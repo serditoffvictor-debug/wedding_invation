@@ -3286,3 +3286,417 @@ body {
     }
 
 }
+/* =====================================================
+   ФИНАЛЬНЫЙ ПЕРВЫЙ ЭКРАН — ТОЛЬКО ТЕЛЕФОНЫ
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* Первый экран всегда занимает минимум весь экран телефона */
+    .hero {
+        min-height: 100svh !important;
+        height: auto !important;
+
+        padding:
+            34px
+            10px
+            45px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+
+    .hero-inner {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* =================================================
+       ПРИГЛАШЕНИЕ НА СВАДЬБУ
+    ================================================= */
+
+    .hero-subtitle {
+        margin:
+            0
+            0
+            10px !important;
+
+        font-family:
+            "Marck Script",
+            cursive !important;
+
+        font-size: 29px !important;
+
+        font-weight: 400 !important;
+
+        line-height: 1.05 !important;
+
+        letter-spacing: 0 !important;
+
+        text-transform: none !important;
+    }
+
+
+    /* =================================================
+       ИМЕНА
+    ================================================= */
+
+    .hero h1 {
+        margin: 0 !important;
+
+        font-size: 48px !important;
+
+        line-height: 1 !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    .hero h1 span {
+        margin:
+            0
+            4px !important;
+    }
+
+
+    /* =================================================
+       ДАТА
+    ================================================= */
+
+    .hero-date {
+        margin-top: 17px !important;
+
+        font-size: 16px !important;
+
+        letter-spacing: 5px !important;
+    }
+
+
+    /* =================================================
+       ФОРМУЛА
+       
+       [ ФОТО ] + [ ФОТО ]
+               =
+             СЕРДЦЕ
+    ================================================= */
+
+    .love-equation {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin:
+            30px
+            auto
+            0 !important;
+
+        padding: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 12px !important;
+
+        transform: none !important;
+    }
+
+
+    /* =================================================
+       ФОТОГРАФИИ
+    ================================================= */
+
+    .love-equation .childhood-photos {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 9px !important;
+    }
+
+
+    .photo-card {
+        width:
+            clamp(
+                128px,
+                39vw,
+                150px
+            ) !important;
+
+        flex:
+            0
+            0
+            clamp(
+                128px,
+                39vw,
+                150px
+            ) !important;
+
+        padding:
+            6px
+            6px
+            14px !important;
+    }
+
+
+    .photo-image-crop {
+        width: 100% !important;
+
+        height:
+            clamp(
+                170px,
+                51vw,
+                198px
+            ) !important;
+    }
+
+
+    .photo-image-crop img {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+    }
+
+
+    /* Виктор */
+
+    .photo-left {
+        transform:
+            rotate(-2deg) !important;
+    }
+
+
+    .photo-left .photo-image-crop img {
+        transform:
+            scale(1.18) !important;
+
+        transform-origin:
+            center 30% !important;
+    }
+
+
+    /* Валерия */
+
+    .photo-right {
+        transform:
+            rotate(2deg) !important;
+    }
+
+
+    .photo-right .photo-image-crop img {
+        transform:
+            scale(1.03) !important;
+
+        transform-origin:
+            center !important;
+    }
+
+
+    /* =================================================
+       ПЛЮС
+    ================================================= */
+
+    .photo-plus {
+        width: 28px !important;
+
+        flex:
+            0
+            0
+            28px !important;
+
+        margin: 0 !important;
+
+        font-size: 43px !important;
+
+        line-height: 1 !important;
+
+        transform: none !important;
+    }
+
+
+    /* =================================================
+       ЗНАК РАВНО
+    ================================================= */
+
+    .photo-equals {
+        width: auto !important;
+
+        margin:
+            2px
+            0
+            -4px !important;
+
+        font-size: 44px !important;
+
+        line-height: 0.8 !important;
+
+        transform: none !important;
+    }
+
+
+    /* =================================================
+       БОЛЬШОЕ СЕРДЦЕ
+    ================================================= */
+
+    .hero-heart {
+        width: 210px !important;
+        height: 190px !important;
+
+        margin: 0 !important;
+
+        flex-shrink: 0 !important;
+
+        transform: none !important;
+    }
+
+
+    .hero-heart-text {
+        width: 160px !important;
+        max-width: 160px !important;
+
+        font-size: 14px !important;
+
+        line-height: 1.2 !important;
+
+        transform: none !important;
+    }
+
+
+    /* =================================================
+       КНОПКА
+    ================================================= */
+
+    .hero-button {
+        margin-top: 22px !important;
+
+        padding:
+            15px
+            32px !important;
+
+        font-size: 16px !important;
+    }
+
+}
+
+
+/* =====================================================
+   ТЕЛЕФОНЫ ДО 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        min-height: 100svh !important;
+
+        padding:
+            28px
+            8px
+            38px !important;
+    }
+
+
+    .hero-subtitle {
+        font-size: 26px !important;
+    }
+
+
+    .hero h1 {
+        font-size: 42px !important;
+    }
+
+
+    .hero-date {
+        margin-top: 14px !important;
+
+        font-size: 15px !important;
+
+        letter-spacing: 4px !important;
+    }
+
+
+    .love-equation {
+        margin-top: 25px !important;
+
+        gap: 10px !important;
+    }
+
+
+    .love-equation .childhood-photos {
+        gap: 7px !important;
+    }
+
+
+    .photo-card {
+        width: 128px !important;
+
+        flex:
+            0
+            0
+            128px !important;
+    }
+
+
+    .photo-image-crop {
+        height: 170px !important;
+    }
+
+
+    .photo-plus {
+        width: 25px !important;
+
+        flex:
+            0
+            0
+            25px !important;
+
+        font-size: 38px !important;
+    }
+
+
+    .photo-equals {
+        font-size: 40px !important;
+    }
+
+
+    .hero-heart {
+        width: 195px !important;
+        height: 176px !important;
+    }
+
+
+    .hero-heart-text {
+        width: 148px !important;
+        max-width: 148px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    .hero-button {
+        margin-top: 19px !important;
+
+        padding:
+            14px
+            29px !important;
+    }
+
+}
