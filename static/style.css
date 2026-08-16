@@ -2869,3 +2869,420 @@ body {
     }
 
 }
+/* =====================================================
+   ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
+===================================================== */
+
+
+/* Такой же шрифт, как у "До встречи!" */
+
+.hero-subtitle {
+    font-family: "Marck Script", cursive !important;
+
+    font-size: 34px !important;
+    font-weight: 400 !important;
+
+    line-height: 1.05 !important;
+
+    letter-spacing: 0 !important;
+
+    text-transform: none !important;
+
+    color: #f4efe5;
+
+    margin:
+        0
+        0
+        12px !important;
+}
+
+
+/* =====================================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* Убираем огромную пустую высоту */
+
+    .hero {
+        min-height: auto !important;
+
+        height: auto !important;
+
+        padding:
+            38px
+            14px
+            42px !important;
+
+        display: block !important;
+    }
+
+
+    .hero-inner {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* Приглашение на свадьбу */
+
+    .hero-subtitle {
+        font-family:
+            "Marck Script",
+            cursive !important;
+
+        font-size: 29px !important;
+
+        font-weight: 400 !important;
+
+        line-height: 1.05 !important;
+
+        letter-spacing: 0 !important;
+
+        text-transform: none !important;
+
+        margin:
+            0
+            0
+            12px !important;
+    }
+
+
+    /* Виктор & Валерия */
+
+    .hero h1 {
+        margin: 0 !important;
+
+        font-size: 48px !important;
+
+        line-height: 1 !important;
+
+        white-space: nowrap;
+    }
+
+
+    .hero h1 span {
+        margin:
+            0
+            4px !important;
+    }
+
+
+    /* Дата */
+
+    .hero-date {
+        margin-top: 18px !important;
+
+        font-size: 16px !important;
+
+        letter-spacing: 5px !important;
+    }
+
+
+    /* =================================================
+       НОВАЯ КОМПОЗИЦИЯ
+
+       [ ФОТО ] + [ ФОТО ]
+
+              =
+
+            СЕРДЦЕ
+    ================================================= */
+
+    .love-equation {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin:
+            30px
+            auto
+            0 !important;
+
+        padding: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 14px !important;
+
+        transform: none !important;
+    }
+
+
+    /* Фотографии */
+
+    .love-equation .childhood-photos {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        display: flex !important;
+
+        flex-direction: row !important;
+
+        justify-content: center !important;
+
+        align-items: center !important;
+
+        gap: 13px !important;
+    }
+
+
+    .photo-card {
+        width: 128px !important;
+
+        flex:
+            0
+            0
+            128px !important;
+
+        padding:
+            6px
+            6px
+            14px !important;
+    }
+
+
+    .photo-image-crop {
+        width: 100% !important;
+
+        height: 165px !important;
+    }
+
+
+    .photo-image-crop img {
+        width: 100% !important;
+
+        height: 100% !important;
+
+        object-fit: cover !important;
+    }
+
+
+    /* Виктор */
+
+    .photo-left {
+        transform:
+            rotate(-2deg) !important;
+    }
+
+
+    .photo-left .photo-image-crop img {
+        transform:
+            scale(1.18) !important;
+
+        transform-origin:
+            center 30% !important;
+    }
+
+
+    /* Валерия */
+
+    .photo-right {
+        transform:
+            rotate(2deg) !important;
+    }
+
+
+    .photo-right .photo-image-crop img {
+        transform:
+            scale(1.03) !important;
+
+        transform-origin:
+            center !important;
+    }
+
+
+    /* Плюс */
+
+    .photo-plus {
+        width: 32px !important;
+
+        flex:
+            0
+            0
+            32px !important;
+
+        font-size: 40px !important;
+
+        line-height: 1 !important;
+
+        margin: 0 !important;
+
+        transform: none !important;
+    }
+
+
+    /* Равно */
+
+    .photo-equals {
+        width: auto !important;
+
+        height: auto !important;
+
+        margin:
+            1px
+            0
+            -2px !important;
+
+        font-size: 42px !important;
+
+        line-height: 0.8 !important;
+
+        transform: none !important;
+    }
+
+
+    /* Сердце */
+
+    .hero-heart {
+        width: 190px !important;
+
+        height: 172px !important;
+
+        margin: 0 !important;
+
+        flex-shrink: 0 !important;
+
+        transform: none !important;
+    }
+
+
+    .hero-heart-text {
+        width: 145px !important;
+
+        max-width: 145px !important;
+
+        font-size: 13px !important;
+
+        line-height: 1.2 !important;
+
+        transform: none !important;
+    }
+
+
+    /* Кнопка */
+
+    .hero-button {
+        margin-top: 24px !important;
+
+        padding:
+            15px
+            31px !important;
+
+        font-size: 16px !important;
+    }
+
+}
+
+
+/* =====================================================
+   МАЛЕНЬКИЕ ТЕЛЕФОНЫ
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding:
+            32px
+            10px
+            38px !important;
+    }
+
+
+    .hero-subtitle {
+        font-size: 26px !important;
+    }
+
+
+    .hero h1 {
+        font-size: 42px !important;
+    }
+
+
+    .hero-date {
+        font-size: 15px !important;
+
+        letter-spacing: 4px !important;
+    }
+
+
+    .love-equation {
+        margin-top: 27px !important;
+
+        gap: 12px !important;
+    }
+
+
+    .love-equation .childhood-photos {
+        gap: 10px !important;
+    }
+
+
+    .photo-card {
+        width: 112px !important;
+
+        flex:
+            0
+            0
+            112px !important;
+    }
+
+
+    .photo-image-crop {
+        height: 146px !important;
+    }
+
+
+    .photo-plus {
+        width: 28px !important;
+
+        flex:
+            0
+            0
+            28px !important;
+
+        font-size: 36px !important;
+    }
+
+
+    .photo-equals {
+        font-size: 38px !important;
+    }
+
+
+    .hero-heart {
+        width: 170px !important;
+
+        height: 154px !important;
+    }
+
+
+    .hero-heart-text {
+        width: 130px !important;
+
+        max-width: 130px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    .hero-button {
+        margin-top: 21px !important;
+    }
+
+}
