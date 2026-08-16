@@ -483,11 +483,19 @@ body {
         "Marck Script",
         cursive;
 
-    font-size: 28px;
+    font-size: 32px;
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: 0;
 
     margin-bottom: 10px;
 
     color: #f4efe5;
+
+    text-transform: none;
 }
 
 
@@ -1980,8 +1988,17 @@ body {
 
 
     .hero-subtitle {
-        font-size: 24px;
+        font-family:
+            "Marck Script",
+            cursive;
+
+        font-size: 26px;
+
+        line-height: 1.08;
+
+        letter-spacing: 0;
     }
+
 
 
     .hero h1 {
@@ -2353,6 +2370,11 @@ body {
 
 @media (max-width: 400px) {
 
+    .hero-subtitle {
+        font-size: 23px;
+    }
+
+   }
     .envelope {
         width: 285px;
         height: 190px;
