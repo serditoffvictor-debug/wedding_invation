@@ -2529,3 +2529,321 @@ body {
     }
 
 }
+/* =====================================================
+   НОВЫЙ ПЕРВЫЙ ЭКРАН ДЛЯ ТЕЛЕФОНА
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* Убираем искусственную высоту в целый экран */
+    .hero {
+        min-height: auto;
+
+        align-items: flex-start;
+
+        padding:
+            34px
+            14px
+            42px;
+    }
+
+
+    .hero-inner {
+        width: 100%;
+    }
+
+
+    /* Приглашение на свадьбу */
+
+    .hero-subtitle {
+        margin-bottom: 8px;
+
+        font-size: 23px;
+
+        line-height: 1.05;
+    }
+
+
+    /* Виктор & Валерия */
+
+    .hero h1 {
+        font-size: 48px;
+
+        line-height: 0.95;
+    }
+
+
+    .hero h1 span {
+        margin:
+            0
+            5px;
+    }
+
+
+    /* Дата */
+
+    .hero-date {
+        margin-top: 18px;
+
+        font-size: 17px;
+
+        letter-spacing: 5px;
+    }
+
+
+    /* =================================================
+       ФОРМУЛА НА МОБИЛЬНОМ
+
+       ФОТО + ФОТО
+           = СЕРДЦЕ
+    ================================================= */
+
+    .love-equation {
+        width: 100%;
+
+        margin-top: 31px;
+
+        display: grid;
+
+        grid-template-columns:
+            42px
+            155px;
+
+        justify-content: center;
+
+        align-items: center;
+
+        column-gap: 7px;
+
+        row-gap: 17px;
+    }
+
+
+    /* Два фото занимают всю первую строку */
+
+    .love-equation .childhood-photos {
+        grid-column:
+            1 / -1;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 13px;
+    }
+
+
+    /* Фотографии делаем значительно крупнее */
+
+    .photo-card {
+        width: 122px;
+
+        padding:
+            6px
+            6px
+            13px;
+    }
+
+
+    .photo-image-crop {
+        height: 158px;
+    }
+
+
+    /* Виктор */
+
+    .photo-left .photo-image-crop img {
+        transform:
+            scale(1.18);
+
+        transform-origin:
+            center 30%;
+    }
+
+
+    /* Валерия */
+
+    .photo-right .photo-image-crop img {
+        transform:
+            scale(1.03);
+
+        transform-origin:
+            center;
+    }
+
+
+    /* Плюс между фотографиями */
+
+    .photo-plus {
+        width: 29px;
+
+        font-size: 39px;
+
+        line-height: 1;
+    }
+
+
+    /* Равно — вторая строка слева от сердца */
+
+    .photo-equals {
+        grid-column: 1;
+
+        width: 42px;
+
+        margin: 0;
+
+        font-size: 42px;
+
+        line-height: 1;
+
+        text-align: center;
+    }
+
+
+    /* Сердце */
+
+    .hero-heart {
+        grid-column: 2;
+
+        width: 155px;
+        height: 142px;
+
+        margin: 0;
+    }
+
+
+    /* Текст в сердце */
+
+    .hero-heart-text {
+        width: 118px;
+
+        font-size: 12px;
+
+        line-height: 1.18;
+    }
+
+
+    /* Кнопка */
+
+    .hero-button {
+        margin-top: 26px;
+
+        padding:
+            15px
+            30px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   СОВСЕМ НЕБОЛЬШИЕ ТЕЛЕФОНЫ
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding:
+            30px
+            10px
+            38px;
+    }
+
+
+    .hero-subtitle {
+        font-size: 21px;
+    }
+
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+
+    .hero-date {
+        margin-top: 16px;
+
+        font-size: 15px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .love-equation {
+        margin-top: 27px;
+
+        grid-template-columns:
+            37px
+            142px;
+
+        column-gap: 5px;
+
+        row-gap: 15px;
+    }
+
+
+    .love-equation .childhood-photos {
+        gap: 10px;
+    }
+
+
+    .photo-card {
+        width: 112px;
+
+        padding:
+            5px
+            5px
+            12px;
+    }
+
+
+    .photo-image-crop {
+        height: 146px;
+    }
+
+
+    .photo-plus {
+        width: 27px;
+
+        font-size: 36px;
+    }
+
+
+    .photo-equals {
+        width: 37px;
+
+        font-size: 38px;
+    }
+
+
+    .hero-heart {
+        width: 142px;
+        height: 130px;
+    }
+
+
+    .hero-heart-text {
+        width: 108px;
+
+        font-size: 11px;
+    }
+
+
+    .hero-button {
+        margin-top: 23px;
+
+        padding:
+            14px
+            27px;
+
+        font-size: 15px;
+    }
+
+}
