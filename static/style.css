@@ -3607,68 +3607,85 @@ section.dress-code .color {
     3px solid
     rgba(90,70,50,0.25);
 
-} /* ===================================== RSVP FIX
-===================================== */
+}
 
-.rsvp-form { width: 100%; max-width: 520px; margin: 30px auto 0;
-box-sizing: border-box; }
+/* ===================================================== FINAL RSVP
+ALCOHOL CHECKBOX FIX
+===================================================== */
 
-.rsvp-form input, .rsvp-form select, .rsvp-form textarea {
+.rsvp-form { width: 100%; max-width: 570px; box-sizing: border-box; }
 
-    width: 100%;
-    max-width: 100%;
+.alcohol-options { display: grid; grid-template-columns: repeat(2,
+minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 15px; }
+
+.checkbox-option { display: flex !important; flex-direction: row
+!important; align-items: center !important; justify-content: flex-start
+!important;
+
+    width: 100% !important;
+    min-height: 52px;
+
+    padding: 12px 14px;
 
     box-sizing: border-box;
 
-    font-family: inherit;
+    background: var(--warm-white);
+
+    border: 1px solid rgba(91,70,56,0.24);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    gap: 12px;
+
+    overflow: hidden;
 
 }
 
-.rsvp-form textarea {
+.checkbox-option input[type=“checkbox”] { appearance: auto;
 
-    min-height: 120px;
+    width: 18px;
+    height: 18px;
 
-    resize: vertical;
+    margin: 0 !important;
 
-}
-
-.alcohol-options {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px;
-
-    width: 100%;
+    flex: 0 0 18px;
 
 }
 
-.checkbox-option {
+.checkbox-option span { display: block !important;
 
-    width: 100%;
+    flex: 1 1 auto;
 
-    box-sizing: border-box;
+    width: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    text-align: left !important;
+
+    white-space: nowrap !important;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 
 }
 
-/* телефон */
+.checkbox-option:hover { border-color: var(–olive); }
+
+.checkbox-option:has(input:checked) { background: #d8dfcd; border-color:
+var(–olive-dark); }
 
 @media(max-width:700px){
 
-    .rsvp-form {
-
-        width: 100%;
-
-        padding: 0 10px;
-
+    .alcohol-options {
+        grid-template-columns: 1fr;
     }
 
-
-    .alcohol-options {
-
-        grid-template-columns: 1fr;
-
+    .checkbox-option span {
+        white-space: normal !important;
     }
 
 }
