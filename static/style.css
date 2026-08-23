@@ -1284,26 +1284,38 @@ body {
 }
 
 
+/* =====================================
+   DRESS CODE - ЦВЕТА В ОДИН РЯД
+===================================== */
+
 .colors {
+
     display: flex;
 
+    flex-direction: row;
+
     justify-content: center;
+
     align-items: flex-start;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
-    gap: 20px;
+    gap: 14px;
 
     margin-top: 28px;
+
+    width: 100%;
+
 }
 
 
 .color-wrapper {
-    min-width: 95px;
 
-    padding:
-        12px
-        10px;
+    width: 115px;
+
+    min-width: 115px;
+
+    padding: 12px 8px;
 
     display: flex;
 
@@ -1311,7 +1323,9 @@ body {
 
     align-items: center;
 
-    gap: 9px;
+    justify-content: center;
+
+    gap: 10px;
 
     font-size: 15px;
 
@@ -1326,11 +1340,14 @@ body {
         );
 
     border-radius: 12px;
+
 }
 
 
 .color {
+
     width: 58px;
+
     height: 58px;
 
     border-radius: 50%;
@@ -1346,45 +1363,72 @@ body {
 
     box-shadow:
         0 4px 10px
-        rgba(63, 48, 40, 0.14);
+        rgba(
+            63,
+            48,
+            40,
+            0.14
+        );
 
-    transition:
-        transform 0.25s ease;
 }
 
 
-.color:hover {
-    transform: scale(1.12);
-}
+/* =====================================
+   МОБИЛЬНЫЙ ТЕЛЕФОН
+===================================== */
+
+@media(max-width:700px){
+
+    .colors {
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 10px;
+
+        padding:
+            0
+            10px
+            10px;
+
+        scrollbar-width: none;
+
+    }
 
 
-.color-2 {
-    background: #5a4637;
-}
+    .colors::-webkit-scrollbar {
+
+        display:none;
+
+    }
 
 
-.color-3 {
-    background: #84592B;
-}
+    .color-wrapper {
+
+        width: 85px;
+
+        min-width:85px;
+
+        padding:
+            10px
+            5px;
+
+        font-size:13px;
+
+    }
 
 
-.color-4 {
-    background: #d5c4b7;
-}
+    .color {
 
+        width:48px;
 
-.color-5 {
-    background: #d1c2a8;
-}
+        height:48px;
 
+    }
 
-.color-6 {
-    background: #b8c3a0;
-}
-
-
-.color-7 {
-    background: #596545;
 }
 
 
