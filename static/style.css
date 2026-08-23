@@ -3625,3 +3625,80 @@ section.dress-code .color {
     rgba(90,70,50,0.25);
 
 }
+/* =====================================
+   RSVP FIX
+===================================== */
+
+.rsvp-form {
+    width: 100%;
+    max-width: 520px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+}
+
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+
+    width: 100%;
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+    font-family: inherit;
+
+}
+
+
+.rsvp-form textarea {
+
+    min-height: 120px;
+
+    resize: vertical;
+
+}
+
+
+.alcohol-options {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    width: 100%;
+
+}
+
+
+.checkbox-option {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+/* телефон */
+
+@media(max-width:700px){
+
+    .rsvp-form {
+
+        width: 100%;
+
+        padding: 0 10px;
+
+    }
+
+
+    .alcohol-options {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
