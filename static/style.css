@@ -3506,52 +3506,75 @@ justify-content: center !important; }
     }
 
 }
-/* =====================================================
-   FINAL FIX DRESS CODE ROW
-===================================================== */
+/* =====================================
+   DRESS CODE ONLY
+   FIX COLORS ROW
+===================================== */
 
-.dress-code .colors {
-    width: 100%;
+section.dress-code .colors {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
+
     justify-content: center !important;
     align-items: flex-start !important;
+
     gap: 18px !important;
-    overflow: visible !important;
+
+    width: 100% !important;
+
+    position: static !important;
 }
 
 
-.dress-code .color-wrapper {
+section.dress-code .color-wrapper {
+
     width: 120px !important;
     min-width: 120px !important;
-    height: 145px !important;
+    height: auto !important;
 
     display: flex !important;
+
     flex-direction: column !important;
 
-    justify-content: center !important;
     align-items: center !important;
+    justify-content: center !important;
 
-    padding: 12px !important;
+    position: static !important;
+
 }
 
 
-/* мобильные телефоны */
-@media (max-width:700px){
+section.dress-code .color {
 
-    .dress-code .colors {
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        justify-content: flex-start !important;
-        padding: 0 10px !important;
+    position: static !important;
+
+}
+
+
+/* телефон */
+
+@media(max-width:700px){
+
+    section.dress-code .colors {
+
+        display:flex !important;
+
+        flex-wrap:wrap !important;
+
+        justify-content:center !important;
+
+        gap:12px !important;
+
     }
 
 
-    .dress-code .color-wrapper {
-        flex: 0 0 105px !important;
-        width: 105px !important;
-        min-width:105px !important;
+    section.dress-code .color-wrapper {
+
+        width:95px !important;
+
+        min-width:95px !important;
+
     }
 
 }
