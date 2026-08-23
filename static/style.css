@@ -3791,3 +3791,73 @@ box-sizing: border-box;
         white-space: normal !important;
     }
 }
+
+/* ===== FINAL FIXES ===== */
+
+#envelope-screen {
+    display:flex;
+}
+
+#invitation {
+    width:100%;
+}
+
+.hero {
+    min-height:100vh;
+    min-height:100dvh;
+}
+
+.dress-code,
+.rsvp,
+.final-section {
+    position:relative;
+    display:block;
+    clear:both;
+}
+
+.dress-code .colors {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.additional-title {
+    width:100%;
+    margin:32px 0 18px;
+    text-align:center;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:var(--chocolate-medium);
+    font-size:18px;
+}
+
+.color-black {
+    background:#111111;
+}
+
+.color-white {
+    background:#ffffff;
+    border-color:rgba(90,70,50,.25);
+}
+
+.rsvp {
+    isolation:isolate;
+}
+
+.final-section {
+    width:100%;
+    min-height:420px;
+}
+
+.wedding-countdown {
+    display:flex;
+}
+
+@media(max-width:700px){
+    .dress-code .colors {
+        flex-wrap:wrap;
+    }
+}
