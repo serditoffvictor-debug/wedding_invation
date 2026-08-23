@@ -1458,6 +1458,7 @@ textarea:focus { border-color: var(–olive);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    width: 100%;
     margin-top: 15px;
 
 }
@@ -1465,23 +1466,20 @@ textarea:focus { border-color: var(–olive);
 .checkbox-option {
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 12px;
 
-    min-height: 48px;
+    width: 100%;
+    min-height: 52px;
+
     padding: 12px 16px;
+
+    box-sizing: border-box;
 
     background: var(--warm-white);
 
-    border:
-        1px solid
-        rgba(
-            91,
-            70,
-            56,
-            0.24
-        );
+    border: 1px solid rgba(91,70,56,0.24);
 
     border-radius: 10px;
 
@@ -1491,15 +1489,7 @@ textarea:focus { border-color: var(–olive);
 
     color: var(--chocolate-dark);
 
-    transition:
-        border-color 0.2s ease,
-        background 0.2s ease;
-
-}
-
-.checkbox-option:hover {
-
-    border-color: var(--olive);
+    gap: 12px;
 
 }
 
@@ -1510,7 +1500,7 @@ textarea:focus { border-color: var(–olive);
 
     margin: 0;
 
-    flex-shrink: 0;
+    flex: 0 0 auto;
 
     accent-color: var(--olive-dark);
 
@@ -1518,7 +1508,19 @@ textarea:focus { border-color: var(–olive);
 
 .checkbox-option span {
 
+    display: block;
+
+    flex: 1;
+
+    text-align: left;
+
     white-space: nowrap;
+
+}
+
+.checkbox-option:hover {
+
+    border-color: var(--olive);
 
 }
 
