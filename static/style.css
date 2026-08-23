@@ -3506,3 +3506,52 @@ justify-content: center !important; }
     }
 
 }
+/* =====================================================
+   FINAL FIX DRESS CODE ROW
+===================================================== */
+
+.dress-code .colors {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    overflow: visible !important;
+}
+
+
+.dress-code .color-wrapper {
+    width: 120px !important;
+    min-width: 120px !important;
+    height: 145px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 12px !important;
+}
+
+
+/* мобильные телефоны */
+@media (max-width:700px){
+
+    .dress-code .colors {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        justify-content: flex-start !important;
+        padding: 0 10px !important;
+    }
+
+
+    .dress-code .color-wrapper {
+        flex: 0 0 105px !important;
+        width: 105px !important;
+        min-width:105px !important;
+    }
+
+}
