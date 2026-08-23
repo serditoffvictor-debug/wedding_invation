@@ -1124,42 +1124,31 @@ body { margin: 0; padding: 0;
 .colors {
 
     display: flex;
-
-    flex-direction: row;
-
     justify-content: center;
-
     align-items: flex-start;
-
-    flex-wrap: nowrap;
-
-    gap: 14px;
-
-    margin-top: 28px;
-
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
     width: 100%;
 
 }
 
 .color-wrapper {
 
-    width: 115px;
+    width: 130px;
+    min-height: 145px;
 
-    min-width: 115px;
-
-    padding: 12px 8px;
+    padding: 15px 10px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 10px;
 
-    font-size: 15px;
+    font-size: 16px;
+    text-align: center;
 
     color: var(--chocolate-dark);
 
@@ -1171,15 +1160,14 @@ body { margin: 0; padding: 0;
             0.43
         );
 
-    border-radius: 12px;
+    border-radius: 16px;
 
 }
 
 .color {
 
-    width: 58px;
-
-    height: 58px;
+    width: 65px;
+    height: 65px;
 
     border-radius: 50%;
 
@@ -1189,19 +1177,29 @@ body { margin: 0; padding: 0;
             255,
             255,
             255,
-            0.65
+            0.8
         );
 
     box-shadow:
-        0 4px 10px
+        0 5px 15px
         rgba(
             63,
             48,
             40,
-            0.14
+            0.18
         );
 
 }
+
+.color-chocolate { background:#5b4638; }
+
+.color-caramel { background:#8c6330; }
+
+.color-beige { background:#d8c8aa; }
+
+.color-sage { background:#b8c49f; }
+
+.color-olive { background:#667253; }
 
 /* ===================================== МОБИЛЬНЫЙ ТЕЛЕФОН
 ===================================== */
@@ -1210,27 +1208,10 @@ body { margin: 0; padding: 0;
 
     .colors {
 
-        flex-wrap: nowrap;
-
-        overflow-x: auto;
-
-        justify-content: flex-start;
-
-        gap: 10px;
-
-        padding:
-            0
-            10px
-            10px;
-
-        scrollbar-width: none;
-
-    }
-
-
-    .colors::-webkit-scrollbar {
-
-        display:none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
 
     }
 
