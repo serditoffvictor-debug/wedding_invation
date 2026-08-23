@@ -7681,3 +7681,44 @@ box-sizing: border-box;
     clear: both !important;
 }
 
+/* ===== FINAL OPEN ENVELOPE FIX ===== */
+
+html, body {
+    min-height:100%;
+}
+
+#envelope-screen {
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:flex;
+    opacity:1;
+    visibility:visible;
+}
+
+#envelope-screen.screen-hide {
+    display:none !important;
+    opacity:0 !important;
+    visibility:hidden !important;
+}
+
+#invitation {
+    display:none;
+    opacity:0;
+    width:100%;
+    visibility:hidden;
+}
+
+#invitation.show {
+    display:block !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    animation:none !important;
+}
+
+#invitation .hero,
+#invitation .section,
+#invitation .final-section {
+    display:block;
+}
+
