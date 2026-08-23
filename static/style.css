@@ -1453,27 +1453,24 @@ textarea:focus { border-color: var(–olive);
 
 }
 
-.alcohol-options { display: grid;
+.alcohol-options {
 
-    grid-template-columns:
-        repeat(
-            2,
-            1fr
-        );
-
-    gap: 9px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
 
 }
 
-.checkbox-option { display: flex;
+.checkbox-option {
 
+    display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
 
-    gap: 10px;
-
-    padding:
-        12px
-        14px;
+    min-height: 48px;
+    padding: 12px 16px;
 
     background: var(--warm-white);
 
@@ -1486,7 +1483,7 @@ textarea:focus { border-color: var(–olive);
             0.24
         );
 
-    border-radius: 7px;
+    border-radius: 10px;
 
     cursor: pointer;
 
@@ -1500,21 +1497,48 @@ textarea:focus { border-color: var(–olive);
 
 }
 
-.checkbox-option:hover { border-color: var(–olive); }
+.checkbox-option:hover {
 
-.checkbox-option input { width: 18px; height: 18px;
+    border-color: var(--olive);
+
+}
+
+.checkbox-option input {
+
+    width: 18px;
+    height: 18px;
 
     margin: 0;
+
+    flex-shrink: 0;
 
     accent-color: var(--olive-dark);
 
 }
 
-.checkbox-option:has(input:checked) { background: #d8dfcd;
+.checkbox-option span {
+
+    white-space: nowrap;
+
+}
+
+.checkbox-option:has(input:checked) {
+
+    background: #d8dfcd;
 
     border-color: var(--olive-dark);
 
     color: var(--olive-dark);
+
+}
+
+@media(max-width:700px){
+
+    .alcohol-options {
+
+        grid-template-columns: 1fr;
+
+    }
 
 }
 
@@ -3505,16 +3529,11 @@ justify-content: center !important; }
         min-width: 85px !important;
     }
 
-}
-/* =====================================
-   DRESS CODE ONLY
-   FIX COLORS ROW
-===================================== */
+} /* ===================================== DRESS CODE ONLY FIX COLORS
+ROW ===================================== */
 
-section.dress-code .colors {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
+section.dress-code .colors { display: flex !important; flex-direction:
+row !important; flex-wrap: wrap !important;
 
     justify-content: center !important;
     align-items: flex-start !important;
@@ -3524,8 +3543,8 @@ section.dress-code .colors {
     width: 100% !important;
 
     position: static !important;
-}
 
+}
 
 section.dress-code .color-wrapper {
 
@@ -3544,13 +3563,11 @@ section.dress-code .color-wrapper {
 
 }
 
-
 section.dress-code .color {
 
     position: static !important;
 
 }
-
 
 /* телефон */
 
@@ -3577,18 +3594,14 @@ section.dress-code .color {
 
     }
 
-}
-/* =====================================
-   ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ МУЖЧИН
-===================================== */
-
+} /* ===================================== ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ
+МУЖЧИН ===================================== */
 
 .additional-colors {
 
     margin-top: 35px;
 
 }
-
 
 .additional-title {
 
@@ -3604,7 +3617,6 @@ section.dress-code .color {
 
 }
 
-
 /* черный */
 
 .color-black {
@@ -3612,7 +3624,6 @@ section.dress-code .color {
     background:#111111;
 
 }
-
 
 /* белый */
 
@@ -3624,22 +3635,13 @@ section.dress-code .color {
     3px solid
     rgba(90,70,50,0.25);
 
-}
-/* =====================================
-   RSVP FIX
+} /* ===================================== RSVP FIX
 ===================================== */
 
-.rsvp-form {
-    width: 100%;
-    max-width: 520px;
-    margin: 30px auto 0;
-    box-sizing: border-box;
-}
+.rsvp-form { width: 100%; max-width: 520px; margin: 30px auto 0;
+box-sizing: border-box; }
 
-
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea {
+.rsvp-form input, .rsvp-form select, .rsvp-form textarea {
 
     width: 100%;
     max-width: 100%;
@@ -3650,7 +3652,6 @@ section.dress-code .color {
 
 }
 
-
 .rsvp-form textarea {
 
     min-height: 120px;
@@ -3658,7 +3659,6 @@ section.dress-code .color {
     resize: vertical;
 
 }
-
 
 .alcohol-options {
 
@@ -3672,7 +3672,6 @@ section.dress-code .color {
 
 }
 
-
 .checkbox-option {
 
     width: 100%;
@@ -3680,7 +3679,6 @@ section.dress-code .color {
     box-sizing: border-box;
 
 }
-
 
 /* телефон */
 
