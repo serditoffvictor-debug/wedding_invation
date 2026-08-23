@@ -439,8 +439,6 @@
 
 
     <div class="colors">
-
-
         <div class="color-wrapper">
 
             <div class="color color-black"></div>
@@ -463,8 +461,6 @@
 
         </div>
 
-
-    </div>
 
     </div>
 
@@ -888,5 +884,60 @@
         </div>
 
     </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const seal = document.getElementById("waxSeal");
+    const screen = document.getElementById("envelope-screen");
+    const invitation = document.getElementById("invitation");
+
+    if (seal) {
+        seal.addEventListener("click", function () {
+            const flap = document.querySelector(".envelope-flap");
+            const letter = document.querySelector(".envelope-letter");
+
+            seal.classList.add("seal-open");
+            if (flap) flap.classList.add("flap-open");
+            if (letter) letter.classList.add("letter-open");
+
+            setTimeout(function () {
+                if (screen) screen.classList.add("screen-hide");
+                if (invitation) invitation.classList.add("show");
+            }, 900);
+        });
+    }
+
+    const target = new Date("2026-09-19T15:30:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = target - now;
+
+        const ids = [
+            ["countdownDays", 86400000],
+            ["countdownHours", 3600000],
+            ["countdownMinutes", 60000],
+            ["countdownSeconds", 1000]
+        ];
+
+        if (distance < 0) return;
+
+        let value = distance;
+
+        ids.forEach(function(item) {
+            const el = document.getElementById(item[0]);
+            if (!el) return;
+
+            const number = Math.floor(value / item[1]);
+            value = value % item[1];
+            el.textContent = String(number).padStart(2, "0");
+        });
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+});
+</script>
+
 </body>
 </html>
