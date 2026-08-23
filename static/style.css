@@ -3578,3 +3578,50 @@ section.dress-code .color {
     }
 
 }
+/* =====================================
+   ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ МУЖЧИН
+===================================== */
+
+
+.additional-colors {
+
+    margin-top: 35px;
+
+}
+
+
+.additional-title {
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: var(--chocolate-dark);
+
+}
+
+
+/* черный */
+
+.color-black {
+
+    background:#111111;
+
+}
+
+
+/* белый */
+
+.color-white {
+
+    background:#FFFFFF;
+
+    border:
+    3px solid
+    rgba(90,70,50,0.25);
+
+}
