@@ -2389,7 +2389,7 @@ opacity: 0.55;
 }
 
 
-} /* ===================================================== НОВЫЙ ПЕРВЫЙ
+ /* ===================================================== НОВЫЙ ПЕРВЫЙ
 ЭКРАН ДЛЯ ТЕЛЕФОНА =====================================================
 */
 @media (max-width: 700px) {
@@ -3789,7 +3789,7 @@ box-sizing: border-box;
         white-space: normal !important;
     }
 }
-}
+
 
 
  {
@@ -6182,7 +6182,7 @@ opacity: 0.55;
 }
 
 
-} /* ===================================================== НОВЫЙ ПЕРВЫЙ
+ /* ===================================================== НОВЫЙ ПЕРВЫЙ
 ЭКРАН ДЛЯ ТЕЛЕФОНА =====================================================
 */
 @media (max-width: 700px) {
@@ -7720,5 +7720,64 @@ html, body {
 #invitation .section,
 #invitation .final-section {
     display:block;
+}
+
+/* ===== FINAL STRUCTURE FIX ===== */
+
+html, body {
+    width:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+#envelope-screen {
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    background:#f5f1e8;
+    opacity:1;
+    visibility:visible;
+}
+
+#envelope-screen.screen-hide {
+    display:none !important;
+}
+
+#invitation {
+    display:none;
+    width:100%;
+    opacity:1;
+    visibility:visible;
+}
+
+#invitation.show {
+    display:block !important;
+    opacity:1 !important;
+    visibility:visible !important;
+}
+
+#invitation section {
+    display:block;
+    width:100%;
+}
+
+.dress-code {
+    clear:both;
+    display:block;
+}
+
+.rsvp {
+    clear:both;
+    display:block;
+}
+
+.final-section {
+    width:100%;
+    clear:both;
 }
 
