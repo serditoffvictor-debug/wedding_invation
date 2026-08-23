@@ -3792,72 +3792,62 @@ box-sizing: border-box;
     }
 }
 
-/* ===== FINAL FIXES ===== */
-
-#envelope-screen {
-    display:flex;
-}
+/* ===== STRUCTURE FIX ===== */
 
 #invitation {
     width:100%;
 }
 
-.hero {
-    min-height:100vh;
-    min-height:100dvh;
-}
-
-.dress-code,
-.rsvp,
-.final-section {
-    position:relative;
+#invitation.show {
     display:block;
+}
+
+#envelope-screen.screen-hide {
+    display:none;
+}
+
+.dress-code {
     clear:both;
-}
-
-.dress-code .colors {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:center;
-    align-items:flex-start;
-    gap:18px;
-}
-
-.additional-title {
-    width:100%;
-    margin:32px 0 18px;
-    text-align:center;
-    letter-spacing:5px;
-    text-transform:uppercase;
-    color:var(--chocolate-medium);
-    font-size:18px;
-}
-
-.color-black {
-    background:#111111;
-}
-
-.color-white {
-    background:#ffffff;
-    border-color:rgba(90,70,50,.25);
+    overflow:hidden;
 }
 
 .rsvp {
-    isolation:isolate;
+    clear:both;
+    overflow:hidden;
 }
 
 .final-section {
-    width:100%;
-    min-height:420px;
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    clear:both;
 }
 
-.wedding-countdown {
-    display:flex;
+.colors {
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+}
+
+.dress-code .colors + .additional-title {
+    clear:both;
+}
+
+.alcohol-options {
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+}
+
+.checkbox-option {
+    width:100% !important;
 }
 
 @media(max-width:700px){
-    .dress-code .colors {
-        flex-wrap:wrap;
+    .colors {
+        flex-wrap:wrap !important;
+    }
+    .alcohol-options {
+        grid-template-columns:1fr !important;
     }
 }
