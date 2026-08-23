@@ -7629,3 +7629,55 @@ box-sizing: border-box;
  justify-content:center;
  align-items:center;
 }
+
+/* ===== FIX: ENVELOPE OPEN / INVITATION VISIBILITY ===== */
+
+#envelope-screen {
+    transition: opacity .9s ease, visibility .9s ease;
+}
+
+#envelope-screen.screen-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+#invitation {
+    display: none !important;
+    opacity: 0;
+    width: 100%;
+}
+
+#invitation.show {
+    display: block !important;
+    opacity: 1 !important;
+    animation: invitationAppear 1s ease forwards;
+}
+
+@keyframes invitationAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* fix sections after envelope */
+#invitation section {
+    display: block;
+}
+
+/* footer full width */
+.final-section {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* separate dress-code and RSVP */
+.dress-code,
+.rsvp {
+    display: block !important;
+    clear: both !important;
+}
+
