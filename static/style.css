@@ -1,7 +1,5 @@
 :root {
 
-
-
 /* Основной оливковый */
 --olive-dark: #4f5a3d;
 --olive: #667253;
@@ -27,7 +25,6 @@
 --line-olive: rgba(79, 90, 61, 0.17);
 --line-chocolate: rgba(91, 70, 56, 0.18);
 
-
 }
 /* ===================================================== ОСНОВНЫЕ
 НАСТРОЙКИ ===================================================== */
@@ -36,7 +33,6 @@
 
 html { scroll-behavior: smooth; }
 body { margin: 0; padding: 0;
-
 
 background: var(--cream);
 
@@ -49,12 +45,10 @@ font-family:
 
 overflow-x: hidden;
 
-
 }
 /* ===================================================== КОНВЕРТ
 ===================================================== */
 #envelope-screen { position: fixed;
-
 
 inset: 0;
 
@@ -79,17 +73,13 @@ opacity: 1;
 transition:
     opacity 0.9s ease;
 
-
 }
 #envelope-screen.screen-hide { opacity: 0;
 
-
 pointer-events: none;
-
 
 }
 .envelope-wrapper { width: 100%;
-
 
 display: flex;
 
@@ -98,10 +88,8 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
 }
 .envelope { position: relative;
-
 
 width: 360px;
 height: 235px;
@@ -110,12 +98,10 @@ margin: 0 auto;
 
 perspective: 1200px;
 
-
 }
 /* ===================================================== ПИСЬМО
 ===================================================== */
 .envelope-letter { position: absolute;
-
 
 left: 30px;
 right: 30px;
@@ -150,29 +136,23 @@ transition:
         1
     );
 
-
 }
 .envelope-letter.letter-open { transform: translateY(-92px); }
 .letter-small-title { font-size: 23px;
 
-
 color: var(--olive-dark);
-
 
 }
 .letter-small-date { margin-top: 10px;
-
 
 font-size: 16px;
 
 color: var(--chocolate-medium);
 
-
 }
 /* ===================================================== КОРПУС КОНВЕРТА
 ===================================================== */
 .envelope-body { position: absolute;
-
 
 left: 0;
 right: 0;
@@ -189,10 +169,8 @@ z-index: 3;
 
 overflow: hidden;
 
-
 }
-.envelope-body::before { content: "";;
-
+.envelope-body::before { content: "";
 
 position: absolute;
 
@@ -211,10 +189,8 @@ clip-path:
         0 100%
     );
 
-
 }
-.envelope-body::after { content: "";;
-
+.envelope-body::after { content: "";
 
 position: absolute;
 
@@ -233,12 +209,10 @@ clip-path:
         0 100%
     );
 
-
 }
 /* ===================================================== КЛАПАН
 ===================================================== */
 .envelope-flap { position: absolute;
-
 
 left: 0;
 right: 0;
@@ -270,19 +244,15 @@ transition:
         1
     );
 
-
 }
 .envelope-flap.flap-open { transform: rotateX(180deg);
 
-
 z-index: 1;
-
 
 }
 /* ===================================================== ПЕЧАТЬ
 ===================================================== */
 .wax-seal { position: absolute;
-
 
 left: 50%;
 top: 131px;
@@ -334,11 +304,9 @@ transition:
     transform 0.35s ease,
     opacity 0.45s ease;
 
-
 }
-.wax-seal { transform: translateX(-50%) scale(1.07); }
+.wax-seal:hover { transform: translateX(-50%) scale(1.07); }
 .wax-seal.seal-open { opacity: 0;
-
 
 transform:
     translateX(-50%)
@@ -346,10 +314,8 @@ transform:
 
 pointer-events: none;
 
-
 }
 .open-text { width: 100%;
-
 
 margin-top: 36px;
 
@@ -361,21 +327,17 @@ color: var(--chocolate-medium);
 
 text-align: center;
 
-
 }
 /* ===================================================== ОСНОВНОЙ САЙТ
 ===================================================== */
 #invitation { display: none;
 
-
 width: 100%;
 
 opacity: 0;
 
-
 }
 #invitation.show { display: block;
-
 
 animation:
     invitationAppear
@@ -383,10 +345,8 @@ animation:
     ease
     forwards;
 
-
 }
 @keyframes invitationAppear {
-
 
 from {
     opacity: 0;
@@ -396,12 +356,10 @@ to {
     opacity: 1;
 }
 
-
 }
 /* ===================================================== ПЕРВЫЙ ЭКРАН
 ===================================================== */
 .hero { min-height: 100vh;
-
 
 width: 100%;
 
@@ -426,10 +384,8 @@ padding:
     30px
     55px;
 
-
 }
 .hero-inner { width: 100%;
-
 
 max-width: 1500px;
 
@@ -441,10 +397,8 @@ flex-direction: column;
 
 align-items: center;
 
-
 }
 .hero-subtitle { font-family: "Marck Script", cursive;
-
 
 font-size: 32px;
 
@@ -460,10 +414,8 @@ color: #f4efe5;
 
 text-transform: none;
 
-
 }
 .hero h1 { margin: 0;
-
 
 font-weight: 400;
 
@@ -480,20 +432,16 @@ letter-spacing: -1px;
 
 color: var(--warm-white);
 
-
 }
 .hero h1 span { font-style: italic;
-
 
 margin:
     0 15px;
 
 color: #e4d4c6;
 
-
 }
 .hero-date { margin-top: 22px;
-
 
 font-size: 22px;
 
@@ -501,12 +449,10 @@ letter-spacing: 8px;
 
 color: #f3eee3;
 
-
 }
 /* ===================================================== ФОТО + ФОТО =
 СЕРДЦЕ ===================================================== */
 .love-equation { width: min( 1280px, 94vw );
-
 
 margin-top: 38px;
 
@@ -519,10 +465,8 @@ gap: 40px;
 
 flex-wrap: nowrap;
 
-
 }
 .love-equation .childhood-photos { width: auto;
-
 
 margin: 0;
 
@@ -537,10 +481,8 @@ gap: 25px;
 
 flex-shrink: 0;
 
-
 }
 .photo-card { width: 185px;
-
 
 background: var(--cream-light);
 
@@ -558,48 +500,38 @@ flex-shrink: 0;
 transition:
     transform 0.4s ease;
 
-
 }
 .photo-image-crop { width: 100%;
-
 
 height: 235px;
 
 overflow: hidden;
 
-
 }
 .photo-image-crop img { display: block;
-
 
 width: 100%;
 height: 100%;
 
 object-fit: cover;
 
-
 }
 .photo-left { transform: rotate(-2deg); }
 .photo-left .photo-image-crop img { transform: scale(1.22);
 
-
 transform-origin:
     center 30%;
-
 
 }
 .photo-right { transform: rotate(2deg); }
 .photo-right .photo-image-crop img { transform: scale(1.03);
 
-
 transform-origin: center;
-
 
 }
 .photo-left { transform: rotate(-2deg) translateY(-6px); }
 .photo-right { transform: rotate(2deg) translateY(-6px); }
 .photo-plus { width: 48px;
-
 
 flex-shrink: 0;
 
@@ -611,10 +543,8 @@ text-align: center;
 
 color: #f1e7dc;
 
-
 }
 .photo-equals { width: 65px;
-
 
 flex-shrink: 0;
 
@@ -626,10 +556,8 @@ text-align: center;
 
 color: #f1e7dc;
 
-
 }
 .hero-heart { position: relative;
-
 
 width: 290px;
 height: 255px;
@@ -679,11 +607,9 @@ clip-path:
         58% 88%
     );
 
-
 }
 .hero-heart::before, .hero-heart::after { display: none; }
 .hero-heart-text { width: 215px;
-
 
 position: relative;
 
@@ -697,10 +623,8 @@ text-align: center;
 
 color: #f7f1e7;
 
-
 }
 .hero-button { display: inline-flex;
-
 
 align-items: center;
 justify-content: center;
@@ -734,39 +658,31 @@ transition:
     background 0.3s ease,
     color 0.3s ease;
 
-
 }
-.hero-button { transform: translateY(-3px);
-
+.hero-button:hover { transform: translateY(-3px);
 
 background: var(--chocolate);
 
 color: #ffffff;
-
 
 }
 /* ===================================================== ОБЩИЕ СЕКЦИИ
 ===================================================== */
 .section { width: 100%;
 
-
 padding:
     50px
     25px;
 
-
 }
 .section-content { max-width: 900px;
-
 
 margin: 0 auto;
 
 text-align: center;
 
-
 }
 .section-label { margin: 0 0 22px;
-
 
 font-family:
     "Cormorant Garamond",
@@ -785,10 +701,8 @@ text-transform: uppercase;
 
 color: var(--chocolate-medium);
 
-
 }
 .section h2 { margin: 0;
-
 
 font-family:
     "Cormorant Garamond",
@@ -810,10 +724,8 @@ letter-spacing: -0.4px;
 
 color: var(--olive-dark);
 
-
 }
 .section-text { max-width: 650px;
-
 
 margin:
     20px
@@ -825,12 +737,10 @@ line-height: 1.45;
 
 color: var(--text-soft);
 
-
 }
 /* ===================================================== ДОРОГИЕ ГОСТИ
 МОЛОЧНЫЙ ФОН ===================================================== */
 .welcome { background: var(--cream);
-
 
 padding:
     46px
@@ -843,11 +753,9 @@ border-top:
 border-bottom:
     1px solid var(--line-chocolate);
 
-
 }
 .welcome .section-content { max-width: 950px; }
 .welcome .welcome-label { margin: 0 0 26px;
-
 
 font-size: 22px;
 
@@ -857,10 +765,8 @@ letter-spacing: 6px;
 
 color: var(--chocolate);
 
-
 }
 .welcome-main-text { max-width: 820px;
-
 
 margin: 0 auto;
 
@@ -879,21 +785,17 @@ color: var(--olive-dark);
 
 text-align: center;
 
-
 }
 .welcome-line { display: block; }
 .welcome-line-accent { margin-top: 17px;
 
-
 color: var(--chocolate);
-
 
 }
 /* ===================================================== МЕСТО ВСТРЕЧИ
 СВЕТЛЫЙ ШОКОЛАДНЫЙ ФОН
 ===================================================== */
 .location { background: var(--chocolate-light);
-
 
 padding:
     50px
@@ -904,27 +806,21 @@ border-bottom:
     1px solid
     var(--line-chocolate);
 
-
 }
 .location .section-label { color: var(--olive-dark); }
 .location h2 { font-size: clamp( 36px, 4vw, 50px );
 
-
 color: var(--chocolate-dark);
-
 
 }
 .location .section-text { margin: 16px auto 0;
-
 
 font-size: 19px;
 
 color: var(--chocolate-medium);
 
-
 }
 .yandex-map-wrapper { width: 100%;
-
 
 max-width: 850px;
 
@@ -947,10 +843,8 @@ box-shadow:
     0 18px 45px
     rgba(63, 48, 40, 0.16);
 
-
 }
 .yandex-map-wrapper iframe { display: block;
-
 
 width: 100%;
 
@@ -958,10 +852,8 @@ height: 420px;
 
 border: 0;
 
-
 }
 .map-button { display: inline-flex;
-
 
 align-items: center;
 justify-content: center;
@@ -1001,22 +893,18 @@ transition:
     color 0.3s ease,
     transform 0.3s ease;
 
-
 }
-.map-button { background: var(--chocolate);
-
+.map-button:hover { background: var(--chocolate);
 
 color: #ffffff;
 
 transform: translateY(-2px);
-
 
 }
 /* ===================================================== ПРОГРАММА ДНЯ
 СВЕТЛЫЙ ОЛИВКОВЫЙ =====================================================
 */
 .program { background: var(--olive-light);
-
 
 padding:
     50px
@@ -1027,18 +915,14 @@ border-bottom:
     1px solid
     var(--line-olive);
 
-
 }
 .program .section-label { color: var(--chocolate); }
 .program h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--olive-dark);
-
 
 }
 .timeline { max-width: 680px;
-
 
 margin:
     32px
@@ -1047,10 +931,8 @@ margin:
 
 text-align: left;
 
-
 }
 .timeline-item { display: grid;
-
 
 grid-template-columns:
     100px
@@ -1083,18 +965,14 @@ border:
 
 border-radius: 12px;
 
-
 }
 .timeline-item { margin-bottom: 0; }
 .timeline-time { font-size: 23px;
 
-
 color: var(--chocolate);
-
 
 }
 .timeline-info h3 { margin: 0 0 5px;
-
 
 font-size: 26px;
 
@@ -1102,10 +980,8 @@ font-weight: 500;
 
 color: var(--olive-dark);
 
-
 }
 .timeline-info p { margin: 0;
-
 
 font-size: 17px;
 
@@ -1113,13 +989,11 @@ line-height: 1.45;
 
 color: #6c7163;
 
-
 }
 /* ===================================================== DRESS CODE
 СВЕТЛЫЙ ШОКОЛАДНЫЙ =====================================================
 */
 .dress-code { background: #eee4dc;
-
 
 padding:
     50px
@@ -1130,18 +1004,14 @@ border-bottom:
     1px solid
     var(--line-chocolate);
 
-
 }
 .dress-code .section-label { color: var(--olive-dark); }
 .dress-code h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--chocolate-dark);
-
 
 }
 .dress-code .section-text { max-width: 700px;
-
 
 margin:
     17px
@@ -1152,22 +1022,18 @@ font-size: 19px;
 
 color: var(--chocolate-medium);
 
-
 }
 /* ===================================== DRESS CODE - ЦВЕТА В ОДИН РЯД
 ===================================== */
 .colors {
-
-    display: grid;
-    grid-template-columns: repeat(5, 130px);
+    display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: stretch;
+    flex-wrap: nowrap;
     gap: 22px;
     margin-top: 30px;
     width: 100%;
-
 }
-
 
 .color-wrapper {
 
@@ -1200,7 +1066,6 @@ color: var(--chocolate-medium);
 
 }
 
-
 .color {
 
     width: 70px;
@@ -1228,7 +1093,6 @@ color: var(--chocolate-medium);
 
 }
 
-
 .color-chocolate { background:#5b4638; }
 .color-caramel { background:#8c6330; }
 .color-beige { background:#d8c8aa; }
@@ -1254,7 +1118,6 @@ color: var(--chocolate-medium);
     border-color:#dddddd;
 }
 
-
 @media(max-width:700px){
 
     .colors {
@@ -1270,7 +1133,6 @@ color: var(--chocolate-medium);
 ===================================== */
 @media(max-width:700px){
 
-
 .colors {
 
     flex-wrap: wrap;
@@ -1279,7 +1141,6 @@ color: var(--chocolate-medium);
     padding: 0;
 
 }
-
 
 .color-wrapper {
 
@@ -1295,7 +1156,6 @@ color: var(--chocolate-medium);
 
 }
 
-
 .color {
 
     width:48px;
@@ -1304,13 +1164,11 @@ color: var(--chocolate-medium);
 
 }
 
-
 }
 /* ===================================================== RSVP МОЛОЧНЫЙ
 ФОН + ОЛИВКОВАЯ ФОРМА
 ===================================================== */
 .rsvp { background: var(--cream);
-
 
 padding:
     50px
@@ -1321,18 +1179,14 @@ border-bottom:
     1px solid
     var(--line-olive);
 
-
 }
 .rsvp .section-label { color: var(--chocolate); }
 .rsvp h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--olive-dark);
-
 
 }
 .rsvp .section-text { max-width: 650px;
-
 
 margin:
     17px
@@ -1343,10 +1197,8 @@ font-size: 19px;
 
 color: var(--text-soft);
 
-
 }
 .rsvp-form { max-width: 570px;
-
 
 margin:
     28px
@@ -1381,10 +1233,8 @@ border:
 
 border-radius: 16px;
 
-
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea { width: 100%;
-
 
 border:
     1px solid
@@ -1418,18 +1268,14 @@ transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 
-
 }
 .rsvp-form textarea { min-height: 90px;
 
-
 resize: vertical;
-
 
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form
 textarea { border-color: var(--olive);
-
 
 box-shadow:
     0 0 0 3px
@@ -1440,10 +1286,8 @@ box-shadow:
         0.10
     );
 
-
 }
 .rsvp-form button { margin-top: 6px;
-
 
 border: none;
 
@@ -1479,10 +1323,8 @@ transition:
     transform 0.3s ease,
     background 0.3s ease;
 
-
 }
-.rsvp-form button { transform: translateY(-2px);
-
+.rsvp-form button:hover { transform: translateY(-2px);
 
 background:
     linear-gradient(
@@ -1491,19 +1333,15 @@ background:
         var(--chocolate)
     );
 
-
 }
 .rsvp-form button { opacity: 0.65;
-
 
 cursor: default;
 
 transform: none;
 
-
 }
-\#formMessage { margin-top: 15px;
-
+#formMessage { margin-top: 15px;
 
 min-height: 24px;
 
@@ -1511,22 +1349,17 @@ font-size: 19px;
 
 color: var(--olive-dark);
 
-
 }
 .form-group { width: 100%;
 
-
 text-align: left;
-
 
 }
 .form-label { margin-bottom: 10px;
 
-
 font-size: 18px;
 
 color: var(--chocolate-dark);
-
 
 }
 .alcohol-options { display: grid; grid-template-columns: repeat(2,
@@ -1534,7 +1367,6 @@ minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 15px; }
 .checkbox-option { display: flex !important; flex-direction: row
 !important; align-items: center !important; justify-content: flex-start
 !important;
-
 
 width: 100%;
 min-height: 52px;
@@ -1553,10 +1385,8 @@ color: var(--chocolate-dark);
 
 gap: 12px;
 
-
 }
 .checkbox-option input { width: 18px; height: 18px;
-
 
 margin: 0 !important;
 
@@ -1564,10 +1394,8 @@ flex: 0 0 auto;
 
 accent-color: var(--olive-dark);
 
-
 }
 .checkbox-option span { display: block !important;
-
 
 flex: 1;
 
@@ -1577,25 +1405,21 @@ white-space: normal !important;
 
 margin: 0 !important;
 
-
 }
 .checkbox-option { border-color: var(--olive); }
 .checkbox-option(input) { background: #d8dfcd; border-color:
 var(--olive-dark); color: var(--olive-dark); }
 @media(max-width:700px){
 
-
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
 
 }
 /* ===================================================== ПОДВАЛ
 ШОКОЛАДНО-ОЛИВКОВЫЙ
 ===================================================== */
 .final-section { min-height: auto;
-
 
 background:
     linear-gradient(
@@ -1619,10 +1443,8 @@ padding:
     20px
     58px;
 
-
 }
 .final-content h2 { margin: 13px 0;
-
 
 font-size:
     clamp(
@@ -1635,30 +1457,24 @@ font-weight: 400;
 
 color: var(--warm-white);
 
-
 }
 .final-script { font-family: "Marck Script", cursive;
-
 
 font-size: 48px;
 
 color: #e7ddd3;
 
-
 }
 .final-date { font-size: 19px;
-
 
 letter-spacing: 6px;
 
 color: #e2e4d8;
 
-
 }
 /* ===================================================== ОБРАТНЫЙ ОТСЧЁТ
 ===================================================== */
 .countdown-title { margin-top: 26px;
-
 
 font-size: 19px;
 
@@ -1670,10 +1486,8 @@ color:
         0.82
     );
 
-
 }
 .wedding-countdown { margin-top: 17px;
-
 
 display: flex;
 
@@ -1684,10 +1498,8 @@ gap: 16px;
 
 color: #ffffff;
 
-
 }
 .countdown-item { min-width: 75px;
-
 
 padding:
     10px
@@ -1709,19 +1521,15 @@ background:
 
 border-radius: 10px;
 
-
 }
 .countdown-number { font-size: 36px;
-
 
 line-height: 1;
 
 color: #fffdf8;
 
-
 }
 .countdown-label { margin-top: 7px;
-
 
 font-size: 11px;
 
@@ -1733,21 +1541,17 @@ color: #ddd7cc;
 
 opacity: 0.85;
 
-
 }
 .countdown-divider { padding-top: 13px;
-
 
 font-size: 27px;
 
 opacity: 0.55;
 
-
 }
 /* ===================================================== ПЛАНШЕТ
 ===================================================== */
 @media (max-width: 1000px) {
-
 
 .love-equation {
     width: 96vw;
@@ -1755,11 +1559,9 @@ opacity: 0.55;
     gap: 22px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 14px;
 }
-
 
 .photo-card {
     width: 145px;
@@ -1770,11 +1572,9 @@ opacity: 0.55;
         15px;
 }
 
-
 .photo-image-crop {
     height: 185px;
 }
-
 
 .photo-plus {
     width: 34px;
@@ -1782,19 +1582,16 @@ opacity: 0.55;
     font-size: 48px;
 }
 
-
 .photo-equals {
     width: 45px;
 
     font-size: 52px;
 }
 
-
 .hero-heart {
     width: 220px;
     height: 195px;
 }
-
 
 .hero-heart-text {
     width: 165px;
@@ -1802,23 +1599,19 @@ opacity: 0.55;
     font-size: 16px;
 }
 
-
 }
 /* ===================================================== ТЕЛЕФОН
 ===================================================== */
 @media (max-width: 700px) {
 
-
 #envelope-screen {
     padding: 18px;
 }
-
 
 .envelope {
     width: 310px;
     height: 205px;
 }
-
 
 .envelope-letter {
     left: 25px;
@@ -1829,24 +1622,20 @@ opacity: 0.55;
     height: 150px;
 }
 
-
 .envelope-letter.letter-open {
     transform:
         translateY(-78px);
 }
 
-
 .envelope-body {
     height: 165px;
 }
-
 
 .envelope-flap {
     top: 40px;
 
     height: 110px;
 }
-
 
 .wax-seal {
     width: 70px;
@@ -1855,14 +1644,12 @@ opacity: 0.55;
     top: 115px;
 }
 
-
 .hero {
     padding:
         22px
         12px
         45px;
 }
-
 
 .hero-subtitle {
     font-family:
@@ -1876,20 +1663,16 @@ opacity: 0.55;
     letter-spacing: 0;
 }
 
-
-
 .hero h1 {
     font-size: 46px;
 
     line-height: 0.95;
 }
 
-
 .hero h1 span {
     margin:
         0 5px;
 }
-
 
 .hero-date {
     font-size: 17px;
@@ -1897,13 +1680,11 @@ opacity: 0.55;
     letter-spacing: 5px;
 }
 
-
 .section {
     padding:
         42px
         20px;
 }
-
 
 .section-label {
     margin-bottom: 18px;
@@ -1913,18 +1694,15 @@ opacity: 0.55;
     letter-spacing: 4px;
 }
 
-
 .section h2 {
     font-size: 36px;
 
     line-height: 1.1;
 }
 
-
 .section-text {
     font-size: 18px;
 }
-
 
 /* ДОРОГИЕ ГОСТИ */
 
@@ -1935,7 +1713,6 @@ opacity: 0.55;
         42px;
 }
 
-
 .welcome .welcome-label {
     margin-bottom: 21px;
 
@@ -1944,18 +1721,15 @@ opacity: 0.55;
     letter-spacing: 4px;
 }
 
-
 .welcome-main-text {
     font-size: 25px;
 
     line-height: 1.26;
 }
 
-
 .welcome-line-accent {
     margin-top: 14px;
 }
-
 
 /* МЕСТО */
 
@@ -1966,16 +1740,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .location h2 {
     font-size: 38px;
 }
 
-
 .location .section-text {
     font-size: 18px;
 }
-
 
 .yandex-map-wrapper {
     margin-top: 23px;
@@ -1983,11 +1754,9 @@ opacity: 0.55;
     border-width: 4px;
 }
 
-
 .yandex-map-wrapper iframe {
     height: 340px;
 }
-
 
 /* ПРОГРАММА */
 
@@ -1998,16 +1767,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .program h2 {
     font-size: 37px;
 }
 
-
 .timeline {
     margin-top: 28px;
 }
-
 
 .timeline-item {
     grid-template-columns:
@@ -2020,21 +1786,17 @@ opacity: 0.55;
         15px;
 }
 
-
 .timeline-time {
     font-size: 20px;
 }
-
 
 .timeline-info h3 {
     font-size: 22px;
 }
 
-
 .timeline-info p {
     font-size: 16px;
 }
-
 
 /* DRESS CODE */
 
@@ -2045,16 +1807,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .dress-code h2 {
     font-size: 37px;
 }
 
-
 .dress-code .section-text {
     font-size: 18px;
 }
-
 
 .colors {
     margin-top: 24px;
@@ -2062,17 +1821,14 @@ opacity: 0.55;
     gap: 12px;
 }
 
-
 .color-wrapper {
     min-width: 85px;
 }
-
 
 .color {
     width: 48px;
     height: 48px;
 }
-
 
 /* RSVP */
 
@@ -2083,23 +1839,19 @@ opacity: 0.55;
         46px;
 }
 
-
 .rsvp h2 {
     font-size: 37px;
 }
 
-
 .rsvp .section-text {
     font-size: 18px;
 }
-
 
 .rsvp-form {
     margin-top: 24px;
 
     padding: 18px;
 }
-
 
 /* ПОДВАЛ */
 
@@ -2110,16 +1862,13 @@ opacity: 0.55;
         50px;
 }
 
-
 .final-content h2 {
     font-size: 43px;
 }
 
-
 .final-script {
     font-size: 42px;
 }
-
 
 .countdown-title {
     margin-top: 23px;
@@ -2127,13 +1876,11 @@ opacity: 0.55;
     font-size: 17px;
 }
 
-
 .wedding-countdown {
     margin-top: 15px;
 
     gap: 7px;
 }
-
 
 .countdown-item {
     min-width: 54px;
@@ -2143,11 +1890,9 @@ opacity: 0.55;
         5px;
 }
 
-
 .countdown-number {
     font-size: 27px;
 }
-
 
 .countdown-label {
     font-size: 8px;
@@ -2155,19 +1900,16 @@ opacity: 0.55;
     letter-spacing: 1px;
 }
 
-
 .countdown-divider {
     padding-top: 11px;
 
     font-size: 21px;
 }
 
-
 }
 /* ===================================================== УЗКИЕ ТЕЛЕФОНЫ
 ===================================================== */
 @media (max-width: 560px) {
-
 
 .love-equation {
     width: 100%;
@@ -2177,11 +1919,9 @@ opacity: 0.55;
     gap: 7px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 5px;
 }
-
 
 .photo-card {
     width: 78px;
@@ -2192,11 +1932,9 @@ opacity: 0.55;
         9px;
 }
 
-
 .photo-image-crop {
     height: 103px;
 }
-
 
 .photo-plus {
     width: 19px;
@@ -2204,19 +1942,16 @@ opacity: 0.55;
     font-size: 29px;
 }
 
-
 .photo-equals {
     width: 24px;
 
     font-size: 32px;
 }
 
-
 .hero-heart {
     width: 118px;
     height: 108px;
 }
-
 
 .hero-heart-text {
     width: 92px;
@@ -2226,30 +1961,24 @@ opacity: 0.55;
     line-height: 1.18;
 }
 
-
 .hero-button {
     margin-top: 24px;
 }
 
-
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
 
 }
 /* ===================================================== МАЛЕНЬКИЕ
 ТЕЛЕФОНЫ ===================================================== */
 @media (max-width: 400px) {
 
-
 .hero-subtitle {
     font-size: 23px;
 }
 
-
 } .envelope { width: 285px; height: 190px; }
-
 
 .envelope-letter {
     left: 23px;
@@ -2260,24 +1989,20 @@ opacity: 0.55;
     height: 138px;
 }
 
-
 .envelope-letter.letter-open {
     transform:
         translateY(-71px);
 }
 
-
 .envelope-body {
     height: 153px;
 }
-
 
 .envelope-flap {
     top: 37px;
 
     height: 101px;
 }
-
 
 .wax-seal {
     width: 64px;
@@ -2286,31 +2011,25 @@ opacity: 0.55;
     top: 106px;
 }
 
-
 .hero h1 {
     font-size: 40px;
 }
-
 
 .love-equation {
     gap: 5px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 4px;
 }
-
 
 .photo-card {
     width: 68px;
 }
 
-
 .photo-image-crop {
     height: 91px;
 }
-
 
 .photo-plus {
     width: 16px;
@@ -2318,19 +2037,16 @@ opacity: 0.55;
     font-size: 25px;
 }
 
-
 .photo-equals {
     width: 20px;
 
     font-size: 28px;
 }
 
-
 .hero-heart {
     width: 102px;
     height: 94px;
 }
-
 
 .hero-heart-text {
     width: 80px;
@@ -2338,13 +2054,11 @@ opacity: 0.55;
     font-size: 8px;
 }
 
-
 .section {
     padding:
         36px
         18px;
 }
-
 
 .section-label {
     margin-bottom: 16px;
@@ -2354,11 +2068,9 @@ opacity: 0.55;
     letter-spacing: 3px;
 }
 
-
 .section h2 {
     font-size: 32px;
 }
-
 
 .welcome {
     padding:
@@ -2366,7 +2078,6 @@ opacity: 0.55;
         18px
         37px;
 }
-
 
 .welcome .welcome-label {
     margin-bottom: 19px;
@@ -2376,11 +2087,9 @@ opacity: 0.55;
     letter-spacing: 3px;
 }
 
-
 .welcome-main-text {
     font-size: 22px;
 }
-
 
 .location,
 .program,
@@ -2391,14 +2100,12 @@ opacity: 0.55;
         38px;
 }
 
-
 .rsvp {
     padding:
         36px
         18px
         40px;
 }
-
 
 .location h2,
 .program h2,
@@ -2407,11 +2114,9 @@ opacity: 0.55;
     font-size: 32px;
 }
 
-
 .rsvp-form {
     padding: 15px;
 }
-
 
 .final-section {
     padding:
@@ -2420,12 +2125,10 @@ opacity: 0.55;
         43px;
 }
 
-
  /* ===================================================== НОВЫЙ ПЕРВЫЙ
 ЭКРАН ДЛЯ ТЕЛЕФОНА =====================================================
 */
 @media (max-width: 700px) {
-
 
 /* Убираем искусственную высоту в целый экран */
 .hero {
@@ -2439,11 +2142,9 @@ opacity: 0.55;
         42px;
 }
 
-
 .hero-inner {
     width: 100%;
 }
-
 
 /* Приглашение на свадьбу */
 
@@ -2455,7 +2156,6 @@ opacity: 0.55;
     line-height: 1.05;
 }
 
-
 /* Виктор & Валерия */
 
 .hero h1 {
@@ -2464,13 +2164,11 @@ opacity: 0.55;
     line-height: 0.95;
 }
 
-
 .hero h1 span {
     margin:
         0
         5px;
 }
-
 
 /* Дата */
 
@@ -2481,7 +2179,6 @@ opacity: 0.55;
 
     letter-spacing: 5px;
 }
-
 
 /* =================================================
    ФОРМУЛА НА МОБИЛЬНОМ
@@ -2510,7 +2207,6 @@ opacity: 0.55;
     row-gap: 17px;
 }
 
-
 /* Два фото занимают всю первую строку */
 
 .love-equation .childhood-photos {
@@ -2529,7 +2225,6 @@ opacity: 0.55;
     gap: 13px;
 }
 
-
 /* Фотографии делаем значительно крупнее */
 
 .photo-card {
@@ -2541,11 +2236,9 @@ opacity: 0.55;
         13px;
 }
 
-
 .photo-image-crop {
     height: 158px;
 }
-
 
 /* Виктор */
 
@@ -2557,7 +2250,6 @@ opacity: 0.55;
         center 30%;
 }
 
-
 /* Валерия */
 
 .photo-right .photo-image-crop img {
@@ -2568,7 +2260,6 @@ opacity: 0.55;
         center;
 }
 
-
 /* Плюс между фотографиями */
 
 .photo-plus {
@@ -2578,7 +2269,6 @@ opacity: 0.55;
 
     line-height: 1;
 }
-
 
 /* Равно — вторая строка слева от сердца */
 
@@ -2596,7 +2286,6 @@ opacity: 0.55;
     text-align: center;
 }
 
-
 /* Сердце */
 
 .hero-heart {
@@ -2608,7 +2297,6 @@ opacity: 0.55;
     margin: 0;
 }
 
-
 /* Текст в сердце */
 
 .hero-heart-text {
@@ -2618,7 +2306,6 @@ opacity: 0.55;
 
     line-height: 1.18;
 }
-
 
 /* Кнопка */
 
@@ -2632,13 +2319,11 @@ opacity: 0.55;
     font-size: 16px;
 }
 
-
 }
 /* ===================================================== СОВСЕМ
 НЕБОЛЬШИЕ ТЕЛЕФОНЫ =====================================================
 */
 @media (max-width: 400px) {
-
 
 .hero {
     padding:
@@ -2647,16 +2332,13 @@ opacity: 0.55;
         38px;
 }
 
-
 .hero-subtitle {
     font-size: 21px;
 }
 
-
 .hero h1 {
     font-size: 43px;
 }
-
 
 .hero-date {
     margin-top: 16px;
@@ -2665,7 +2347,6 @@ opacity: 0.55;
 
     letter-spacing: 4px;
 }
-
 
 .love-equation {
     margin-top: 27px;
@@ -2679,11 +2360,9 @@ opacity: 0.55;
     row-gap: 15px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 10px;
 }
-
 
 .photo-card {
     width: 112px;
@@ -2694,11 +2373,9 @@ opacity: 0.55;
         12px;
 }
 
-
 .photo-image-crop {
     height: 146px;
 }
-
 
 .photo-plus {
     width: 27px;
@@ -2706,26 +2383,22 @@ opacity: 0.55;
     font-size: 36px;
 }
 
-
 .photo-equals {
     width: 37px;
 
     font-size: 38px;
 }
 
-
 .hero-heart {
     width: 142px;
     height: 130px;
 }
-
 
 .hero-heart-text {
     width: 108px;
 
     font-size: 11px;
 }
-
 
 .hero-button {
     margin-top: 23px;
@@ -2737,13 +2410,11 @@ opacity: 0.55;
     font-size: 15px;
 }
 
-
 } /* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
 ===================================================== */
 /* Такой же шрифт, как у "До встречи!" */
 .hero-subtitle { font-family: "Marck Script", cursive !important;
-
 
 font-size: 34px !important;
 font-weight: 400 !important;
@@ -2761,12 +2432,10 @@ margin:
     0
     12px !important;
 
-
 }
 /* ===================================================== МОБИЛЬНАЯ
 ВЕРСИЯ ===================================================== */
 @media (max-width: 700px) {
-
 
 /* Убираем огромную пустую высоту */
 
@@ -2783,7 +2452,6 @@ margin:
     display: block !important;
 }
 
-
 .hero-inner {
     width: 100% !important;
 
@@ -2793,7 +2461,6 @@ margin:
 
     overflow: visible !important;
 }
-
 
 /* Приглашение на свадьбу */
 
@@ -2818,7 +2485,6 @@ margin:
         12px !important;
 }
 
-
 /* Виктор & Валерия */
 
 .hero h1 {
@@ -2831,13 +2497,11 @@ margin:
     white-space: nowrap;
 }
 
-
 .hero h1 span {
     margin:
         0
         4px !important;
 }
-
 
 /* Дата */
 
@@ -2848,7 +2512,6 @@ margin:
 
     letter-spacing: 5px !important;
 }
-
 
 /* =================================================
    НОВАЯ КОМПОЗИЦИЯ
@@ -2885,7 +2548,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Фотографии */
 
 .love-equation .childhood-photos {
@@ -2906,7 +2568,6 @@ margin:
     gap: 13px !important;
 }
 
-
 .photo-card {
     width: 128px !important;
 
@@ -2921,13 +2582,11 @@ margin:
         14px !important;
 }
 
-
 .photo-image-crop {
     width: 100% !important;
 
     height: 165px !important;
 }
-
 
 .photo-image-crop img {
     width: 100% !important;
@@ -2937,14 +2596,12 @@ margin:
     object-fit: cover !important;
 }
 
-
 /* Виктор */
 
 .photo-left {
     transform:
         rotate(-2deg) !important;
 }
-
 
 .photo-left .photo-image-crop img {
     transform:
@@ -2954,14 +2611,12 @@ margin:
         center 30% !important;
 }
 
-
 /* Валерия */
 
 .photo-right {
     transform:
         rotate(2deg) !important;
 }
-
 
 .photo-right .photo-image-crop img {
     transform:
@@ -2970,7 +2625,6 @@ margin:
     transform-origin:
         center !important;
 }
-
 
 /* Плюс */
 
@@ -2991,7 +2645,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Равно */
 
 .photo-equals {
@@ -3011,7 +2664,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Сердце */
 
 .hero-heart {
@@ -3026,7 +2678,6 @@ margin:
     transform: none !important;
 }
 
-
 .hero-heart-text {
     width: 145px !important;
 
@@ -3038,7 +2689,6 @@ margin:
 
     transform: none !important;
 }
-
 
 /* Кнопка */
 
@@ -3052,12 +2702,10 @@ margin:
     font-size: 16px !important;
 }
 
-
 }
 /* ===================================================== МАЛЕНЬКИЕ
 ТЕЛЕФОНЫ ===================================================== */
 @media (max-width: 400px) {
-
 
 .hero {
     padding:
@@ -3066,16 +2714,13 @@ margin:
         38px !important;
 }
 
-
 .hero-subtitle {
     font-size: 26px !important;
 }
 
-
 .hero h1 {
     font-size: 42px !important;
 }
-
 
 .hero-date {
     font-size: 15px !important;
@@ -3083,18 +2728,15 @@ margin:
     letter-spacing: 4px !important;
 }
 
-
 .love-equation {
     margin-top: 27px !important;
 
     gap: 12px !important;
 }
 
-
 .love-equation .childhood-photos {
     gap: 10px !important;
 }
-
 
 .photo-card {
     width: 112px !important;
@@ -3105,11 +2747,9 @@ margin:
         112px !important;
 }
 
-
 .photo-image-crop {
     height: 146px !important;
 }
-
 
 .photo-plus {
     width: 28px !important;
@@ -3122,18 +2762,15 @@ margin:
     font-size: 36px !important;
 }
 
-
 .photo-equals {
     font-size: 38px !important;
 }
-
 
 .hero-heart {
     width: 170px !important;
 
     height: 154px !important;
 }
-
 
 .hero-heart-text {
     width: 130px !important;
@@ -3143,17 +2780,14 @@ margin:
     font-size: 12px !important;
 }
 
-
 .hero-button {
     margin-top: 21px !important;
 }
-
 
 } /* ===================================================== ФИНАЛЬНЫЙ
 ПЕРВЫЙ ЭКРАН — ТОЛЬКО ТЕЛЕФОНЫ
 ===================================================== */
 @media (max-width: 700px) {
-
 
 /* Первый экран всегда занимает минимум весь экран телефона */
 .hero {
@@ -3171,7 +2805,6 @@ margin:
     justify-content: center !important;
 }
 
-
 .hero-inner {
     width: 100% !important;
     max-width: 100% !important;
@@ -3180,7 +2813,6 @@ margin:
 
     overflow: visible !important;
 }
-
 
 /* =================================================
    ПРИГЛАШЕНИЕ НА СВАДЬБУ
@@ -3207,7 +2839,6 @@ margin:
     text-transform: none !important;
 }
 
-
 /* =================================================
    ИМЕНА
 ================================================= */
@@ -3222,13 +2853,11 @@ margin:
     white-space: nowrap !important;
 }
 
-
 .hero h1 span {
     margin:
         0
         4px !important;
 }
-
 
 /* =================================================
    ДАТА
@@ -3241,7 +2870,6 @@ margin:
 
     letter-spacing: 5px !important;
 }
-
 
 /* =================================================
    ФОРМУЛА
@@ -3274,7 +2902,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    ФОТОГРАФИИ
 ================================================= */
@@ -3294,7 +2921,6 @@ margin:
 
     gap: 9px !important;
 }
-
 
 .photo-card {
     width:
@@ -3319,7 +2945,6 @@ margin:
         14px !important;
 }
 
-
 .photo-image-crop {
     width: 100% !important;
 
@@ -3331,7 +2956,6 @@ margin:
         ) !important;
 }
 
-
 .photo-image-crop img {
     width: 100% !important;
     height: 100% !important;
@@ -3339,14 +2963,12 @@ margin:
     object-fit: cover !important;
 }
 
-
 /* Виктор */
 
 .photo-left {
     transform:
         rotate(-2deg) !important;
 }
-
 
 .photo-left .photo-image-crop img {
     transform:
@@ -3356,14 +2978,12 @@ margin:
         center 30% !important;
 }
 
-
 /* Валерия */
 
 .photo-right {
     transform:
         rotate(2deg) !important;
 }
-
 
 .photo-right .photo-image-crop img {
     transform:
@@ -3372,7 +2992,6 @@ margin:
     transform-origin:
         center !important;
 }
-
 
 /* =================================================
    ПЛЮС
@@ -3395,7 +3014,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    ЗНАК РАВНО
 ================================================= */
@@ -3415,7 +3033,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    БОЛЬШОЕ СЕРДЦЕ
 ================================================= */
@@ -3431,7 +3048,6 @@ margin:
     transform: none !important;
 }
 
-
 .hero-heart-text {
     width: 160px !important;
     max-width: 160px !important;
@@ -3442,7 +3058,6 @@ margin:
 
     transform: none !important;
 }
-
 
 /* =================================================
    КНОПКА
@@ -3458,12 +3073,10 @@ margin:
     font-size: 16px !important;
 }
 
-
 }
 /* ===================================================== ТЕЛЕФОНЫ ДО
 400px ===================================================== */
 @media (max-width: 400px) {
-
 
 .hero {
     min-height: 100svh !important;
@@ -3474,16 +3087,13 @@ margin:
         38px !important;
 }
 
-
 .hero-subtitle {
     font-size: 26px !important;
 }
 
-
 .hero h1 {
     font-size: 42px !important;
 }
-
 
 .hero-date {
     margin-top: 14px !important;
@@ -3493,18 +3103,15 @@ margin:
     letter-spacing: 4px !important;
 }
 
-
 .love-equation {
     margin-top: 25px !important;
 
     gap: 10px !important;
 }
 
-
 .love-equation .childhood-photos {
     gap: 7px !important;
 }
-
 
 .photo-card {
     width: 128px !important;
@@ -3515,11 +3122,9 @@ margin:
         128px !important;
 }
 
-
 .photo-image-crop {
     height: 170px !important;
 }
-
 
 .photo-plus {
     width: 25px !important;
@@ -3532,17 +3137,14 @@ margin:
     font-size: 38px !important;
 }
 
-
 .photo-equals {
     font-size: 40px !important;
 }
-
 
 .hero-heart {
     width: 195px !important;
     height: 176px !important;
 }
-
 
 .hero-heart-text {
     width: 148px !important;
@@ -3551,7 +3153,6 @@ margin:
     font-size: 13px !important;
 }
 
-
 .hero-button {
     margin-top: 19px !important;
 
@@ -3559,7 +3160,6 @@ margin:
         14px
         29px !important;
 }
-
 
 }
 /* ===================================================== ФИНАЛЬНОЕ
@@ -3575,7 +3175,6 @@ flex-direction: column !important; align-items: center !important;
 justify-content: center !important; }
 /* Телефон */ @media (max-width: 700px) {
 
-
 .dress-code .colors {
     justify-content: flex-start !important;
     overflow-x: auto !important;
@@ -3588,12 +3187,10 @@ justify-content: center !important; }
     min-width: 85px !important;
 }
 
-
 } /* ===================================== DRESS CODE ONLY FIX COLORS
 ROW ===================================== */
 section.dress-code .colors { display: flex !important; flex-direction:
 row !important; flex-wrap: wrap !important;
-
 
 justify-content: center !important;
 align-items: flex-start !important;
@@ -3604,10 +3201,8 @@ width: 100% !important;
 
 position: static !important;
 
-
 }
 section.dress-code .color-wrapper {
-
 
 width: 120px !important;
 min-width: 120px !important;
@@ -3622,18 +3217,14 @@ justify-content: center !important;
 
 position: static !important;
 
-
 }
 section.dress-code .color {
 
-
 position: static !important;
-
 
 }
 /* телефон */
 @media(max-width:700px){
-
 
 section.dress-code .colors {
 
@@ -3647,7 +3238,6 @@ section.dress-code .colors {
 
 }
 
-
 section.dress-code .color-wrapper {
 
     width:95px !important;
@@ -3656,18 +3246,14 @@ section.dress-code .color-wrapper {
 
 }
 
-
 } /* ===================================== ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ
 МУЖЧИН ===================================== */
 .additional-colors {
 
-
 margin-top: 35px;
-
 
 }
 .additional-title {
-
 
 margin-bottom: 20px;
 
@@ -3679,19 +3265,15 @@ text-transform: uppercase;
 
 color: var(--chocolate-dark);
 
-
 }
 /* черный */
 .color-black {
 
-
 background:#111111;
-
 
 }
 /* белый */
 .color-white {
-
 
 background:#FFFFFF;
 
@@ -3699,13 +3281,11 @@ border:
 3px solid
 rgba(90,70,50,0.25);
 
-
 } /* ===================================== RSVP FIX
 ===================================== */
 .rsvp-form { width: 100%; max-width: 520px; margin: 30px auto 0;
 box-sizing: border-box; }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea {
-
 
 width: 100%;
 max-width: 100%;
@@ -3714,19 +3294,15 @@ box-sizing: border-box;
 
 font-family: inherit;
 
-
 }
 .rsvp-form textarea {
-
 
 min-height: 120px;
 
 resize: vertical;
 
-
 }
 .alcohol-options {
-
 
 display: grid;
 
@@ -3736,20 +3312,16 @@ gap: 10px;
 
 width: 100%;
 
-
 }
 .checkbox-option {
-
 
 width: 100%;
 
 box-sizing: border-box;
 
-
 }
 /* телефон */
 @media(max-width:700px){
-
 
 .rsvp-form {
 
@@ -3759,13 +3331,11 @@ box-sizing: border-box;
 
 }
 
-
 .alcohol-options {
 
     grid-template-columns: 1fr;
 
 }
-
 
 }
 
@@ -3822,10 +3392,7 @@ box-sizing: border-box;
     }
 }
 
-
-
  {
-
 
 /* Основной оливковый */
 --olive-dark: #4f5a3d;
@@ -3852,7 +3419,6 @@ box-sizing: border-box;
 --line-olive: rgba(79, 90, 61, 0.17);
 --line-chocolate: rgba(91, 70, 56, 0.18);
 
-
 }
 /* ===================================================== ОСНОВНЫЕ
 НАСТРОЙКИ ===================================================== */
@@ -3861,7 +3427,6 @@ box-sizing: border-box;
 
 html { scroll-behavior: smooth; }
 body { margin: 0; padding: 0;
-
 
 background: var(--cream);
 
@@ -3874,12 +3439,10 @@ font-family:
 
 overflow-x: hidden;
 
-
 }
 /* ===================================================== КОНВЕРТ
 ===================================================== */
 #envelope-screen { position: fixed;
-
 
 inset: 0;
 
@@ -3904,17 +3467,13 @@ opacity: 1;
 transition:
     opacity 0.9s ease;
 
-
 }
 #envelope-screen.screen-hide { opacity: 0;
 
-
 pointer-events: none;
-
 
 }
 .envelope-wrapper { width: 100%;
-
 
 display: flex;
 
@@ -3923,10 +3482,8 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
 }
 .envelope { position: relative;
-
 
 width: 360px;
 height: 235px;
@@ -3935,12 +3492,10 @@ margin: 0 auto;
 
 perspective: 1200px;
 
-
 }
 /* ===================================================== ПИСЬМО
 ===================================================== */
 .envelope-letter { position: absolute;
-
 
 left: 30px;
 right: 30px;
@@ -3975,29 +3530,23 @@ transition:
         1
     );
 
-
 }
 .envelope-letter.letter-open { transform: translateY(-92px); }
 .letter-small-title { font-size: 23px;
 
-
 color: var(--olive-dark);
-
 
 }
 .letter-small-date { margin-top: 10px;
-
 
 font-size: 16px;
 
 color: var(--chocolate-medium);
 
-
 }
 /* ===================================================== КОРПУС КОНВЕРТА
 ===================================================== */
 .envelope-body { position: absolute;
-
 
 left: 0;
 right: 0;
@@ -4014,10 +3563,8 @@ z-index: 3;
 
 overflow: hidden;
 
-
 }
-.envelope-body::before { content: "";;
-
+.envelope-body::before { content: "";
 
 position: absolute;
 
@@ -4036,10 +3583,8 @@ clip-path:
         0 100%
     );
 
-
 }
-.envelope-body::after { content: "";;
-
+.envelope-body::after { content: "";
 
 position: absolute;
 
@@ -4058,12 +3603,10 @@ clip-path:
         0 100%
     );
 
-
 }
 /* ===================================================== КЛАПАН
 ===================================================== */
 .envelope-flap { position: absolute;
-
 
 left: 0;
 right: 0;
@@ -4095,19 +3638,15 @@ transition:
         1
     );
 
-
 }
 .envelope-flap.flap-open { transform: rotateX(180deg);
 
-
 z-index: 1;
-
 
 }
 /* ===================================================== ПЕЧАТЬ
 ===================================================== */
 .wax-seal { position: absolute;
-
 
 left: 50%;
 top: 131px;
@@ -4159,11 +3698,9 @@ transition:
     transform 0.35s ease,
     opacity 0.45s ease;
 
-
 }
-.wax-seal { transform: translateX(-50%) scale(1.07); }
+.wax-seal:hover { transform: translateX(-50%) scale(1.07); }
 .wax-seal.seal-open { opacity: 0;
-
 
 transform:
     translateX(-50%)
@@ -4171,10 +3708,8 @@ transform:
 
 pointer-events: none;
 
-
 }
 .open-text { width: 100%;
-
 
 margin-top: 36px;
 
@@ -4186,21 +3721,17 @@ color: var(--chocolate-medium);
 
 text-align: center;
 
-
 }
 /* ===================================================== ОСНОВНОЙ САЙТ
 ===================================================== */
 #invitation { display: none;
 
-
 width: 100%;
 
 opacity: 0;
 
-
 }
 #invitation.show { display: block;
-
 
 animation:
     invitationAppear
@@ -4208,10 +3739,8 @@ animation:
     ease
     forwards;
 
-
 }
 @keyframes invitationAppear {
-
 
 from {
     opacity: 0;
@@ -4221,12 +3750,10 @@ to {
     opacity: 1;
 }
 
-
 }
 /* ===================================================== ПЕРВЫЙ ЭКРАН
 ===================================================== */
 .hero { min-height: 100vh;
-
 
 width: 100%;
 
@@ -4251,10 +3778,8 @@ padding:
     30px
     55px;
 
-
 }
 .hero-inner { width: 100%;
-
 
 max-width: 1500px;
 
@@ -4266,10 +3791,8 @@ flex-direction: column;
 
 align-items: center;
 
-
 }
 .hero-subtitle { font-family: "Marck Script", cursive;
-
 
 font-size: 32px;
 
@@ -4285,10 +3808,8 @@ color: #f4efe5;
 
 text-transform: none;
 
-
 }
 .hero h1 { margin: 0;
-
 
 font-weight: 400;
 
@@ -4305,20 +3826,16 @@ letter-spacing: -1px;
 
 color: var(--warm-white);
 
-
 }
 .hero h1 span { font-style: italic;
-
 
 margin:
     0 15px;
 
 color: #e4d4c6;
 
-
 }
 .hero-date { margin-top: 22px;
-
 
 font-size: 22px;
 
@@ -4326,12 +3843,10 @@ letter-spacing: 8px;
 
 color: #f3eee3;
 
-
 }
 /* ===================================================== ФОТО + ФОТО =
 СЕРДЦЕ ===================================================== */
 .love-equation { width: min( 1280px, 94vw );
-
 
 margin-top: 38px;
 
@@ -4344,10 +3859,8 @@ gap: 40px;
 
 flex-wrap: nowrap;
 
-
 }
 .love-equation .childhood-photos { width: auto;
-
 
 margin: 0;
 
@@ -4362,10 +3875,8 @@ gap: 25px;
 
 flex-shrink: 0;
 
-
 }
 .photo-card { width: 185px;
-
 
 background: var(--cream-light);
 
@@ -4383,48 +3894,38 @@ flex-shrink: 0;
 transition:
     transform 0.4s ease;
 
-
 }
 .photo-image-crop { width: 100%;
-
 
 height: 235px;
 
 overflow: hidden;
 
-
 }
 .photo-image-crop img { display: block;
-
 
 width: 100%;
 height: 100%;
 
 object-fit: cover;
 
-
 }
 .photo-left { transform: rotate(-2deg); }
 .photo-left .photo-image-crop img { transform: scale(1.22);
 
-
 transform-origin:
     center 30%;
-
 
 }
 .photo-right { transform: rotate(2deg); }
 .photo-right .photo-image-crop img { transform: scale(1.03);
 
-
 transform-origin: center;
-
 
 }
 .photo-left { transform: rotate(-2deg) translateY(-6px); }
 .photo-right { transform: rotate(2deg) translateY(-6px); }
 .photo-plus { width: 48px;
-
 
 flex-shrink: 0;
 
@@ -4436,10 +3937,8 @@ text-align: center;
 
 color: #f1e7dc;
 
-
 }
 .photo-equals { width: 65px;
-
 
 flex-shrink: 0;
 
@@ -4451,10 +3950,8 @@ text-align: center;
 
 color: #f1e7dc;
 
-
 }
 .hero-heart { position: relative;
-
 
 width: 290px;
 height: 255px;
@@ -4504,11 +4001,9 @@ clip-path:
         58% 88%
     );
 
-
 }
 .hero-heart::before, .hero-heart::after { display: none; }
 .hero-heart-text { width: 215px;
-
 
 position: relative;
 
@@ -4522,10 +4017,8 @@ text-align: center;
 
 color: #f7f1e7;
 
-
 }
 .hero-button { display: inline-flex;
-
 
 align-items: center;
 justify-content: center;
@@ -4559,39 +4052,31 @@ transition:
     background 0.3s ease,
     color 0.3s ease;
 
-
 }
-.hero-button { transform: translateY(-3px);
-
+.hero-button:hover { transform: translateY(-3px);
 
 background: var(--chocolate);
 
 color: #ffffff;
-
 
 }
 /* ===================================================== ОБЩИЕ СЕКЦИИ
 ===================================================== */
 .section { width: 100%;
 
-
 padding:
     50px
     25px;
 
-
 }
 .section-content { max-width: 900px;
-
 
 margin: 0 auto;
 
 text-align: center;
 
-
 }
 .section-label { margin: 0 0 22px;
-
 
 font-family:
     "Cormorant Garamond",
@@ -4610,10 +4095,8 @@ text-transform: uppercase;
 
 color: var(--chocolate-medium);
 
-
 }
 .section h2 { margin: 0;
-
 
 font-family:
     "Cormorant Garamond",
@@ -4635,10 +4118,8 @@ letter-spacing: -0.4px;
 
 color: var(--olive-dark);
 
-
 }
 .section-text { max-width: 650px;
-
 
 margin:
     20px
@@ -4650,12 +4131,10 @@ line-height: 1.45;
 
 color: var(--text-soft);
 
-
 }
 /* ===================================================== ДОРОГИЕ ГОСТИ
 МОЛОЧНЫЙ ФОН ===================================================== */
 .welcome { background: var(--cream);
-
 
 padding:
     46px
@@ -4668,11 +4147,9 @@ border-top:
 border-bottom:
     1px solid var(--line-chocolate);
 
-
 }
 .welcome .section-content { max-width: 950px; }
 .welcome .welcome-label { margin: 0 0 26px;
-
 
 font-size: 22px;
 
@@ -4682,10 +4159,8 @@ letter-spacing: 6px;
 
 color: var(--chocolate);
 
-
 }
 .welcome-main-text { max-width: 820px;
-
 
 margin: 0 auto;
 
@@ -4704,21 +4179,17 @@ color: var(--olive-dark);
 
 text-align: center;
 
-
 }
 .welcome-line { display: block; }
 .welcome-line-accent { margin-top: 17px;
 
-
 color: var(--chocolate);
-
 
 }
 /* ===================================================== МЕСТО ВСТРЕЧИ
 СВЕТЛЫЙ ШОКОЛАДНЫЙ ФОН
 ===================================================== */
 .location { background: var(--chocolate-light);
-
 
 padding:
     50px
@@ -4729,27 +4200,21 @@ border-bottom:
     1px solid
     var(--line-chocolate);
 
-
 }
 .location .section-label { color: var(--olive-dark); }
 .location h2 { font-size: clamp( 36px, 4vw, 50px );
 
-
 color: var(--chocolate-dark);
-
 
 }
 .location .section-text { margin: 16px auto 0;
-
 
 font-size: 19px;
 
 color: var(--chocolate-medium);
 
-
 }
 .yandex-map-wrapper { width: 100%;
-
 
 max-width: 850px;
 
@@ -4772,10 +4237,8 @@ box-shadow:
     0 18px 45px
     rgba(63, 48, 40, 0.16);
 
-
 }
 .yandex-map-wrapper iframe { display: block;
-
 
 width: 100%;
 
@@ -4783,10 +4246,8 @@ height: 420px;
 
 border: 0;
 
-
 }
 .map-button { display: inline-flex;
-
 
 align-items: center;
 justify-content: center;
@@ -4826,22 +4287,18 @@ transition:
     color 0.3s ease,
     transform 0.3s ease;
 
-
 }
-.map-button { background: var(--chocolate);
-
+.map-button:hover { background: var(--chocolate);
 
 color: #ffffff;
 
 transform: translateY(-2px);
-
 
 }
 /* ===================================================== ПРОГРАММА ДНЯ
 СВЕТЛЫЙ ОЛИВКОВЫЙ =====================================================
 */
 .program { background: var(--olive-light);
-
 
 padding:
     50px
@@ -4852,18 +4309,14 @@ border-bottom:
     1px solid
     var(--line-olive);
 
-
 }
 .program .section-label { color: var(--chocolate); }
 .program h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--olive-dark);
-
 
 }
 .timeline { max-width: 680px;
-
 
 margin:
     32px
@@ -4872,10 +4325,8 @@ margin:
 
 text-align: left;
 
-
 }
 .timeline-item { display: grid;
-
 
 grid-template-columns:
     100px
@@ -4908,18 +4359,14 @@ border:
 
 border-radius: 12px;
 
-
 }
 .timeline-item { margin-bottom: 0; }
 .timeline-time { font-size: 23px;
 
-
 color: var(--chocolate);
-
 
 }
 .timeline-info h3 { margin: 0 0 5px;
-
 
 font-size: 26px;
 
@@ -4927,10 +4374,8 @@ font-weight: 500;
 
 color: var(--olive-dark);
 
-
 }
 .timeline-info p { margin: 0;
-
 
 font-size: 17px;
 
@@ -4938,13 +4383,11 @@ line-height: 1.45;
 
 color: #6c7163;
 
-
 }
 /* ===================================================== DRESS CODE
 СВЕТЛЫЙ ШОКОЛАДНЫЙ =====================================================
 */
 .dress-code { background: #eee4dc;
-
 
 padding:
     50px
@@ -4955,18 +4398,14 @@ border-bottom:
     1px solid
     var(--line-chocolate);
 
-
 }
 .dress-code .section-label { color: var(--olive-dark); }
 .dress-code h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--chocolate-dark);
-
 
 }
 .dress-code .section-text { max-width: 700px;
-
 
 margin:
     17px
@@ -4977,12 +4416,10 @@ font-size: 19px;
 
 color: var(--chocolate-medium);
 
-
 }
 /* ===================================== DRESS CODE - ЦВЕТА В ОДИН РЯД
 ===================================== */
 .colors {
-
 
 display: flex;
 justify-content: center;
@@ -4992,10 +4429,8 @@ gap: 18px;
 margin-top: 30px;
 width: 100%;
 
-
 }
 .color-wrapper {
-
 
 width: 130px;
 min-height: 145px;
@@ -5024,10 +4459,8 @@ background:
 
 border-radius: 16px;
 
-
 }
 .color {
-
 
 width: 65px;
 height: 65px;
@@ -5052,7 +4485,6 @@ box-shadow:
         0.18
     );
 
-
 }
 .color-chocolate { background:#5b4638; }
 .color-caramel { background:#8c6330; }
@@ -5063,7 +4495,6 @@ box-shadow:
 ===================================== */
 @media(max-width:700px){
 
-
 .colors {
 
     flex-wrap: wrap;
@@ -5072,7 +4503,6 @@ box-shadow:
     padding: 0;
 
 }
-
 
 .color-wrapper {
 
@@ -5088,7 +4518,6 @@ box-shadow:
 
 }
 
-
 .color {
 
     width:48px;
@@ -5097,13 +4526,11 @@ box-shadow:
 
 }
 
-
 }
 /* ===================================================== RSVP МОЛОЧНЫЙ
 ФОН + ОЛИВКОВАЯ ФОРМА
 ===================================================== */
 .rsvp { background: var(--cream);
-
 
 padding:
     50px
@@ -5114,18 +4541,14 @@ border-bottom:
     1px solid
     var(--line-olive);
 
-
 }
 .rsvp .section-label { color: var(--chocolate); }
 .rsvp h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
 color: var(--olive-dark);
-
 
 }
 .rsvp .section-text { max-width: 650px;
-
 
 margin:
     17px
@@ -5136,10 +4559,8 @@ font-size: 19px;
 
 color: var(--text-soft);
 
-
 }
 .rsvp-form { max-width: 570px;
-
 
 margin:
     28px
@@ -5174,10 +4595,8 @@ border:
 
 border-radius: 16px;
 
-
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea { width: 100%;
-
 
 border:
     1px solid
@@ -5211,18 +4630,14 @@ transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 
-
 }
 .rsvp-form textarea { min-height: 90px;
 
-
 resize: vertical;
-
 
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form
 textarea { border-color: var(--olive);
-
 
 box-shadow:
     0 0 0 3px
@@ -5233,10 +4648,8 @@ box-shadow:
         0.10
     );
 
-
 }
 .rsvp-form button { margin-top: 6px;
-
 
 border: none;
 
@@ -5272,10 +4685,8 @@ transition:
     transform 0.3s ease,
     background 0.3s ease;
 
-
 }
-.rsvp-form button { transform: translateY(-2px);
-
+.rsvp-form button:hover { transform: translateY(-2px);
 
 background:
     linear-gradient(
@@ -5284,19 +4695,15 @@ background:
         var(--chocolate)
     );
 
-
 }
 .rsvp-form button { opacity: 0.65;
-
 
 cursor: default;
 
 transform: none;
 
-
 }
-\#formMessage { margin-top: 15px;
-
+#formMessage { margin-top: 15px;
 
 min-height: 24px;
 
@@ -5304,22 +4711,17 @@ font-size: 19px;
 
 color: var(--olive-dark);
 
-
 }
 .form-group { width: 100%;
 
-
 text-align: left;
-
 
 }
 .form-label { margin-bottom: 10px;
 
-
 font-size: 18px;
 
 color: var(--chocolate-dark);
-
 
 }
 .alcohol-options { display: grid; grid-template-columns: repeat(2,
@@ -5327,7 +4729,6 @@ minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 15px; }
 .checkbox-option { display: flex !important; flex-direction: row
 !important; align-items: center !important; justify-content: flex-start
 !important;
-
 
 width: 100%;
 min-height: 52px;
@@ -5346,10 +4747,8 @@ color: var(--chocolate-dark);
 
 gap: 12px;
 
-
 }
 .checkbox-option input { width: 18px; height: 18px;
-
 
 margin: 0 !important;
 
@@ -5357,10 +4756,8 @@ flex: 0 0 auto;
 
 accent-color: var(--olive-dark);
 
-
 }
 .checkbox-option span { display: block !important;
-
 
 flex: 1;
 
@@ -5370,25 +4767,21 @@ white-space: normal !important;
 
 margin: 0 !important;
 
-
 }
 .checkbox-option { border-color: var(--olive); }
 .checkbox-option(input) { background: #d8dfcd; border-color:
 var(--olive-dark); color: var(--olive-dark); }
 @media(max-width:700px){
 
-
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
 
 }
 /* ===================================================== ПОДВАЛ
 ШОКОЛАДНО-ОЛИВКОВЫЙ
 ===================================================== */
 .final-section { min-height: auto;
-
 
 background:
     linear-gradient(
@@ -5412,10 +4805,8 @@ padding:
     20px
     58px;
 
-
 }
 .final-content h2 { margin: 13px 0;
-
 
 font-size:
     clamp(
@@ -5428,30 +4819,24 @@ font-weight: 400;
 
 color: var(--warm-white);
 
-
 }
 .final-script { font-family: "Marck Script", cursive;
-
 
 font-size: 48px;
 
 color: #e7ddd3;
 
-
 }
 .final-date { font-size: 19px;
-
 
 letter-spacing: 6px;
 
 color: #e2e4d8;
 
-
 }
 /* ===================================================== ОБРАТНЫЙ ОТСЧЁТ
 ===================================================== */
 .countdown-title { margin-top: 26px;
-
 
 font-size: 19px;
 
@@ -5463,10 +4848,8 @@ color:
         0.82
     );
 
-
 }
 .wedding-countdown { margin-top: 17px;
-
 
 display: flex;
 
@@ -5477,10 +4860,8 @@ gap: 16px;
 
 color: #ffffff;
 
-
 }
 .countdown-item { min-width: 75px;
-
 
 padding:
     10px
@@ -5502,19 +4883,15 @@ background:
 
 border-radius: 10px;
 
-
 }
 .countdown-number { font-size: 36px;
-
 
 line-height: 1;
 
 color: #fffdf8;
 
-
 }
 .countdown-label { margin-top: 7px;
-
 
 font-size: 11px;
 
@@ -5526,21 +4903,17 @@ color: #ddd7cc;
 
 opacity: 0.85;
 
-
 }
 .countdown-divider { padding-top: 13px;
-
 
 font-size: 27px;
 
 opacity: 0.55;
 
-
 }
 /* ===================================================== ПЛАНШЕТ
 ===================================================== */
 @media (max-width: 1000px) {
-
 
 .love-equation {
     width: 96vw;
@@ -5548,11 +4921,9 @@ opacity: 0.55;
     gap: 22px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 14px;
 }
-
 
 .photo-card {
     width: 145px;
@@ -5563,11 +4934,9 @@ opacity: 0.55;
         15px;
 }
 
-
 .photo-image-crop {
     height: 185px;
 }
-
 
 .photo-plus {
     width: 34px;
@@ -5575,19 +4944,16 @@ opacity: 0.55;
     font-size: 48px;
 }
 
-
 .photo-equals {
     width: 45px;
 
     font-size: 52px;
 }
 
-
 .hero-heart {
     width: 220px;
     height: 195px;
 }
-
 
 .hero-heart-text {
     width: 165px;
@@ -5595,23 +4961,19 @@ opacity: 0.55;
     font-size: 16px;
 }
 
-
 }
 /* ===================================================== ТЕЛЕФОН
 ===================================================== */
 @media (max-width: 700px) {
 
-
 #envelope-screen {
     padding: 18px;
 }
-
 
 .envelope {
     width: 310px;
     height: 205px;
 }
-
 
 .envelope-letter {
     left: 25px;
@@ -5622,24 +4984,20 @@ opacity: 0.55;
     height: 150px;
 }
 
-
 .envelope-letter.letter-open {
     transform:
         translateY(-78px);
 }
 
-
 .envelope-body {
     height: 165px;
 }
-
 
 .envelope-flap {
     top: 40px;
 
     height: 110px;
 }
-
 
 .wax-seal {
     width: 70px;
@@ -5648,14 +5006,12 @@ opacity: 0.55;
     top: 115px;
 }
 
-
 .hero {
     padding:
         22px
         12px
         45px;
 }
-
 
 .hero-subtitle {
     font-family:
@@ -5669,20 +5025,16 @@ opacity: 0.55;
     letter-spacing: 0;
 }
 
-
-
 .hero h1 {
     font-size: 46px;
 
     line-height: 0.95;
 }
 
-
 .hero h1 span {
     margin:
         0 5px;
 }
-
 
 .hero-date {
     font-size: 17px;
@@ -5690,13 +5042,11 @@ opacity: 0.55;
     letter-spacing: 5px;
 }
 
-
 .section {
     padding:
         42px
         20px;
 }
-
 
 .section-label {
     margin-bottom: 18px;
@@ -5706,18 +5056,15 @@ opacity: 0.55;
     letter-spacing: 4px;
 }
 
-
 .section h2 {
     font-size: 36px;
 
     line-height: 1.1;
 }
 
-
 .section-text {
     font-size: 18px;
 }
-
 
 /* ДОРОГИЕ ГОСТИ */
 
@@ -5728,7 +5075,6 @@ opacity: 0.55;
         42px;
 }
 
-
 .welcome .welcome-label {
     margin-bottom: 21px;
 
@@ -5737,18 +5083,15 @@ opacity: 0.55;
     letter-spacing: 4px;
 }
 
-
 .welcome-main-text {
     font-size: 25px;
 
     line-height: 1.26;
 }
 
-
 .welcome-line-accent {
     margin-top: 14px;
 }
-
 
 /* МЕСТО */
 
@@ -5759,16 +5102,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .location h2 {
     font-size: 38px;
 }
 
-
 .location .section-text {
     font-size: 18px;
 }
-
 
 .yandex-map-wrapper {
     margin-top: 23px;
@@ -5776,11 +5116,9 @@ opacity: 0.55;
     border-width: 4px;
 }
 
-
 .yandex-map-wrapper iframe {
     height: 340px;
 }
-
 
 /* ПРОГРАММА */
 
@@ -5791,16 +5129,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .program h2 {
     font-size: 37px;
 }
 
-
 .timeline {
     margin-top: 28px;
 }
-
 
 .timeline-item {
     grid-template-columns:
@@ -5813,21 +5148,17 @@ opacity: 0.55;
         15px;
 }
 
-
 .timeline-time {
     font-size: 20px;
 }
-
 
 .timeline-info h3 {
     font-size: 22px;
 }
 
-
 .timeline-info p {
     font-size: 16px;
 }
-
 
 /* DRESS CODE */
 
@@ -5838,16 +5169,13 @@ opacity: 0.55;
         44px;
 }
 
-
 .dress-code h2 {
     font-size: 37px;
 }
 
-
 .dress-code .section-text {
     font-size: 18px;
 }
-
 
 .colors {
     margin-top: 24px;
@@ -5855,17 +5183,14 @@ opacity: 0.55;
     gap: 12px;
 }
 
-
 .color-wrapper {
     min-width: 85px;
 }
-
 
 .color {
     width: 48px;
     height: 48px;
 }
-
 
 /* RSVP */
 
@@ -5876,23 +5201,19 @@ opacity: 0.55;
         46px;
 }
 
-
 .rsvp h2 {
     font-size: 37px;
 }
 
-
 .rsvp .section-text {
     font-size: 18px;
 }
-
 
 .rsvp-form {
     margin-top: 24px;
 
     padding: 18px;
 }
-
 
 /* ПОДВАЛ */
 
@@ -5903,16 +5224,13 @@ opacity: 0.55;
         50px;
 }
 
-
 .final-content h2 {
     font-size: 43px;
 }
 
-
 .final-script {
     font-size: 42px;
 }
-
 
 .countdown-title {
     margin-top: 23px;
@@ -5920,13 +5238,11 @@ opacity: 0.55;
     font-size: 17px;
 }
 
-
 .wedding-countdown {
     margin-top: 15px;
 
     gap: 7px;
 }
-
 
 .countdown-item {
     min-width: 54px;
@@ -5936,11 +5252,9 @@ opacity: 0.55;
         5px;
 }
 
-
 .countdown-number {
     font-size: 27px;
 }
-
 
 .countdown-label {
     font-size: 8px;
@@ -5948,19 +5262,16 @@ opacity: 0.55;
     letter-spacing: 1px;
 }
 
-
 .countdown-divider {
     padding-top: 11px;
 
     font-size: 21px;
 }
 
-
 }
 /* ===================================================== УЗКИЕ ТЕЛЕФОНЫ
 ===================================================== */
 @media (max-width: 560px) {
-
 
 .love-equation {
     width: 100%;
@@ -5970,11 +5281,9 @@ opacity: 0.55;
     gap: 7px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 5px;
 }
-
 
 .photo-card {
     width: 78px;
@@ -5985,11 +5294,9 @@ opacity: 0.55;
         9px;
 }
 
-
 .photo-image-crop {
     height: 103px;
 }
-
 
 .photo-plus {
     width: 19px;
@@ -5997,19 +5304,16 @@ opacity: 0.55;
     font-size: 29px;
 }
 
-
 .photo-equals {
     width: 24px;
 
     font-size: 32px;
 }
 
-
 .hero-heart {
     width: 118px;
     height: 108px;
 }
-
 
 .hero-heart-text {
     width: 92px;
@@ -6019,30 +5323,24 @@ opacity: 0.55;
     line-height: 1.18;
 }
 
-
 .hero-button {
     margin-top: 24px;
 }
 
-
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
 
 }
 /* ===================================================== МАЛЕНЬКИЕ
 ТЕЛЕФОНЫ ===================================================== */
 @media (max-width: 400px) {
 
-
 .hero-subtitle {
     font-size: 23px;
 }
 
-
 } .envelope { width: 285px; height: 190px; }
-
 
 .envelope-letter {
     left: 23px;
@@ -6053,24 +5351,20 @@ opacity: 0.55;
     height: 138px;
 }
 
-
 .envelope-letter.letter-open {
     transform:
         translateY(-71px);
 }
 
-
 .envelope-body {
     height: 153px;
 }
-
 
 .envelope-flap {
     top: 37px;
 
     height: 101px;
 }
-
 
 .wax-seal {
     width: 64px;
@@ -6079,31 +5373,25 @@ opacity: 0.55;
     top: 106px;
 }
 
-
 .hero h1 {
     font-size: 40px;
 }
-
 
 .love-equation {
     gap: 5px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 4px;
 }
-
 
 .photo-card {
     width: 68px;
 }
 
-
 .photo-image-crop {
     height: 91px;
 }
-
 
 .photo-plus {
     width: 16px;
@@ -6111,19 +5399,16 @@ opacity: 0.55;
     font-size: 25px;
 }
 
-
 .photo-equals {
     width: 20px;
 
     font-size: 28px;
 }
 
-
 .hero-heart {
     width: 102px;
     height: 94px;
 }
-
 
 .hero-heart-text {
     width: 80px;
@@ -6131,13 +5416,11 @@ opacity: 0.55;
     font-size: 8px;
 }
 
-
 .section {
     padding:
         36px
         18px;
 }
-
 
 .section-label {
     margin-bottom: 16px;
@@ -6147,11 +5430,9 @@ opacity: 0.55;
     letter-spacing: 3px;
 }
 
-
 .section h2 {
     font-size: 32px;
 }
-
 
 .welcome {
     padding:
@@ -6159,7 +5440,6 @@ opacity: 0.55;
         18px
         37px;
 }
-
 
 .welcome .welcome-label {
     margin-bottom: 19px;
@@ -6169,11 +5449,9 @@ opacity: 0.55;
     letter-spacing: 3px;
 }
 
-
 .welcome-main-text {
     font-size: 22px;
 }
-
 
 .location,
 .program,
@@ -6184,14 +5462,12 @@ opacity: 0.55;
         38px;
 }
 
-
 .rsvp {
     padding:
         36px
         18px
         40px;
 }
-
 
 .location h2,
 .program h2,
@@ -6200,11 +5476,9 @@ opacity: 0.55;
     font-size: 32px;
 }
 
-
 .rsvp-form {
     padding: 15px;
 }
-
 
 .final-section {
     padding:
@@ -6213,12 +5487,10 @@ opacity: 0.55;
         43px;
 }
 
-
  /* ===================================================== НОВЫЙ ПЕРВЫЙ
 ЭКРАН ДЛЯ ТЕЛЕФОНА =====================================================
 */
 @media (max-width: 700px) {
-
 
 /* Убираем искусственную высоту в целый экран */
 .hero {
@@ -6232,11 +5504,9 @@ opacity: 0.55;
         42px;
 }
 
-
 .hero-inner {
     width: 100%;
 }
-
 
 /* Приглашение на свадьбу */
 
@@ -6248,7 +5518,6 @@ opacity: 0.55;
     line-height: 1.05;
 }
 
-
 /* Виктор & Валерия */
 
 .hero h1 {
@@ -6257,13 +5526,11 @@ opacity: 0.55;
     line-height: 0.95;
 }
 
-
 .hero h1 span {
     margin:
         0
         5px;
 }
-
 
 /* Дата */
 
@@ -6274,7 +5541,6 @@ opacity: 0.55;
 
     letter-spacing: 5px;
 }
-
 
 /* =================================================
    ФОРМУЛА НА МОБИЛЬНОМ
@@ -6303,7 +5569,6 @@ opacity: 0.55;
     row-gap: 17px;
 }
 
-
 /* Два фото занимают всю первую строку */
 
 .love-equation .childhood-photos {
@@ -6322,7 +5587,6 @@ opacity: 0.55;
     gap: 13px;
 }
 
-
 /* Фотографии делаем значительно крупнее */
 
 .photo-card {
@@ -6334,11 +5598,9 @@ opacity: 0.55;
         13px;
 }
 
-
 .photo-image-crop {
     height: 158px;
 }
-
 
 /* Виктор */
 
@@ -6350,7 +5612,6 @@ opacity: 0.55;
         center 30%;
 }
 
-
 /* Валерия */
 
 .photo-right .photo-image-crop img {
@@ -6361,7 +5622,6 @@ opacity: 0.55;
         center;
 }
 
-
 /* Плюс между фотографиями */
 
 .photo-plus {
@@ -6371,7 +5631,6 @@ opacity: 0.55;
 
     line-height: 1;
 }
-
 
 /* Равно — вторая строка слева от сердца */
 
@@ -6389,7 +5648,6 @@ opacity: 0.55;
     text-align: center;
 }
 
-
 /* Сердце */
 
 .hero-heart {
@@ -6401,7 +5659,6 @@ opacity: 0.55;
     margin: 0;
 }
 
-
 /* Текст в сердце */
 
 .hero-heart-text {
@@ -6411,7 +5668,6 @@ opacity: 0.55;
 
     line-height: 1.18;
 }
-
 
 /* Кнопка */
 
@@ -6425,13 +5681,11 @@ opacity: 0.55;
     font-size: 16px;
 }
 
-
 }
 /* ===================================================== СОВСЕМ
 НЕБОЛЬШИЕ ТЕЛЕФОНЫ =====================================================
 */
 @media (max-width: 400px) {
-
 
 .hero {
     padding:
@@ -6440,16 +5694,13 @@ opacity: 0.55;
         38px;
 }
 
-
 .hero-subtitle {
     font-size: 21px;
 }
 
-
 .hero h1 {
     font-size: 43px;
 }
-
 
 .hero-date {
     margin-top: 16px;
@@ -6458,7 +5709,6 @@ opacity: 0.55;
 
     letter-spacing: 4px;
 }
-
 
 .love-equation {
     margin-top: 27px;
@@ -6472,11 +5722,9 @@ opacity: 0.55;
     row-gap: 15px;
 }
 
-
 .love-equation .childhood-photos {
     gap: 10px;
 }
-
 
 .photo-card {
     width: 112px;
@@ -6487,11 +5735,9 @@ opacity: 0.55;
         12px;
 }
 
-
 .photo-image-crop {
     height: 146px;
 }
-
 
 .photo-plus {
     width: 27px;
@@ -6499,26 +5745,22 @@ opacity: 0.55;
     font-size: 36px;
 }
 
-
 .photo-equals {
     width: 37px;
 
     font-size: 38px;
 }
 
-
 .hero-heart {
     width: 142px;
     height: 130px;
 }
-
 
 .hero-heart-text {
     width: 108px;
 
     font-size: 11px;
 }
-
 
 .hero-button {
     margin-top: 23px;
@@ -6530,13 +5772,11 @@ opacity: 0.55;
     font-size: 15px;
 }
 
-
 } /* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
 ===================================================== */
 /* Такой же шрифт, как у "До встречи!" */
 .hero-subtitle { font-family: "Marck Script", cursive !important;
-
 
 font-size: 34px !important;
 font-weight: 400 !important;
@@ -6554,12 +5794,10 @@ margin:
     0
     12px !important;
 
-
 }
 /* ===================================================== МОБИЛЬНАЯ
 ВЕРСИЯ ===================================================== */
 @media (max-width: 700px) {
-
 
 /* Убираем огромную пустую высоту */
 
@@ -6576,7 +5814,6 @@ margin:
     display: block !important;
 }
 
-
 .hero-inner {
     width: 100% !important;
 
@@ -6586,7 +5823,6 @@ margin:
 
     overflow: visible !important;
 }
-
 
 /* Приглашение на свадьбу */
 
@@ -6611,7 +5847,6 @@ margin:
         12px !important;
 }
 
-
 /* Виктор & Валерия */
 
 .hero h1 {
@@ -6624,13 +5859,11 @@ margin:
     white-space: nowrap;
 }
 
-
 .hero h1 span {
     margin:
         0
         4px !important;
 }
-
 
 /* Дата */
 
@@ -6641,7 +5874,6 @@ margin:
 
     letter-spacing: 5px !important;
 }
-
 
 /* =================================================
    НОВАЯ КОМПОЗИЦИЯ
@@ -6678,7 +5910,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Фотографии */
 
 .love-equation .childhood-photos {
@@ -6699,7 +5930,6 @@ margin:
     gap: 13px !important;
 }
 
-
 .photo-card {
     width: 128px !important;
 
@@ -6714,13 +5944,11 @@ margin:
         14px !important;
 }
 
-
 .photo-image-crop {
     width: 100% !important;
 
     height: 165px !important;
 }
-
 
 .photo-image-crop img {
     width: 100% !important;
@@ -6730,14 +5958,12 @@ margin:
     object-fit: cover !important;
 }
 
-
 /* Виктор */
 
 .photo-left {
     transform:
         rotate(-2deg) !important;
 }
-
 
 .photo-left .photo-image-crop img {
     transform:
@@ -6747,14 +5973,12 @@ margin:
         center 30% !important;
 }
 
-
 /* Валерия */
 
 .photo-right {
     transform:
         rotate(2deg) !important;
 }
-
 
 .photo-right .photo-image-crop img {
     transform:
@@ -6763,7 +5987,6 @@ margin:
     transform-origin:
         center !important;
 }
-
 
 /* Плюс */
 
@@ -6784,7 +6007,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Равно */
 
 .photo-equals {
@@ -6804,7 +6026,6 @@ margin:
     transform: none !important;
 }
 
-
 /* Сердце */
 
 .hero-heart {
@@ -6819,7 +6040,6 @@ margin:
     transform: none !important;
 }
 
-
 .hero-heart-text {
     width: 145px !important;
 
@@ -6831,7 +6051,6 @@ margin:
 
     transform: none !important;
 }
-
 
 /* Кнопка */
 
@@ -6845,12 +6064,10 @@ margin:
     font-size: 16px !important;
 }
 
-
 }
 /* ===================================================== МАЛЕНЬКИЕ
 ТЕЛЕФОНЫ ===================================================== */
 @media (max-width: 400px) {
-
 
 .hero {
     padding:
@@ -6859,16 +6076,13 @@ margin:
         38px !important;
 }
 
-
 .hero-subtitle {
     font-size: 26px !important;
 }
 
-
 .hero h1 {
     font-size: 42px !important;
 }
-
 
 .hero-date {
     font-size: 15px !important;
@@ -6876,18 +6090,15 @@ margin:
     letter-spacing: 4px !important;
 }
 
-
 .love-equation {
     margin-top: 27px !important;
 
     gap: 12px !important;
 }
 
-
 .love-equation .childhood-photos {
     gap: 10px !important;
 }
-
 
 .photo-card {
     width: 112px !important;
@@ -6898,11 +6109,9 @@ margin:
         112px !important;
 }
 
-
 .photo-image-crop {
     height: 146px !important;
 }
-
 
 .photo-plus {
     width: 28px !important;
@@ -6915,18 +6124,15 @@ margin:
     font-size: 36px !important;
 }
 
-
 .photo-equals {
     font-size: 38px !important;
 }
-
 
 .hero-heart {
     width: 170px !important;
 
     height: 154px !important;
 }
-
 
 .hero-heart-text {
     width: 130px !important;
@@ -6936,17 +6142,14 @@ margin:
     font-size: 12px !important;
 }
 
-
 .hero-button {
     margin-top: 21px !important;
 }
-
 
 } /* ===================================================== ФИНАЛЬНЫЙ
 ПЕРВЫЙ ЭКРАН — ТОЛЬКО ТЕЛЕФОНЫ
 ===================================================== */
 @media (max-width: 700px) {
-
 
 /* Первый экран всегда занимает минимум весь экран телефона */
 .hero {
@@ -6964,7 +6167,6 @@ margin:
     justify-content: center !important;
 }
 
-
 .hero-inner {
     width: 100% !important;
     max-width: 100% !important;
@@ -6973,7 +6175,6 @@ margin:
 
     overflow: visible !important;
 }
-
 
 /* =================================================
    ПРИГЛАШЕНИЕ НА СВАДЬБУ
@@ -7000,7 +6201,6 @@ margin:
     text-transform: none !important;
 }
 
-
 /* =================================================
    ИМЕНА
 ================================================= */
@@ -7015,13 +6215,11 @@ margin:
     white-space: nowrap !important;
 }
 
-
 .hero h1 span {
     margin:
         0
         4px !important;
 }
-
 
 /* =================================================
    ДАТА
@@ -7034,7 +6232,6 @@ margin:
 
     letter-spacing: 5px !important;
 }
-
 
 /* =================================================
    ФОРМУЛА
@@ -7067,7 +6264,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    ФОТОГРАФИИ
 ================================================= */
@@ -7087,7 +6283,6 @@ margin:
 
     gap: 9px !important;
 }
-
 
 .photo-card {
     width:
@@ -7112,7 +6307,6 @@ margin:
         14px !important;
 }
 
-
 .photo-image-crop {
     width: 100% !important;
 
@@ -7124,7 +6318,6 @@ margin:
         ) !important;
 }
 
-
 .photo-image-crop img {
     width: 100% !important;
     height: 100% !important;
@@ -7132,14 +6325,12 @@ margin:
     object-fit: cover !important;
 }
 
-
 /* Виктор */
 
 .photo-left {
     transform:
         rotate(-2deg) !important;
 }
-
 
 .photo-left .photo-image-crop img {
     transform:
@@ -7149,14 +6340,12 @@ margin:
         center 30% !important;
 }
 
-
 /* Валерия */
 
 .photo-right {
     transform:
         rotate(2deg) !important;
 }
-
 
 .photo-right .photo-image-crop img {
     transform:
@@ -7165,7 +6354,6 @@ margin:
     transform-origin:
         center !important;
 }
-
 
 /* =================================================
    ПЛЮС
@@ -7188,7 +6376,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    ЗНАК РАВНО
 ================================================= */
@@ -7208,7 +6395,6 @@ margin:
     transform: none !important;
 }
 
-
 /* =================================================
    БОЛЬШОЕ СЕРДЦЕ
 ================================================= */
@@ -7224,7 +6410,6 @@ margin:
     transform: none !important;
 }
 
-
 .hero-heart-text {
     width: 160px !important;
     max-width: 160px !important;
@@ -7235,7 +6420,6 @@ margin:
 
     transform: none !important;
 }
-
 
 /* =================================================
    КНОПКА
@@ -7251,12 +6435,10 @@ margin:
     font-size: 16px !important;
 }
 
-
 }
 /* ===================================================== ТЕЛЕФОНЫ ДО
 400px ===================================================== */
 @media (max-width: 400px) {
-
 
 .hero {
     min-height: 100svh !important;
@@ -7267,16 +6449,13 @@ margin:
         38px !important;
 }
 
-
 .hero-subtitle {
     font-size: 26px !important;
 }
 
-
 .hero h1 {
     font-size: 42px !important;
 }
-
 
 .hero-date {
     margin-top: 14px !important;
@@ -7286,18 +6465,15 @@ margin:
     letter-spacing: 4px !important;
 }
 
-
 .love-equation {
     margin-top: 25px !important;
 
     gap: 10px !important;
 }
 
-
 .love-equation .childhood-photos {
     gap: 7px !important;
 }
-
 
 .photo-card {
     width: 128px !important;
@@ -7308,11 +6484,9 @@ margin:
         128px !important;
 }
 
-
 .photo-image-crop {
     height: 170px !important;
 }
-
 
 .photo-plus {
     width: 25px !important;
@@ -7325,17 +6499,14 @@ margin:
     font-size: 38px !important;
 }
 
-
 .photo-equals {
     font-size: 40px !important;
 }
-
 
 .hero-heart {
     width: 195px !important;
     height: 176px !important;
 }
-
 
 .hero-heart-text {
     width: 148px !important;
@@ -7344,7 +6515,6 @@ margin:
     font-size: 13px !important;
 }
 
-
 .hero-button {
     margin-top: 19px !important;
 
@@ -7352,7 +6522,6 @@ margin:
         14px
         29px !important;
 }
-
 
 }
 /* ===================================================== ФИНАЛЬНОЕ
@@ -7368,7 +6537,6 @@ flex-direction: column !important; align-items: center !important;
 justify-content: center !important; }
 /* Телефон */ @media (max-width: 700px) {
 
-
 .dress-code .colors {
     justify-content: flex-start !important;
     overflow-x: auto !important;
@@ -7381,12 +6549,10 @@ justify-content: center !important; }
     min-width: 85px !important;
 }
 
-
 } /* ===================================== DRESS CODE ONLY FIX COLORS
 ROW ===================================== */
 section.dress-code .colors { display: flex !important; flex-direction:
 row !important; flex-wrap: wrap !important;
-
 
 justify-content: center !important;
 align-items: flex-start !important;
@@ -7397,10 +6563,8 @@ width: 100% !important;
 
 position: static !important;
 
-
 }
 section.dress-code .color-wrapper {
-
 
 width: 120px !important;
 min-width: 120px !important;
@@ -7415,18 +6579,14 @@ justify-content: center !important;
 
 position: static !important;
 
-
 }
 section.dress-code .color {
 
-
 position: static !important;
-
 
 }
 /* телефон */
 @media(max-width:700px){
-
 
 section.dress-code .colors {
 
@@ -7440,7 +6600,6 @@ section.dress-code .colors {
 
 }
 
-
 section.dress-code .color-wrapper {
 
     width:95px !important;
@@ -7449,18 +6608,14 @@ section.dress-code .color-wrapper {
 
 }
 
-
 } /* ===================================== ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ
 МУЖЧИН ===================================== */
 .additional-colors {
 
-
 margin-top: 35px;
-
 
 }
 .additional-title {
-
 
 margin-bottom: 20px;
 
@@ -7472,19 +6627,15 @@ text-transform: uppercase;
 
 color: var(--chocolate-dark);
 
-
 }
 /* черный */
 .color-black {
 
-
 background:#111111;
-
 
 }
 /* белый */
 .color-white {
-
 
 background:#FFFFFF;
 
@@ -7492,13 +6643,11 @@ border:
 3px solid
 rgba(90,70,50,0.25);
 
-
 } /* ===================================== RSVP FIX
 ===================================== */
 .rsvp-form { width: 100%; max-width: 520px; margin: 30px auto 0;
 box-sizing: border-box; }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea {
-
 
 width: 100%;
 max-width: 100%;
@@ -7507,19 +6656,15 @@ box-sizing: border-box;
 
 font-family: inherit;
 
-
 }
 .rsvp-form textarea {
-
 
 min-height: 120px;
 
 resize: vertical;
 
-
 }
 .alcohol-options {
-
 
 display: grid;
 
@@ -7529,20 +6674,16 @@ gap: 10px;
 
 width: 100%;
 
-
 }
 .checkbox-option {
-
 
 width: 100%;
 
 box-sizing: border-box;
 
-
 }
 /* телефон */
 @media(max-width:700px){
-
 
 .rsvp-form {
 
@@ -7552,13 +6693,11 @@ box-sizing: border-box;
 
 }
 
-
 .alcohol-options {
 
     grid-template-columns: 1fr;
 
 }
-
 
 }
 
@@ -7614,7 +6753,6 @@ box-sizing: border-box;
         white-space: normal !important;
     }
 }
-
 
 /* ===== CLEAN REPAIR FIXES ===== */
 #envelope-screen{
