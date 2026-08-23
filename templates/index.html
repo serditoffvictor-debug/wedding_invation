@@ -50,6 +50,8 @@
 
     </div>
 
+<div id="invitation">
+
     <!-- =================================================
          ПЕРВЫЙ ЭКРАН
     ================================================== -->
@@ -439,6 +441,8 @@
 
 
     <div class="colors">
+
+
         <div class="color-wrapper">
 
             <div class="color color-black"></div>
@@ -461,6 +465,8 @@
 
         </div>
 
+
+    </div>
 
     </div>
 
@@ -884,58 +890,53 @@
         </div>
 
     </section>
+</div>
+
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
+
     const seal = document.getElementById("waxSeal");
-    const screen = document.getElementById("envelope-screen");
+    const envelope = document.getElementById("envelope-screen");
     const invitation = document.getElementById("invitation");
 
     if (seal) {
-        seal.addEventListener("click", function () {
-            const flap = document.querySelector(".envelope-flap");
-            const letter = document.querySelector(".envelope-letter");
-
+        seal.onclick = () => {
+            document.querySelector(".envelope-flap")?.classList.add("flap-open");
+            document.querySelector(".envelope-letter")?.classList.add("letter-open");
             seal.classList.add("seal-open");
-            if (flap) flap.classList.add("flap-open");
-            if (letter) letter.classList.add("letter-open");
 
-            setTimeout(function () {
-                if (screen) screen.classList.add("screen-hide");
+            setTimeout(() => {
+                envelope?.classList.add("screen-hide");
                 if (invitation) invitation.classList.add("show");
             }, 900);
-        });
+        };
     }
 
-    const target = new Date("2026-09-19T15:30:00").getTime();
+    const targetDate = new Date("2026-09-19T15:30:00").getTime();
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = target - now;
+    function countdown() {
+        const now = Date.now();
+        let diff = targetDate - now;
 
-        const ids = [
-            ["countdownDays", 86400000],
-            ["countdownHours", 3600000],
-            ["countdownMinutes", 60000],
-            ["countdownSeconds", 1000]
-        ];
+        if (diff < 0) diff = 0;
 
-        if (distance < 0) return;
+        const days = Math.floor(diff / 86400000);
+        diff %= 86400000;
+        const hours = Math.floor(diff / 3600000);
+        diff %= 3600000;
+        const minutes = Math.floor(diff / 60000);
+        diff %= 60000;
+        const seconds = Math.floor(diff / 1000);
 
-        let value = distance;
-
-        ids.forEach(function(item) {
-            const el = document.getElementById(item[0]);
-            if (!el) return;
-
-            const number = Math.floor(value / item[1]);
-            value = value % item[1];
-            el.textContent = String(number).padStart(2, "0");
-        });
+        document.getElementById("countdownDays").textContent = String(days).padStart(2,"0");
+        document.getElementById("countdownHours").textContent = String(hours).padStart(2,"0");
+        document.getElementById("countdownMinutes").textContent = String(minutes).padStart(2,"0");
+        document.getElementById("countdownSeconds").textContent = String(seconds).padStart(2,"0");
     }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+    countdown();
+    setInterval(countdown,1000);
 });
 </script>
 
