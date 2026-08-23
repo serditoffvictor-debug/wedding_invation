@@ -1,9 +1,8 @@
-/* =====================================================
-   ЦВЕТОВАЯ СИСТЕМА САЙТА
-===================================================== */
-:root {
+\* ===================================================== ЦВЕТОВАЯ
+СИСТЕМА САЙТА ===================================================== \*/
+ {
 
-
+```
 /* Основной оливковый */
 --olive-dark: #4f5a3d;
 --olive: #667253;
@@ -28,18 +27,18 @@
 /* Линии */
 --line-olive: rgba(79, 90, 61, 0.17);
 --line-chocolate: rgba(91, 70, 56, 0.18);
-
+```
 
 }
-/* ===================================================== ОСНОВНЫЕ
-НАСТРОЙКИ ===================================================== */
+/\* ===================================================== ОСНОВНЫЕ
+НАСТРОЙКИ ===================================================== \*/
 
-* { box-sizing: border-box; }
+- { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
 body { margin: 0; padding: 0;
 
-
+```
 background: var(--cream);
 
 color: var(--text-dark);
@@ -50,14 +49,14 @@ font-family:
     serif;
 
 overflow-x: hidden;
-
+```
 
 }
-/* ===================================================== КОНВЕРТ
-\===================================================== */
-#envelope-screen { position: fixed;
+/\* ===================================================== КОНВЕРТ
+\===================================================== \*/
+\#envelope-screen { position: fixed;
 
-
+```
 inset: 0;
 
 width: 100%;
@@ -80,45 +79,45 @@ opacity: 1;
 
 transition:
     opacity 0.9s ease;
-
+```
 
 }
-#envelope-screen.screen-hide { opacity: 0;
+\#envelope-screen.screen-hide { opacity: 0;
 
-
+```
 pointer-events: none;
-
+```
 
 }
 .envelope-wrapper { width: 100%;
 
-
+```
 display: flex;
 
 flex-direction: column;
 
 align-items: center;
 justify-content: center;
-
+```
 
 }
 .envelope { position: relative;
 
-
+```
 width: 360px;
 height: 235px;
 
 margin: 0 auto;
 
 perspective: 1200px;
-
+```
 
 }
-/* ===================================================== ПИСЬМО
-\===================================================== */
+/\* ===================================================== ПИСЬМО
+\===================================================== \*/
 .envelope-letter { position: absolute;
 
-
+```
 left: 30px;
 right: 30px;
 
@@ -151,31 +150,31 @@ transition:
         0.36,
         1
     );
-
+```
 
 }
 .envelope-letter.letter-open { transform: translateY(-92px); }
 .letter-small-title { font-size: 23px;
 
-
+```
 color: var(--olive-dark);
-
+```
 
 }
 .letter-small-date { margin-top: 10px;
 
-
+```
 font-size: 16px;
 
 color: var(--chocolate-medium);
-
+```
 
 }
-/* ===================================================== КОРПУС КОНВЕРТА
-\===================================================== */
+/\* ===================================================== КОРПУС КОНВЕРТА
+\===================================================== \*/
 .envelope-body { position: absolute;
 
-
+```
 left: 0;
 right: 0;
 bottom: 0;
@@ -190,12 +189,12 @@ border-radius: 0 0 8px 8px;
 z-index: 3;
 
 overflow: hidden;
-
+```
 
 }
-.envelope-body::before { content: "";
+.envelope-body::before { content: ““;
 
-
+```
 position: absolute;
 
 left: 0;
@@ -212,12 +211,12 @@ clip-path:
         100% 100%,
         0 100%
     );
-
+```
 
 }
-.envelope-body::after { content: "";
+.envelope-body::after { content: ““;
 
-
+```
 position: absolute;
 
 right: 0;
@@ -234,14 +233,14 @@ clip-path:
         100% 100%,
         0 100%
     );
-
+```
 
 }
-/* ===================================================== КЛАПАН
-\===================================================== */
+/\* ===================================================== КЛАПАН
+\===================================================== \*/
 .envelope-flap { position: absolute;
 
-
+```
 left: 0;
 right: 0;
 
@@ -271,21 +270,21 @@ transition:
         0.2,
         1
     );
-
+```
 
 }
 .envelope-flap.flap-open { transform: rotateX(180deg);
 
-
+```
 z-index: 1;
-
+```
 
 }
-/* ===================================================== ПЕЧАТЬ
-\===================================================== */
+/\* ===================================================== ПЕЧАТЬ
+\===================================================== \*/
 .wax-seal { position: absolute;
 
-
+```
 left: 50%;
 top: 131px;
 
@@ -335,24 +334,24 @@ box-shadow:
 transition:
     transform 0.35s ease,
     opacity 0.45s ease;
-
+```
 
 }
 .wax-seal { transform: translateX(-50%) scale(1.07); }
 .wax-seal.seal-open { opacity: 0;
 
-
+```
 transform:
     translateX(-50%)
     scale(1.3);
 
 pointer-events: none;
-
+```
 
 }
 .open-text { width: 100%;
 
-
+```
 margin-top: 36px;
 
 font-size: 18px;
@@ -362,34 +361,34 @@ letter-spacing: 1px;
 color: var(--chocolate-medium);
 
 text-align: center;
-
+```
 
 }
-/* ===================================================== ОСНОВНОЙ САЙТ
-\===================================================== */
-#invitation { display: none;
+/\* ===================================================== ОСНОВНОЙ САЙТ
+\===================================================== \*/
+\#invitation { display: none;
 
-
+```
 width: 100%;
 
 opacity: 0;
-
+```
 
 }
-#invitation.show { display: block;
+\#invitation.show { display: block;
 
-
+```
 animation:
     invitationAppear
     1.2s
     ease
     forwards;
-
+```
 
 }
 @keyframes invitationAppear {
 
-
+```
 from {
     opacity: 0;
 }
@@ -397,14 +396,14 @@ from {
 to {
     opacity: 1;
 }
-
+```
 
 }
-/* ===================================================== ПЕРВЫЙ ЭКРАН
-\===================================================== */
+/\* ===================================================== ПЕРВЫЙ ЭКРАН
+\===================================================== \*/
 .hero { min-height: 100vh;
 
-
+```
 width: 100%;
 
 background:
@@ -427,12 +426,12 @@ padding:
     28px
     30px
     55px;
-
+```
 
 }
 .hero-inner { width: 100%;
 
-
+```
 max-width: 1500px;
 
 margin: 0 auto;
@@ -442,12 +441,12 @@ display: flex;
 flex-direction: column;
 
 align-items: center;
-
+```
 
 }
-.hero-subtitle { font-family: "Marck Script", cursive;
+.hero-subtitle { font-family: “Marck Script”, cursive;
 
-
+```
 font-size: 32px;
 
 font-weight: 400;
@@ -461,12 +460,12 @@ margin-bottom: 10px;
 color: #f4efe5;
 
 text-transform: none;
-
+```
 
 }
 .hero h1 { margin: 0;
 
-
+```
 font-weight: 400;
 
 font-size:
@@ -481,35 +480,35 @@ line-height: 0.95;
 letter-spacing: -1px;
 
 color: var(--warm-white);
-
+```
 
 }
 .hero h1 span { font-style: italic;
 
-
+```
 margin:
     0 15px;
 
 color: #e4d4c6;
-
+```
 
 }
 .hero-date { margin-top: 22px;
 
-
+```
 font-size: 22px;
 
 letter-spacing: 8px;
 
 color: #f3eee3;
-
+```
 
 }
-/* ===================================================== ФОТО + ФОТО =
-СЕРДЦЕ ===================================================== */
+/\* ===================================================== ФОТО + ФОТО =
+СЕРДЦЕ ===================================================== \*/
 .love-equation { width: min( 1280px, 94vw );
 
-
+```
 margin-top: 38px;
 
 display: flex;
@@ -520,12 +519,12 @@ align-items: center;
 gap: 40px;
 
 flex-wrap: nowrap;
-
+```
 
 }
 .love-equation .childhood-photos { width: auto;
 
-
+```
 margin: 0;
 
 display: flex;
@@ -538,12 +537,12 @@ align-items: center;
 gap: 25px;
 
 flex-shrink: 0;
-
+```
 
 }
 .photo-card { width: 185px;
 
-
+```
 background: var(--cream-light);
 
 padding:
@@ -559,50 +558,50 @@ flex-shrink: 0;
 
 transition:
     transform 0.4s ease;
-
+```
 
 }
 .photo-image-crop { width: 100%;
 
-
+```
 height: 235px;
 
 overflow: hidden;
-
+```
 
 }
 .photo-image-crop img { display: block;
 
-
+```
 width: 100%;
 height: 100%;
 
 object-fit: cover;
-
+```
 
 }
 .photo-left { transform: rotate(-2deg); }
 .photo-left .photo-image-crop img { transform: scale(1.22);
 
-
+```
 transform-origin:
     center 30%;
-
+```
 
 }
 .photo-right { transform: rotate(2deg); }
 .photo-right .photo-image-crop img { transform: scale(1.03);
 
-
+```
 transform-origin: center;
-
+```
 
 }
 .photo-left { transform: rotate(-2deg) translateY(-6px); }
 .photo-right { transform: rotate(2deg) translateY(-6px); }
 .photo-plus { width: 48px;
 
-
+```
 flex-shrink: 0;
 
 font-size: 62px;
@@ -612,12 +611,12 @@ line-height: 1;
 text-align: center;
 
 color: #f1e7dc;
-
+```
 
 }
 .photo-equals { width: 65px;
 
-
+```
 flex-shrink: 0;
 
 font-size: 68px;
@@ -627,12 +626,12 @@ line-height: 1;
 text-align: center;
 
 color: #f1e7dc;
-
+```
 
 }
 .hero-heart { position: relative;
 
-
+```
 width: 290px;
 height: 255px;
 
@@ -680,13 +679,13 @@ clip-path:
         67% 80%,
         58% 88%
     );
-
+```
 
 }
 .hero-heart::before, .hero-heart::after { display: none; }
 .hero-heart-text { width: 215px;
 
-
+```
 position: relative;
 
 z-index: 2;
@@ -698,12 +697,12 @@ line-height: 1.25;
 text-align: center;
 
 color: #f7f1e7;
-
+```
 
 }
 .hero-button { display: inline-flex;
 
-
+```
 align-items: center;
 justify-content: center;
 
@@ -735,41 +734,41 @@ transition:
     transform 0.3s ease,
     background 0.3s ease,
     color 0.3s ease;
-
+```
 
 }
 .hero-button { transform: translateY(-3px);
 
-
+```
 background: var(--chocolate);
 
 color: #ffffff;
-
+```
 
 }
-/* ===================================================== ОБЩИЕ СЕКЦИИ
-\===================================================== */
+/\* ===================================================== ОБЩИЕ СЕКЦИИ
+\===================================================== \*/
 .section { width: 100%;
 
-
+```
 padding:
     50px
     25px;
-
+```
 
 }
 .section-content { max-width: 900px;
 
-
+```
 margin: 0 auto;
 
 text-align: center;
-
+```
 
 }
 .section-label { margin: 0 0 22px;
 
-
+```
 font-family:
     "Cormorant Garamond",
     Georgia,
@@ -786,12 +785,12 @@ letter-spacing: 6px;
 text-transform: uppercase;
 
 color: var(--chocolate-medium);
-
+```
 
 }
 .section h2 { margin: 0;
 
-
+```
 font-family:
     "Cormorant Garamond",
     Georgia,
@@ -811,12 +810,12 @@ line-height: 1.08;
 letter-spacing: -0.4px;
 
 color: var(--olive-dark);
-
+```
 
 }
 .section-text { max-width: 650px;
 
-
+```
 margin:
     20px
     auto;
@@ -826,14 +825,14 @@ font-size: 20px;
 line-height: 1.45;
 
 color: var(--text-soft);
-
+```
 
 }
-/* ===================================================== ДОРОГИЕ ГОСТИ
-МОЛОЧНЫЙ ФОН ===================================================== */
-.welcome { background: var(--cream);
+/\* ===================================================== ДОРОГИЕ ГОСТИ
+МОЛОЧНЫЙ ФОН ===================================================== \*/
+.welcome { background: var(–cream);
 
-
+```
 padding:
     46px
     25px
@@ -844,13 +843,13 @@ border-top:
 
 border-bottom:
     1px solid var(--line-chocolate);
-
+```
 
 }
 .welcome .section-content { max-width: 950px; }
 .welcome .welcome-label { margin: 0 0 26px;
 
-
+```
 font-size: 22px;
 
 font-weight: 500;
@@ -858,12 +857,12 @@ font-weight: 500;
 letter-spacing: 6px;
 
 color: var(--chocolate);
-
+```
 
 }
 .welcome-main-text { max-width: 820px;
 
-
+```
 margin: 0 auto;
 
 font-size:
@@ -880,23 +879,23 @@ line-height: 1.24;
 color: var(--olive-dark);
 
 text-align: center;
-
+```
 
 }
 .welcome-line { display: block; }
 .welcome-line-accent { margin-top: 17px;
 
-
+```
 color: var(--chocolate);
-
+```
 
 }
-/* ===================================================== МЕСТО ВСТРЕЧИ
+/\* ===================================================== МЕСТО ВСТРЕЧИ
 СВЕТЛЫЙ ШОКОЛАДНЫЙ ФОН
-\===================================================== */
-.location { background: var(--chocolate-light);
+\===================================================== \*/
+.location { background: var(–chocolate-light);
 
-
+```
 padding:
     50px
     25px
@@ -905,29 +904,29 @@ padding:
 border-bottom:
     1px solid
     var(--line-chocolate);
-
+```
 
 }
-.location .section-label { color: var(--olive-dark); }
+.location .section-label { color: var(–olive-dark); }
 .location h2 { font-size: clamp( 36px, 4vw, 50px );
 
-
+```
 color: var(--chocolate-dark);
-
+```
 
 }
 .location .section-text { margin: 16px auto 0;
 
-
+```
 font-size: 19px;
 
 color: var(--chocolate-medium);
-
+```
 
 }
 .yandex-map-wrapper { width: 100%;
 
-
+```
 max-width: 850px;
 
 margin:
@@ -948,23 +947,23 @@ background: #ded4ca;
 box-shadow:
     0 18px 45px
     rgba(63, 48, 40, 0.16);
-
+```
 
 }
 .yandex-map-wrapper iframe { display: block;
 
-
+```
 width: 100%;
 
 height: 420px;
 
 border: 0;
-
+```
 
 }
 .map-button { display: inline-flex;
 
-
+```
 align-items: center;
 justify-content: center;
 
@@ -1002,24 +1001,24 @@ transition:
     background 0.3s ease,
     color 0.3s ease,
     transform 0.3s ease;
-
+```
 
 }
-.map-button { background: var(--chocolate);
+.map-button { background: var(–chocolate);
 
-
+```
 color: #ffffff;
 
 transform: translateY(-2px);
-
+```
 
 }
-/* ===================================================== ПРОГРАММА ДНЯ
+/\* ===================================================== ПРОГРАММА ДНЯ
 СВЕТЛЫЙ ОЛИВКОВЫЙ =====================================================
-*/
-.program { background: var(--olive-light);
+\*/
+.program { background: var(–olive-light);
 
-
+```
 padding:
     50px
     25px
@@ -1028,32 +1027,32 @@ padding:
 border-bottom:
     1px solid
     var(--line-olive);
-
+```
 
 }
-.program .section-label { color: var(--chocolate); }
+.program .section-label { color: var(–chocolate); }
 .program h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
+```
 color: var(--olive-dark);
-
+```
 
 }
 .timeline { max-width: 680px;
 
-
+```
 margin:
     32px
     auto
     0;
 
 text-align: left;
-
+```
 
 }
 .timeline-item { display: grid;
 
-
+```
 grid-template-columns:
     100px
     1fr;
@@ -1084,45 +1083,45 @@ border:
     );
 
 border-radius: 12px;
-
+```
 
 }
 .timeline-item { margin-bottom: 0; }
 .timeline-time { font-size: 23px;
 
-
+```
 color: var(--chocolate);
-
+```
 
 }
 .timeline-info h3 { margin: 0 0 5px;
 
-
+```
 font-size: 26px;
 
 font-weight: 500;
 
 color: var(--olive-dark);
-
+```
 
 }
 .timeline-info p { margin: 0;
 
-
+```
 font-size: 17px;
 
 line-height: 1.45;
 
 color: #6c7163;
-
+```
 
 }
-/* ===================================================== DRESS CODE
+/\* ===================================================== DRESS CODE
 СВЕТЛЫЙ ШОКОЛАДНЫЙ =====================================================
-*/
+\*/
 .dress-code { background: #eee4dc;
 
-
+```
 padding:
     50px
     25px
@@ -1131,20 +1130,20 @@ padding:
 border-bottom:
     1px solid
     var(--line-chocolate);
-
+```
 
 }
-.dress-code .section-label { color: var(--olive-dark); }
+.dress-code .section-label { color: var(–olive-dark); }
 .dress-code h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
+```
 color: var(--chocolate-dark);
-
+```
 
 }
 .dress-code .section-text { max-width: 700px;
 
-
+```
 margin:
     17px
     auto
@@ -1153,14 +1152,14 @@ margin:
 font-size: 19px;
 
 color: var(--chocolate-medium);
-
+```
 
 }
-/* ===================================== DRESS CODE - ЦВЕТА В ОДИН РЯД
-\===================================== */
+/\* ===================================== DRESS CODE - ЦВЕТА В ОДИН РЯД
+\===================================== \*/
 .colors {
 
-
+```
 display: flex;
 justify-content: center;
 align-items: flex-start;
@@ -1168,12 +1167,12 @@ flex-wrap: wrap;
 gap: 18px;
 margin-top: 30px;
 width: 100%;
-
+```
 
 }
 .color-wrapper {
 
-
+```
 width: 130px;
 min-height: 145px;
 
@@ -1200,12 +1199,12 @@ background:
     );
 
 border-radius: 16px;
-
+```
 
 }
 .color {
 
-
+```
 width: 65px;
 height: 65px;
 
@@ -1228,7 +1227,7 @@ box-shadow:
         40,
         0.18
     );
-
+```
 
 }
 .color-chocolate { background:#5b4638; }
@@ -1236,11 +1235,11 @@ box-shadow:
 .color-beige { background:#d8c8aa; }
 .color-sage { background:#b8c49f; }
 .color-olive { background:#667253; }
-/* ===================================== МОБИЛЬНЫЙ ТЕЛЕФОН
-\===================================== */
+/\* ===================================== МОБИЛЬНЫЙ ТЕЛЕФОН
+\===================================== \*/
 @media(max-width:700px){
 
-
+```
 .colors {
 
     flex-wrap: wrap;
@@ -1273,15 +1272,15 @@ box-shadow:
     height:48px;
 
 }
-
+```
 
 }
-/* ===================================================== RSVP МОЛОЧНЫЙ
+/\* ===================================================== RSVP МОЛОЧНЫЙ
 ФОН + ОЛИВКОВАЯ ФОРМА
-\===================================================== */
-.rsvp { background: var(--cream);
+\===================================================== \*/
+.rsvp { background: var(–cream);
 
-
+```
 padding:
     50px
     25px
@@ -1290,20 +1289,20 @@ padding:
 border-bottom:
     1px solid
     var(--line-olive);
-
+```
 
 }
-.rsvp .section-label { color: var(--chocolate); }
+.rsvp .section-label { color: var(–chocolate); }
 .rsvp h2 { font-size: clamp( 35px, 4vw, 48px );
 
-
+```
 color: var(--olive-dark);
-
+```
 
 }
 .rsvp .section-text { max-width: 650px;
 
-
+```
 margin:
     17px
     auto
@@ -1312,12 +1311,12 @@ margin:
 font-size: 19px;
 
 color: var(--text-soft);
-
+```
 
 }
 .rsvp-form { max-width: 570px;
 
-
+```
 margin:
     28px
     auto
@@ -1350,12 +1349,12 @@ border:
     );
 
 border-radius: 16px;
-
+```
 
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea { width: 100%;
 
-
+```
 border:
     1px solid
     rgba(
@@ -1387,20 +1386,20 @@ outline: none;
 transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
-
+```
 
 }
 .rsvp-form textarea { min-height: 90px;
 
-
+```
 resize: vertical;
-
+```
 
 }
 .rsvp-form input, .rsvp-form select, .rsvp-form
-textarea { border-color: var(--olive);
+textarea { border-color: var(–olive);
 
-
+```
 box-shadow:
     0 0 0 3px
     rgba(
@@ -1409,12 +1408,12 @@ box-shadow:
         83,
         0.10
     );
-
+```
 
 }
 .rsvp-form button { margin-top: 6px;
 
-
+```
 border: none;
 
 padding:
@@ -1448,55 +1447,55 @@ box-shadow:
 transition:
     transform 0.3s ease,
     background 0.3s ease;
-
+```
 
 }
 .rsvp-form button { transform: translateY(-2px);
 
-
+```
 background:
     linear-gradient(
         135deg,
         var(--chocolate-dark),
         var(--chocolate)
     );
-
+```
 
 }
 .rsvp-form button { opacity: 0.65;
 
-
+```
 cursor: default;
 
 transform: none;
-
+```
 
 }
-#formMessage { margin-top: 15px;
+\#formMessage { margin-top: 15px;
 
-
+```
 min-height: 24px;
 
 font-size: 19px;
 
 color: var(--olive-dark);
-
+```
 
 }
 .form-group { width: 100%;
 
-
+```
 text-align: left;
-
+```
 
 }
 .form-label { margin-bottom: 10px;
 
-
+```
 font-size: 18px;
 
 color: var(--chocolate-dark);
-
+```
 
 }
 .alcohol-options { display: grid; grid-template-columns: repeat(2,
@@ -1505,7 +1504,7 @@ minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 15px; }
 !important; align-items: center !important; justify-content: flex-start
 !important;
 
-
+```
 width: 100%;
 min-height: 52px;
 
@@ -1522,23 +1521,23 @@ font-size: 18px;
 color: var(--chocolate-dark);
 
 gap: 12px;
-
+```
 
 }
 .checkbox-option input { width: 18px; height: 18px;
 
-
+```
 margin: 0 !important;
 
 flex: 0 0 auto;
 
 accent-color: var(--olive-dark);
-
+```
 
 }
 .checkbox-option span { display: block !important;
 
-
+```
 flex: 1;
 
 text-align: left !important;
@@ -1546,27 +1545,27 @@ text-align: left !important;
 white-space: normal !important;
 
 margin: 0 !important;
-
+```
 
 }
-.checkbox-option { border-color: var(--olive); }
-.checkbox-option:has(input:checked) { background: #d8dfcd; border-color:
-var(--olive-dark); color: var(--olive-dark); }
+.checkbox-option { border-color: var(–olive); }
+.checkbox-option(input) { background: #d8dfcd; border-color:
+var(–olive-dark); color: var(–olive-dark); }
 @media(max-width:700px){
 
-
+```
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
+```
 
 }
-/* ===================================================== ПОДВАЛ
+/\* ===================================================== ПОДВАЛ
 ШОКОЛАДНО-ОЛИВКОВЫЙ
-\===================================================== */
+\===================================================== \*/
 .final-section { min-height: auto;
 
-
+```
 background:
     linear-gradient(
         145deg,
@@ -1588,12 +1587,12 @@ padding:
     54px
     20px
     58px;
-
+```
 
 }
 .final-content h2 { margin: 13px 0;
 
-
+```
 font-size:
     clamp(
         38px,
@@ -1604,32 +1603,32 @@ font-size:
 font-weight: 400;
 
 color: var(--warm-white);
-
+```
 
 }
-.final-script { font-family: "Marck Script", cursive;
+.final-script { font-family: “Marck Script”, cursive;
 
-
+```
 font-size: 48px;
 
 color: #e7ddd3;
-
+```
 
 }
 .final-date { font-size: 19px;
 
-
+```
 letter-spacing: 6px;
 
 color: #e2e4d8;
-
+```
 
 }
-/* ===================================================== ОБРАТНЫЙ ОТСЧЁТ
-\===================================================== */
+/\* ===================================================== ОБРАТНЫЙ ОТСЧЁТ
+\===================================================== \*/
 .countdown-title { margin-top: 26px;
 
-
+```
 font-size: 19px;
 
 color:
@@ -1639,12 +1638,12 @@ color:
         255,
         0.82
     );
-
+```
 
 }
 .wedding-countdown { margin-top: 17px;
 
-
+```
 display: flex;
 
 justify-content: center;
@@ -1653,12 +1652,12 @@ align-items: flex-start;
 gap: 16px;
 
 color: #ffffff;
-
+```
 
 }
 .countdown-item { min-width: 75px;
 
-
+```
 padding:
     10px
     8px;
@@ -1678,21 +1677,21 @@ background:
     );
 
 border-radius: 10px;
-
+```
 
 }
 .countdown-number { font-size: 36px;
 
-
+```
 line-height: 1;
 
 color: #fffdf8;
-
+```
 
 }
 .countdown-label { margin-top: 7px;
 
-
+```
 font-size: 11px;
 
 letter-spacing: 2px;
@@ -1702,23 +1701,23 @@ text-transform: uppercase;
 color: #ddd7cc;
 
 opacity: 0.85;
-
+```
 
 }
 .countdown-divider { padding-top: 13px;
 
-
+```
 font-size: 27px;
 
 opacity: 0.55;
-
+```
 
 }
-/* ===================================================== ПЛАНШЕТ
-\===================================================== */
+/\* ===================================================== ПЛАНШЕТ
+\===================================================== \*/
 @media (max-width: 1000px) {
 
-
+```
 .love-equation {
     width: 96vw;
 
@@ -1771,14 +1770,14 @@ opacity: 0.55;
 
     font-size: 16px;
 }
-
+```
 
 }
-/* ===================================================== ТЕЛЕФОН
-\===================================================== */
+/\* ===================================================== ТЕЛЕФОН
+\===================================================== \*/
 @media (max-width: 700px) {
 
-
+```
 #envelope-screen {
     padding: 18px;
 }
@@ -2131,14 +2130,14 @@ opacity: 0.55;
 
     font-size: 21px;
 }
-
+```
 
 }
-/* ===================================================== УЗКИЕ ТЕЛЕФОНЫ
-\===================================================== */
+/\* ===================================================== УЗКИЕ ТЕЛЕФОНЫ
+\===================================================== \*/
 @media (max-width: 560px) {
 
-
+```
 .love-equation {
     width: 100%;
 
@@ -2205,22 +2204,22 @@ opacity: 0.55;
 .alcohol-options {
     grid-template-columns: 1fr;
 }
-
+```
 
 }
-/* ===================================================== МАЛЕНЬКИЕ
-ТЕЛЕФОНЫ ===================================================== */
+/\* ===================================================== МАЛЕНЬКИЕ
+ТЕЛЕФОНЫ ===================================================== \*/
 @media (max-width: 400px) {
 
-
+```
 .hero-subtitle {
     font-size: 23px;
 }
-
+```
 
 } .envelope { width: 285px; height: 190px; }
 
-
+```
 .envelope-letter {
     left: 23px;
     right: 23px;
@@ -2389,14 +2388,14 @@ opacity: 0.55;
         18px
         43px;
 }
+```
 
-
-} /* ===================================================== НОВЫЙ ПЕРВЫЙ
+} /\* ===================================================== НОВЫЙ ПЕРВЫЙ
 ЭКРАН ДЛЯ ТЕЛЕФОНА =====================================================
-*/
+\*/
 @media (max-width: 700px) {
 
-
+```
 /* Убираем искусственную высоту в целый экран */
 .hero {
     min-height: auto;
@@ -2601,15 +2600,15 @@ opacity: 0.55;
 
     font-size: 16px;
 }
-
+```
 
 }
-/* ===================================================== СОВСЕМ
+/\* ===================================================== СОВСЕМ
 НЕБОЛЬШИЕ ТЕЛЕФОНЫ =====================================================
-*/
+\*/
 @media (max-width: 400px) {
 
-
+```
 .hero {
     padding:
         30px
@@ -2706,15 +2705,15 @@ opacity: 0.55;
 
     font-size: 15px;
 }
+```
 
-
-} /* ===================================================== ФИНАЛЬНОЕ
+} /\* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
-\===================================================== */
-/* Такой же шрифт, как у "До встречи!" */
-.hero-subtitle { font-family: "Marck Script", cursive !important;
+\===================================================== \*/
+/\* Такой же шрифт, как у “До встречи!” \*/
+.hero-subtitle { font-family: “Marck Script”, cursive !important;
 
-
+```
 font-size: 34px !important;
 font-weight: 400 !important;
 
@@ -2730,14 +2729,14 @@ margin:
     0
     0
     12px !important;
-
+```
 
 }
-/* ===================================================== МОБИЛЬНАЯ
-ВЕРСИЯ ===================================================== */
+/\* ===================================================== МОБИЛЬНАЯ
+ВЕРСИЯ ===================================================== \*/
 @media (max-width: 700px) {
 
-
+```
 /* Убираем огромную пустую высоту */
 
 .hero {
@@ -3021,14 +3020,14 @@ margin:
 
     font-size: 16px !important;
 }
-
+```
 
 }
-/* ===================================================== МАЛЕНЬКИЕ
-ТЕЛЕФОНЫ ===================================================== */
+/\* ===================================================== МАЛЕНЬКИЕ
+ТЕЛЕФОНЫ ===================================================== \*/
 @media (max-width: 400px) {
 
-
+```
 .hero {
     padding:
         32px
@@ -3117,14 +3116,14 @@ margin:
 .hero-button {
     margin-top: 21px !important;
 }
+```
 
-
-} /* ===================================================== ФИНАЛЬНЫЙ
+} /\* ===================================================== ФИНАЛЬНЫЙ
 ПЕРВЫЙ ЭКРАН — ТОЛЬКО ТЕЛЕФОНЫ
-\===================================================== */
+\===================================================== \*/
 @media (max-width: 700px) {
 
-
+```
 /* Первый экран всегда занимает минимум весь экран телефона */
 .hero {
     min-height: 100svh !important;
@@ -3427,14 +3426,14 @@ margin:
 
     font-size: 16px !important;
 }
-
+```
 
 }
-/* ===================================================== ТЕЛЕФОНЫ ДО
-400px ===================================================== */
+/\* ===================================================== ТЕЛЕФОНЫ ДО
+400px ===================================================== \*/
 @media (max-width: 400px) {
 
-
+```
 .hero {
     min-height: 100svh !important;
 
@@ -3529,12 +3528,12 @@ margin:
         14px
         29px !important;
 }
-
+```
 
 }
-/* ===================================================== ФИНАЛЬНОЕ
+/\* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ DRESS CODE ЦВЕТА В ОДИН РЯД ЦВЕТА НЕ МЕНЯЕМ
-\===================================================== */
+\===================================================== \*/
 .dress-code .colors { display: flex !important; flex-direction: row
 !important; flex-wrap: nowrap !important; justify-content: center
 !important; align-items: flex-start !important; gap: 14px !important;
@@ -3543,9 +3542,9 @@ width: 100% !important; overflow: visible !important; }
 !important; min-width: 115px !important; display: flex !important;
 flex-direction: column !important; align-items: center !important;
 justify-content: center !important; }
-/* Телефон */ @media (max-width: 700px) {
+/\* Телефон \*/ @media (max-width: 700px) {
 
-
+```
 .dress-code .colors {
     justify-content: flex-start !important;
     overflow-x: auto !important;
@@ -3557,14 +3556,14 @@ justify-content: center !important; }
     width: 85px !important;
     min-width: 85px !important;
 }
+```
 
-
-} /* ===================================== DRESS CODE ONLY FIX COLORS
-ROW ===================================== */
+} /\* ===================================== DRESS CODE ONLY FIX COLORS
+ROW ===================================== \*/
 section.dress-code .colors { display: flex !important; flex-direction:
 row !important; flex-wrap: wrap !important;
 
-
+```
 justify-content: center !important;
 align-items: flex-start !important;
 
@@ -3573,12 +3572,12 @@ gap: 18px !important;
 width: 100% !important;
 
 position: static !important;
-
+```
 
 }
 section.dress-code .color-wrapper {
 
-
+```
 width: 120px !important;
 min-width: 120px !important;
 height: auto !important;
@@ -3591,20 +3590,20 @@ align-items: center !important;
 justify-content: center !important;
 
 position: static !important;
-
+```
 
 }
 section.dress-code .color {
 
-
+```
 position: static !important;
-
+```
 
 }
-/* телефон */
+/\* телефон \*/
 @media(max-width:700px){
 
-
+```
 section.dress-code .colors {
 
     display:flex !important;
@@ -3625,20 +3624,20 @@ section.dress-code .color-wrapper {
     min-width:95px !important;
 
 }
+```
 
-
-} /* ===================================== ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ
-МУЖЧИН ===================================== */
+} /\* ===================================== ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ДЛЯ
+МУЖЧИН ===================================== \*/
 .additional-colors {
 
-
+```
 margin-top: 35px;
-
+```
 
 }
 .additional-title {
 
-
+```
 margin-bottom: 20px;
 
 font-size: 18px;
@@ -3648,56 +3647,56 @@ letter-spacing: 4px;
 text-transform: uppercase;
 
 color: var(--chocolate-dark);
-
+```
 
 }
-/* черный */
+/\* черный \*/
 .color-black {
 
-
+```
 background:#111111;
-
+```
 
 }
-/* белый */
+/\* белый \*/
 .color-white {
 
-
+```
 background:#FFFFFF;
 
 border:
 3px solid
 rgba(90,70,50,0.25);
+```
 
-
-} /* ===================================== RSVP FIX
-\===================================== */
+} /\* ===================================== RSVP FIX
+\===================================== \*/
 .rsvp-form { width: 100%; max-width: 520px; margin: 30px auto 0;
 box-sizing: border-box; }
 .rsvp-form input, .rsvp-form select, .rsvp-form textarea {
 
-
+```
 width: 100%;
 max-width: 100%;
 
 box-sizing: border-box;
 
 font-family: inherit;
-
+```
 
 }
 .rsvp-form textarea {
 
-
+```
 min-height: 120px;
 
 resize: vertical;
-
+```
 
 }
 .alcohol-options {
 
-
+```
 display: grid;
 
 grid-template-columns: repeat(2, 1fr);
@@ -3705,22 +3704,22 @@ grid-template-columns: repeat(2, 1fr);
 gap: 10px;
 
 width: 100%;
-
+```
 
 }
 .checkbox-option {
 
-
+```
 width: 100%;
 
 box-sizing: border-box;
-
+```
 
 }
-/* телефон */
+/\* телефон \*/
 @media(max-width:700px){
 
-
+```
 .rsvp-form {
 
     width: 100%;
@@ -3735,7 +3734,7 @@ box-sizing: border-box;
     grid-template-columns: 1fr;
 
 }
-
+```
 
 }
 
@@ -3789,65 +3788,5 @@ box-sizing: border-box;
 
     .rsvp-form .checkbox-option span {
         white-space: normal !important;
-    }
-}
-
-/* ===== STRUCTURE FIX ===== */
-
-#invitation {
-    width:100%;
-}
-
-#invitation.show {
-    display:block;
-}
-
-#envelope-screen.screen-hide {
-    display:none;
-}
-
-.dress-code {
-    clear:both;
-    overflow:hidden;
-}
-
-.rsvp {
-    clear:both;
-    overflow:hidden;
-}
-
-.final-section {
-    width:100vw;
-    margin-left:calc(50% - 50vw);
-    clear:both;
-}
-
-.colors {
-    display:flex !important;
-    flex-direction:row !important;
-    flex-wrap:nowrap !important;
-    justify-content:center !important;
-    align-items:flex-start !important;
-}
-
-.dress-code .colors + .additional-title {
-    clear:both;
-}
-
-.alcohol-options {
-    display:grid !important;
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-}
-
-.checkbox-option {
-    width:100% !important;
-}
-
-@media(max-width:700px){
-    .colors {
-        flex-wrap:wrap !important;
-    }
-    .alcohol-options {
-        grid-template-columns:1fr !important;
     }
 }
