@@ -1,7 +1,5 @@
 :root {
-* ===================================================== ЦВЕТОВАЯ
-СИСТЕМА САЙТА ===================================================== */
- {
+
 
 
 /* Основной оливковый */
@@ -55,7 +53,7 @@ overflow-x: hidden;
 }
 /* ===================================================== КОНВЕРТ
 ===================================================== */
-\#envelope-screen { position: fixed;
+#envelope-screen { position: fixed;
 
 
 inset: 0;
@@ -83,7 +81,7 @@ transition:
 
 
 }
-\#envelope-screen.screen-hide { opacity: 0;
+#envelope-screen.screen-hide { opacity: 0;
 
 
 pointer-events: none;
@@ -367,7 +365,7 @@ text-align: center;
 }
 /* ===================================================== ОСНОВНОЙ САЙТ
 ===================================================== */
-\#invitation { display: none;
+#invitation { display: none;
 
 
 width: 100%;
@@ -376,7 +374,7 @@ opacity: 0;
 
 
 }
-\#invitation.show { display: block;
+#invitation.show { display: block;
 
 
 animation:
@@ -445,7 +443,7 @@ align-items: center;
 
 
 }
-.hero-subtitle { font-family: “Marck Script”, cursive;
+.hero-subtitle { font-family: "Marck Script", cursive;
 
 
 font-size: 32px;
@@ -1607,7 +1605,7 @@ color: var(--warm-white);
 
 
 }
-.final-script { font-family: “Marck Script”, cursive;
+.final-script { font-family: "Marck Script", cursive;
 
 
 font-size: 48px;
@@ -2711,8 +2709,8 @@ opacity: 0.55;
 } /* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
 ===================================================== */
-/* Такой же шрифт, как у “До встречи!” */
-.hero-subtitle { font-family: “Marck Script”, cursive !important;
+/* Такой же шрифт, как у "До встречи!" */
+.hero-subtitle { font-family: "Marck Script", cursive !important;
 
 
 font-size: 34px !important;
@@ -3848,7 +3846,7 @@ overflow-x: hidden;
 }
 /* ===================================================== КОНВЕРТ
 ===================================================== */
-\#envelope-screen { position: fixed;
+#envelope-screen { position: fixed;
 
 
 inset: 0;
@@ -3876,7 +3874,7 @@ transition:
 
 
 }
-\#envelope-screen.screen-hide { opacity: 0;
+#envelope-screen.screen-hide { opacity: 0;
 
 
 pointer-events: none;
@@ -4160,7 +4158,7 @@ text-align: center;
 }
 /* ===================================================== ОСНОВНОЙ САЙТ
 ===================================================== */
-\#invitation { display: none;
+#invitation { display: none;
 
 
 width: 100%;
@@ -4169,7 +4167,7 @@ opacity: 0;
 
 
 }
-\#invitation.show { display: block;
+#invitation.show { display: block;
 
 
 animation:
@@ -4238,7 +4236,7 @@ align-items: center;
 
 
 }
-.hero-subtitle { font-family: “Marck Script”, cursive;
+.hero-subtitle { font-family: "Marck Script", cursive;
 
 
 font-size: 32px;
@@ -5400,7 +5398,7 @@ color: var(--warm-white);
 
 
 }
-.final-script { font-family: “Marck Script”, cursive;
+.final-script { font-family: "Marck Script", cursive;
 
 
 font-size: 48px;
@@ -6504,8 +6502,8 @@ opacity: 0.55;
 } /* ===================================================== ФИНАЛЬНОЕ
 ИСПРАВЛЕНИЕ ПЕРВОГО ЭКРАНА
 ===================================================== */
-/* Такой же шрифт, как у “До встречи!” */
-.hero-subtitle { font-family: “Marck Script”, cursive !important;
+/* Такой же шрифт, как у "До встречи!" */
+.hero-subtitle { font-family: "Marck Script", cursive !important;
 
 
 font-size: 34px !important;
@@ -7585,29 +7583,49 @@ box-sizing: border-box;
     }
 }
 
-/* ===== FINAL FIXES ===== */
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;width:100%;overflow-x:hidden}
+
+/* ===== CLEAN REPAIR FIXES ===== */
 #envelope-screen{
- position:fixed!important;
- inset:0!important;
- min-height:100vh!important;
- display:flex!important;
- align-items:center!important;
- justify-content:center!important;
- z-index:999999!important;
+ position:fixed;
+ inset:0;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ width:100%;
+ height:100vh;
+ background:var(--cream);
+ z-index:99999;
 }
-#invitation.show{display:block!important}
-.hero{min-height:100vh!important;display:flex!important;align-items:center!important}
-.love-equation{flex-wrap:wrap!important}
-.dress-code{clear:both!important}
-.dress-code .colors + .additional-title{display:block;clear:both}
-.additional-title{width:100%;margin:35px auto 20px;text-align:center}
-.dress-code .colors .colors{margin-top:20px}
-.rsvp{clear:both!important}
+.envelope-wrapper{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+}
+#envelope-screen.screen-hide{
+ opacity:0;
+ visibility:hidden;
+}
+#invitation{display:none;}
+#invitation.show{display:block;opacity:1;}
+.dress-code,.rsvp,.final-section{
+ position:relative;
+ clear:both;
+ width:100%;
+}
+.additional-title{
+ width:100%;
+ display:block;
+ margin:35px auto 20px;
+ text-align:center;
+}
 .final-section{
- width:100%!important;
- min-height:420px!important;
- margin:0!important;
+ min-height:420px;
+ width:100%;
+ margin:0;
 }
-.wedding-countdown{display:flex!important}
+.wedding-countdown{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
