@@ -7039,3 +7039,61 @@ html, body {
         border-radius:14px;
     }
 }
+
+
+/* =============================
+   НАШИ ПОЖЕЛАНИЯ
+============================= */
+.wishes {
+    background: #f6f3eb;
+}
+
+.wishes-content {
+    text-align: center;
+}
+
+.wishes h2 {
+    margin-bottom: 18px;
+}
+
+.wishes-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.wishes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wish-item {
+    padding: 10px 25px;
+}
+
+.wish-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.wish-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--chocolate);
+}
+
+.wish-item p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .wishes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
