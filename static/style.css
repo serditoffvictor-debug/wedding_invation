@@ -7097,3 +7097,80 @@ html, body {
         gap: 20px;
     }
 }
+
+
+/* =====================================================
+   ПРОГРАММА ДНЯ — МОБИЛЬНАЯ ВЕРСИЯ
+   Исправление карточек с иконками
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .program {
+        padding: 35px 12px 45px;
+    }
+
+    .program h2 {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 28px;
+    }
+
+    .timeline {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        display: grid;
+        grid-template-columns: 76px 1fr;
+        grid-template-areas:
+            "icon time"
+            "icon info";
+        column-gap: 18px;
+        row-gap: 10px;
+        padding: 24px 18px;
+        margin-bottom: 14px;
+        border-radius: 20px;
+        align-items: start;
+    }
+
+    .timeline-icon {
+        grid-area: icon;
+        width: 76px;
+        height: 76px;
+        border-right: 1px solid rgba(79,90,61,.15);
+        padding-right: 16px;
+    }
+
+    .timeline-icon img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .timeline-time {
+        grid-area: time;
+        font-size: 22px;
+        line-height: 1;
+        padding-top: 4px;
+    }
+
+    .timeline-info {
+        grid-area: info;
+        min-width: 0;
+    }
+
+    .timeline-info h3 {
+        font-size: 28px;
+        line-height: 1.15;
+        margin: 0 0 10px;
+    }
+
+    .timeline-info p {
+        font-size: 18px;
+        line-height: 1.45;
+        margin: 0;
+        word-break: normal;
+    }
+
+}
