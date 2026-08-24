@@ -1437,13 +1437,7 @@ var(--olive-dark); color: var(--olive-dark); }
 ===================================================== */
 .final-section { min-height: auto;
 
-background:
-    linear-gradient(
-        145deg,
-        var(--chocolate-dark) 0%,
-        #493c30 42%,
-        var(--olive-dark) 100%
-    );
+background: var(--chocolate);
 
 color: #ffffff;
 
@@ -4815,13 +4809,7 @@ var(--olive-dark); color: var(--olive-dark); }
 ===================================================== */
 .final-section { min-height: auto;
 
-background:
-    linear-gradient(
-        145deg,
-        var(--chocolate-dark) 0%,
-        #493c30 42%,
-        var(--olive-dark) 100%
-    );
+background: var(--chocolate);
 
 color: #ffffff;
 
