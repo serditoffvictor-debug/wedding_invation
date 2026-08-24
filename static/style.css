@@ -7019,3 +7019,91 @@ html, body {
         border-radius:14px;
     }
 }
+
+
+/* =====================================================
+   PROGRAM ICONS + FOOTER COLOR FIX
+===================================================== */
+.program .timeline {
+    max-width: 980px;
+}
+
+.program .timeline-item {
+    grid-template-columns: 88px 110px 1fr !important;
+    gap: 22px !important;
+    align-items: start;
+}
+
+.program .timeline-icon {
+    width: 72px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    border-right: 1px solid rgba(79, 90, 61, 0.16);
+    color: var(--olive-dark);
+}
+
+.program .timeline-icon svg {
+    width: 52px;
+    height: 52px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.program .timeline-time {
+    padding-top: 6px;
+}
+
+.program .timeline-info {
+    padding-top: 2px;
+}
+
+.final-section {
+    background: #493c30 !important;
+    background-image: none !important;
+}
+
+@media (max-width: 700px) {
+    .program .timeline-item {
+        grid-template-columns: 62px 74px 1fr !important;
+        gap: 14px !important;
+    }
+
+    .program .timeline-icon {
+        width: 54px;
+        min-height: 54px;
+        padding-right: 14px;
+    }
+
+    .program .timeline-icon svg {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 560px) {
+    .program .timeline-item {
+        grid-template-columns: 54px 64px 1fr !important;
+        gap: 12px !important;
+    }
+
+    .program .timeline-icon {
+        width: 46px;
+        min-height: 46px;
+        padding-right: 10px;
+    }
+
+    .program .timeline-icon svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .program .timeline-time {
+        padding-top: 2px;
+    }
+}
