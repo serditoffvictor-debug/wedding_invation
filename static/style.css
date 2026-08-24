@@ -6991,3 +6991,31 @@ html, body {
         height: 125px;
     }
 }
+
+
+/* ===== Dress code examples ===== */
+.looks-preview{
+    width:100%;
+    max-width:900px;
+    margin:35px auto 0;
+    text-align:center;
+}
+.looks-preview .additional-title{
+    margin:0 0 20px;
+}
+.looks-preview img{
+    display:block;
+    width:100%;
+    max-width:900px;
+    height:auto;
+    border-radius:18px;
+    box-shadow:0 18px 40px rgba(63,48,40,.16);
+}
+@media(max-width:700px){
+    .looks-preview{
+        margin-top:28px;
+    }
+    .looks-preview img{
+        border-radius:14px;
+    }
+}
