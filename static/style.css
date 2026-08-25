@@ -7186,120 +7186,61 @@ html, body {
     overflow: hidden;
 }
 
-.footer-flowers {
-    position: absolute;
-    bottom: -15px;
-    width: 360px;
-    height: 270px;
-    pointer-events: none;
-    opacity: .95;
-    animation: floralAppear 1.8s ease both;
+
+
+/* Floral footer images */
+.final-section{
+    position:relative;
+    overflow:hidden;
 }
 
-.footer-flowers-left { left: -25px; }
-.footer-flowers-right { right: -25px; transform: scaleX(-1); }
-
-.footer-flowers span { position:absolute; display:block; }
-
-.peony {
-    width:130px;
-    height:130px;
-    border-radius:50%;
-    background:
-      radial-gradient(circle,#d8b67c 0 7%,transparent 8%),
-      radial-gradient(ellipse at center,#fffaf0 0 20%,#eee1d0 22% 38%,#fff8ec 40% 58%,#e5d3bf 60% 72%,transparent 74%);
-    filter:drop-shadow(0 12px 16px rgba(0,0,0,.2));
-    animation:flowerFloat 8s ease-in-out infinite;
-}
-
-.peony:nth-child(1){left:35px;bottom:25px;}
-.peony.small{width:85px;height:85px;left:180px;bottom:45px;}
-
-.bud{
-    width:38px;height:38px;left:235px;bottom:150px;
-    border-radius:50% 50% 45% 45%;
-    background:#f5eadb;
-}
-
-.leaf{
-    width:80px;height:35px;
-    background:linear-gradient(120deg,#718070,#c0c9af);
-    border-radius:100% 0;
-    transform:rotate(-35deg);
-    opacity:.8;
-}
-
-.leaf:nth-child(4){left:0;bottom:150px;}
-.leaf:nth-child(5){left:120px;bottom:185px;transform:rotate(35deg);}
-
-.footer-flowers:after{
-    content:"";
+.footer-floral{
     position:absolute;
-    left:120px;
-    bottom:110px;
-    width:170px;
-    height:2px;
-    background:#c9a25a;
-    transform:rotate(-18deg);
-    box-shadow:0 15px 0 rgba(201,162,90,.5);
+    bottom:-20px;
+    width:min(52vw,620px);
+    max-width:620px;
+    z-index:1;
+    opacity:0;
+    transform:translateY(80px);
+    animation:footerFlowerIn 1.8s ease forwards;
+    pointer-events:none;
 }
 
-@keyframes floralAppear{
- from{opacity:0;transform:translateY(60px);}
- to{opacity:.95;transform:translateY(0);}
+.footer-floral-left{
+    left:-30px;
 }
 
-@keyframes flowerFloat{
- 50%{transform:translateY(-5px) rotate(1deg);}
+.footer-floral-right{
+    right:-30px;
+    transform:translateY(80px) scaleX(-1);
+    animation-delay:.25s;
+}
+
+.final-content{
+    position:relative;
+    z-index:3;
+}
+
+@keyframes footerFlowerIn{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 @media(max-width:700px){
- .footer-flowers{width:190px;height:160px;opacity:.8;}
- .peony{width:75px;height:75px;}
- .peony.small{width:55px;height:55px;left:90px;}
-}
-
-/* Premium floral footer v2 */
-.floral-composition{
- position:absolute;
- bottom:-25px;
- width:520px;
- z-index:1;
- opacity:0;
- animation:floralReveal 1.8s ease forwards;
- pointer-events:none;
-}
-.floral-composition img{width:100%;filter:drop-shadow(0 18px 25px rgba(0,0,0,.25));}
-.floral-left{left:-80px;}
-.floral-right{right:-80px;transform:scaleX(-1);animation-delay:.2s;}
-.floating-petals span{
- position:absolute;width:18px;height:28px;background:#fff8ee;border-radius:80% 20%;
- animation:petalMove 7s infinite ease-in-out;
- opacity:.8;
-}
-.floating-petals span:nth-child(1){left:25%;top:30%}
-.floating-petals span:nth-child(2){right:30%;top:55%;animation-delay:2s}
-.floating-petals span:nth-child(3){left:60%;top:20%;animation-delay:4s}
-@keyframes floralReveal{from{opacity:0;transform:translateY(70px)}to{opacity:1;transform:translateY(0)}}
-@keyframes petalMove{50%{transform:translateY(-35px) rotate(90deg)}}
-@media(max-width:700px){
- .floral-composition{width:300px;bottom:-10px}
- .floral-left{left:-90px}.floral-right{right:-90px}
-}
-
-
-/* Реалистичная флористика изображениями */
-.final-section { position:relative; overflow:hidden; }
-.footer-floral-image { position:absolute; bottom:0; width:430px; z-index:1; opacity:0; transform:translateY(70px); animation: floralIn 1.6s ease forwards; }
-.footer-floral-image img { width:100%; display:block; }
-.footer-floral-left { left:-40px; animation-delay:.2s; }
-.footer-floral-right { right:-40px; animation-delay:.4s; }
-.floating-petals img { position:absolute; width:35px; opacity:.7; animation: petalMove 7s ease-in-out infinite; }
-.floating-petals img:first-child { left:35%; top:25%; }
-.floating-petals img:last-child { right:30%; top:45%; animation-delay:2s; }
-@keyframes floralIn { to { opacity:1; transform:translateY(0); } }
-@keyframes petalMove { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-35px) rotate(20deg); } }
-@media(max-width:700px){
- .footer-floral-image{width:230px}
- .footer-floral-left{left:-70px}.footer-floral-right{right:-70px}
+    .footer-floral{
+        width:360px;
+        bottom:-10px;
+    }
+    .footer-floral-left{
+        left:-150px;
+    }
+    .footer-floral-right{
+        right:-150px;
+    }
 }
