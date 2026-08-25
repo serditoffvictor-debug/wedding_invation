@@ -819,10 +819,10 @@
          ПОДВАЛ
     ================================================== -->
 
-    <section class="final-section reveal-footer">
+    <section class="final-section">
 
         <div class="footer-flowers footer-flowers-left" aria-hidden="true">
-            <span class="eucalyptus"></span><span class="peony"></span><span class="gold-line"></span><span class="petal petal-1"></span><span class="petal petal-2"></span>
+            <span></span><span></span><span></span>
         </div>
 
         <div class="final-content">
@@ -947,13 +947,11 @@
         </div>
 
         <div class="footer-flowers footer-flowers-right" aria-hidden="true">
-            <span class="eucalyptus"></span><span class="peony"></span><span class="gold-line"></span><span class="petal petal-1"></span><span class="petal petal-2"></span>
+            <span></span><span></span><span></span>
         </div>
 
     </section>
-<div class="floating-petals" aria-hidden="true">
-    <span></span><span></span><span></span>
-</div>
+
 
 </main>
 
@@ -1486,17 +1484,6 @@ setInterval(
     1000
 );
 
-
-const footerObserver = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("visible");
-        }
-    });
-},{threshold:0.25});
-
-const footer = document.querySelector(".reveal-footer");
-if(footer){ footerObserver.observe(footer); }
 
 </script>
 
