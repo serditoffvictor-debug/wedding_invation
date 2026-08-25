@@ -7188,155 +7188,9 @@ html, body {
 
 
 
-/* Footer floral images */
-.final-section{
-    position:relative;
-    overflow:hidden;
-    min-height:430px;
-}
-
-.footer-floral{
-    position:absolute;
-    bottom:-40px;
-    width:min(38vw,520px);
-    z-index:1;
-    pointer-events:none;
-    opacity:0;
-    transform:translateY(50px);
-    animation:footerFlowerIn 1.6s ease forwards;
-}
-
-.footer-floral-left{
-    left:-20px;
-}
-
-.footer-floral-right{
-    right:-20px;
-}
-
-.final-content{
-    position:relative;
-    z-index:3;
-}
-
-@keyframes footerFlowerIn{
-    from{
-        opacity:0;
-        transform:translateY(70px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@media(max-width:700px){
-    .final-section{
-        min-height:360px;
-    }
-    .footer-floral{
-        width:260px;
-        bottom:-10px;
-    }
-    .footer-floral-left{
-        left:-80px;
-    }
-    .footer-floral-right{
-        right:-80px;
-    }
-}
-
-.final-content{
-    position:relative;
-    z-index:3;
-}
-
-@keyframes footerFlowerIn{
-    from{
-        opacity:0;
-        transform:translateY(80px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@media(max-width:700px){
-    .footer-floral{
-        width:360px;
-        bottom:-10px;
-    }
-    .footer-floral-left{
-        left:-150px;
-    }
-    .footer-floral-right{
-        right:-150px;
-    }
-}
-
-/* FINAL IMAGE FOOTER FLOWERS */
-.final-section{
- position:relative;
- overflow:hidden;
- min-height:430px;
-}
-.footer-floral{
- position:absolute;
- bottom:-25px;
- width:min(34vw,520px);
- z-index:1;
- pointer-events:none;
- opacity:0;
- animation:footerFlowerIn 1.4s ease forwards;
-}
-.footer-floral-left{left:-30px;}
-.footer-floral-right{right:-30px;}
-@keyframes footerFlowerIn{
- from{opacity:0;transform:translateY(60px);}
- to{opacity:1;transform:translateY(0);}
-}
-@media(max-width:700px){
- .footer-floral{width:260px;bottom:0;}
- .footer-floral-left{left:-90px;}
- .footer-floral-right{right:-90px;}
-}
-/* Адаптация цветов для мобильных устройств */
-@media (max-width: 768px) {
-
-    .footer-left,
-    .floral-left {
-        width: 180px;
-        left: -35px;
-        bottom: 0;
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .footer-right,
-    .floral-right {
-        width: 180px;
-        right: -35px;
-        bottom: 0;
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .footer {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .countdown,
-    .timer,
-    .footer-content {
-        position: relative;
-        z-index: 5;
-    }
-}
 
 
-/* FINAL FOOTER FLOWERS - IMAGE VERSION */
+/* FINAL FOOTER FLOWERS */
 .final-section{
     position:relative;
     overflow:hidden;
@@ -7346,55 +7200,33 @@ html, body {
 .footer-floral{
     position:absolute;
     bottom:0;
-    width:min(38vw,520px);
-    max-width:520px;
+    width:min(34vw,520px);
+    z-index:2;
+    pointer-events:none;
+}
+.footer-floral-left{left:-35px;}
+.footer-floral-right{right:-35px;}
+
+.footer-bottom-flowers{
+    position:absolute;
+    bottom:-45px;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(900px,80vw);
     z-index:1;
     pointer-events:none;
-    opacity:1;
+}
+.final-content{position:relative;z-index:5;}
+
+@media(max-width:768px){
+ .final-section{min-height:420px;}
+ .footer-floral{width:170px;bottom:0;}
+ .footer-floral-left{left:-45px;}
+ .footer-floral-right{right:-45px;}
+ .footer-bottom-flowers{width:650px;bottom:-35px;}
 }
 
-.footer-floral-left{
-    left:-20px;
-}
-
-.footer-floral-right{
-    right:-20px;
-}
-
-.final-content{
-    position:relative;
-    z-index:5;
-}
-
-@media (max-width:768px){
-    .final-section{
-        min-height:420px;
-    }
-
-    .footer-floral{
-        width:190px;
-        bottom:-5px;
-    }
-
-    .footer-floral-left{
-        left:-20px;
-    }
-
-    .footer-floral-right{
-        right:-20px;
-    }
-}
-
-@media (max-width:420px){
-    .footer-floral{
-        width:150px;
-    }
-
-    .footer-floral-left{
-        left:-15px;
-    }
-
-    .footer-floral-right{
-        right:-15px;
-    }
+@media(max-width:420px){
+ .footer-floral{width:130px;}
+ .footer-bottom-flowers{width:520px;bottom:-25px;}
 }
