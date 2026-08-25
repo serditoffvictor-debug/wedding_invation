@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+<defs>
+ <filter id="s"><feGaussianBlur stdDeviation="2"/></filter>
+ <linearGradient id="p" x2="0" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#ded1bd"/></linearGradient>
+ <linearGradient id="g"><stop stop-color="#b78a42"/><stop offset="1" stop-color="#e0c27a"/></linearGradient>
+</defs>
+<!-- eucalyptus stems -->
+<g fill="none" stroke="#9b9677" stroke-width="3">
+<path d="M60 320 Q120 120 240 60"/><path d="M170 330 Q270 160 390 100"/>
+</g>
+<g fill="#87947c" opacity=".9">
+<ellipse cx="110" cy="170" rx="28" ry="14" transform="rotate(-35 110 170)"/>
+<ellipse cx="160" cy="125" rx="30" ry="15" transform="rotate(30 160 125)"/>
+<ellipse cx="250" cy="100" rx="32" ry="16" transform="rotate(-25 250 100)"/>
+<ellipse cx="330" cy="145" rx="30" ry="15" transform="rotate(35 330 145)"/>
+</g>
+<!-- peony -->
+<g transform="translate(170 210)">
+<circle r="95" fill="#eee3d2" opacity=".7"/>
+<g fill="url(#p)" stroke="#eadcca">
+<ellipse rx="35" ry="85" transform="rotate(0)"/>
+<ellipse rx="35" ry="85" transform="rotate(45)"/>
+<ellipse rx="35" ry="85" transform="rotate(90)"/>
+<ellipse rx="35" ry="85" transform="rotate(135)"/>
+<ellipse rx="65" ry="35" transform="rotate(22)"/>
+<ellipse rx="65" ry="35" transform="rotate(68)"/>
+</g>
+<circle r="15" fill="#cda55a"/>
+<circle r="5" fill="#8c642b"/>
+</g>
+<!-- gold branches -->
+<path d="M260 300 Q380 250 460 180" stroke="url(#g)" stroke-width="3" fill="none"/>
+</svg>
