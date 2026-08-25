@@ -7834,103 +7834,19 @@ footer .container,
     }
 }
 
-
-/* FINAL FOOTER FLOWERS POSITION FIX */
-.footer-bottom-botanical,
-.footer-flowers,
-.footer-flower,
-.bottom-botanical,
-.bottom-flowers {
-    position:absolute !important;
-    left:50% !important;
-    bottom:-70px !important;
-    transform:translateX(-50%) !important;
-    margin:0 !important;
-    z-index:1 !important;
-}
-
-.footer,
-footer,
-.footer-section {
-    position:relative !important;
-    overflow:hidden !important;
-    padding-bottom:70px !important;
-}
-
-.footer .container,
-footer .container,
-.footer-content,
-.footer-title,
-.footer-name,
-.countdown,
-.timer {
-    position:relative !important;
-    z-index:5 !important;
-}
-
-@media(max-width:768px){
-    .footer-bottom-botanical,
-    .footer-flowers,
-    .footer-flower,
-    .bottom-botanical,
-    .bottom-flowers {
-        bottom:-55px !important;
-        transform:translateX(-50%) !important;
-    }
-
-    .footer,
-    footer,
-    .footer-section {
-        padding-bottom:55px !important;
-    }
-}
-
-@media(max-width:420px){
-    .footer-bottom-botanical,
-    .footer-flowers,
-    .footer-flower,
-    .bottom-botanical,
-    .bottom-flowers {
-        bottom:-45px !important;
-    }
-}
-
-
-/* ONLY LOWER CENTER FLOWERS - DO NOT MOVE SIDE FLOWERS */
+/* FINAL: bottom floral garland flush to bottom */
 .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
 .footer-bottom-botanical,
 .bottom-botanical {
-    position:absolute !important;
-    bottom:-95px !important;
-    transform:translateX(-50%) !important;
-    z-index:1 !important;
+    bottom: -120px !important;
+    margin-bottom: 0 !important;
 }
-
-.footer-floral-left,
-.footer-floral-right {
-    transform:none !important;
+.footer, footer, .final-section {
+    padding-bottom: 0 !important;
+    overflow: hidden !important;
 }
-
-.countdown,
-.wedding-countdown,
-.footer-content,
-.final-content {
-    position:relative;
-    z-index:5;
-}
-
-@media(max-width:768px){
-    .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
-    .footer-bottom-botanical,
-    .bottom-botanical {
-        bottom:-75px !important;
-    }
-}
-
-@media(max-width:420px){
-    .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
-    .footer-bottom-botanical,
-    .bottom-botanical {
-        bottom:-65px !important;
-    }
+@media (max-width:768px){
+ .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
+ .footer-bottom-botanical,
+ .bottom-botanical { bottom:-95px !important; }
 }
