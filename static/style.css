@@ -7274,3 +7274,30 @@ html, body {
         right:-150px;
     }
 }
+
+/* FINAL IMAGE FOOTER FLOWERS */
+.final-section{
+ position:relative;
+ overflow:hidden;
+ min-height:430px;
+}
+.footer-floral{
+ position:absolute;
+ bottom:-25px;
+ width:min(34vw,520px);
+ z-index:1;
+ pointer-events:none;
+ opacity:0;
+ animation:footerFlowerIn 1.4s ease forwards;
+}
+.footer-floral-left{left:-30px;}
+.footer-floral-right{right:-30px;}
+@keyframes footerFlowerIn{
+ from{opacity:0;transform:translateY(60px);}
+ to{opacity:1;transform:translateY(0);}
+}
+@media(max-width:700px){
+ .footer-floral{width:260px;bottom:0;}
+ .footer-floral-left{left:-90px;}
+ .footer-floral-right{right:-90px;}
+}
