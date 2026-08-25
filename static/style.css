@@ -6998,7 +6998,6 @@ html, body {
     padding:0;
     overflow-x:hidden;
 }
-
 #envelope-screen {
     position:fixed;
     inset:0;
@@ -7798,5 +7797,39 @@ footer .container,
     .footer img[class*="flower"],
     .footer img[class*="botanical"] {
         max-height:85px !important;
+    }
+}
+
+
+/* FINAL POSITION: move bottom flowers lower without resizing */
+.footer-bottom-botanical,
+.footer-flower,
+.footer-flowers,
+.bottom-flowers,
+.bottom-botanical {
+    transform: translateX(-50%) translateY(35px) !important;
+    bottom: -35px !important;
+}
+
+/* Mobile: lower but keep visible */
+@media (max-width: 768px) {
+    .footer-bottom-botanical,
+    .footer-flower,
+    .footer-flowers,
+    .bottom-flowers,
+    .bottom-botanical {
+        transform: translateX(-50%) translateY(25px) !important;
+        bottom: -25px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-bottom-botanical,
+    .footer-flower,
+    .footer-flowers,
+    .bottom-flowers,
+    .bottom-botanical {
+        transform: translateX(-50%) translateY(18px) !important;
+        bottom: -18px !important;
     }
 }
