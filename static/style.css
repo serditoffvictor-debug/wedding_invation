@@ -624,48 +624,88 @@ text-align: center;
 color: #f7f1e7;
 
 }
-.hero-button { display: inline-flex;
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-align-items: center;
-justify-content: center;
+    position: relative;
 
-margin-top: 30px;
+    margin-top: 35px;
 
-padding:
-    17px
-    35px;
+    width: 150px;
+    height: 135px;
 
-background: var(--cream-light);
+    background: var(--cream-light);
 
-color: var(--olive-dark);
+    color: var(--olive-dark);
 
-border:
-    1px solid
-    rgba(255, 255, 255, 0.35);
+    text-decoration: none;
 
-border-radius: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: center;
 
-text-decoration: none;
+    padding: 42px 30px 25px;
 
-font-family:
-    Arial,
-    sans-serif;
+    border: 1px solid rgba(255,255,255,.6);
 
-font-size: 15px;
+    clip-path: polygon(
+        50% 92%,
+        10% 52%,
+        5% 35%,
+        8% 20%,
+        20% 8%,
+        35% 5%,
+        50% 18%,
+        65% 5%,
+        80% 8%,
+        92% 20%,
+        95% 35%,
+        90% 52%
+    );
 
-transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease;
+    filter: drop-shadow(0 12px 18px rgba(63,48,40,.25));
+
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.hero-button::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+
+    border: 1px solid rgba(198,165,90,.55);
+
+    clip-path: inherit;
+
+    pointer-events: none;
+}
+
+.hero-button:hover {
+    transform: translateY(-5px) scale(1.03);
+    filter: drop-shadow(0 18px 25px rgba(63,48,40,.3));
+}
+
+@media (max-width: 600px) {
+
+    .hero-button {
+        width: 125px;
+        height: 112px;
+
+        font-size: 13px;
+
+        padding:
+            34px
+            22px
+            18px;
+
+        margin-top: 25px;
+    }
 
 }
-.hero-button:hover { transform: translateY(-3px);
 
-background: var(--chocolate);
-
-color: #ffffff;
-
-}
 /* ===================================================== ОБЩИЕ СЕКЦИИ
 ===================================================== */
 .section { width: 100%;
@@ -4028,48 +4068,88 @@ text-align: center;
 color: #f7f1e7;
 
 }
-.hero-button { display: inline-flex;
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-align-items: center;
-justify-content: center;
+    position: relative;
 
-margin-top: 30px;
+    margin-top: 35px;
 
-padding:
-    17px
-    35px;
+    width: 150px;
+    height: 135px;
 
-background: var(--cream-light);
+    background: var(--cream-light);
 
-color: var(--olive-dark);
+    color: var(--olive-dark);
 
-border:
-    1px solid
-    rgba(255, 255, 255, 0.35);
+    text-decoration: none;
 
-border-radius: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.25;
+    text-align: center;
 
-text-decoration: none;
+    padding: 42px 30px 25px;
 
-font-family:
-    Arial,
-    sans-serif;
+    border: 1px solid rgba(255,255,255,.6);
 
-font-size: 15px;
+    clip-path: polygon(
+        50% 92%,
+        10% 52%,
+        5% 35%,
+        8% 20%,
+        20% 8%,
+        35% 5%,
+        50% 18%,
+        65% 5%,
+        80% 8%,
+        92% 20%,
+        95% 35%,
+        90% 52%
+    );
 
-transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    color 0.3s ease;
+    filter: drop-shadow(0 12px 18px rgba(63,48,40,.25));
+
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.hero-button::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+
+    border: 1px solid rgba(198,165,90,.55);
+
+    clip-path: inherit;
+
+    pointer-events: none;
+}
+
+.hero-button:hover {
+    transform: translateY(-5px) scale(1.03);
+    filter: drop-shadow(0 18px 25px rgba(63,48,40,.3));
+}
+
+@media (max-width: 600px) {
+
+    .hero-button {
+        width: 125px;
+        height: 112px;
+
+        font-size: 13px;
+
+        padding:
+            34px
+            22px
+            18px;
+
+        margin-top: 25px;
+    }
 
 }
-.hero-button:hover { transform: translateY(-3px);
 
-background: var(--chocolate);
-
-color: #ffffff;
-
-}
 /* ===================================================== ОБЩИЕ СЕКЦИИ
 ===================================================== */
 .section { width: 100%;
