@@ -7286,3 +7286,20 @@ html, body {
  .floral-composition{width:300px;bottom:-10px}
  .floral-left{left:-90px}.floral-right{right:-90px}
 }
+
+
+/* Реалистичная флористика изображениями */
+.final-section { position:relative; overflow:hidden; }
+.footer-floral-image { position:absolute; bottom:0; width:430px; z-index:1; opacity:0; transform:translateY(70px); animation: floralIn 1.6s ease forwards; }
+.footer-floral-image img { width:100%; display:block; }
+.footer-floral-left { left:-40px; animation-delay:.2s; }
+.footer-floral-right { right:-40px; animation-delay:.4s; }
+.floating-petals img { position:absolute; width:35px; opacity:.7; animation: petalMove 7s ease-in-out infinite; }
+.floating-petals img:first-child { left:35%; top:25%; }
+.floating-petals img:last-child { right:30%; top:45%; animation-delay:2s; }
+@keyframes floralIn { to { opacity:1; transform:translateY(0); } }
+@keyframes petalMove { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-35px) rotate(20deg); } }
+@media(max-width:700px){
+ .footer-floral-image{width:230px}
+ .footer-floral-left{left:-70px}.footer-floral-right{right:-70px}
+}
