@@ -7301,3 +7301,36 @@ html, body {
  .footer-floral-left{left:-90px;}
  .footer-floral-right{right:-90px;}
 }
+/* Адаптация цветов для мобильных устройств */
+@media (max-width: 768px) {
+
+    .footer-left,
+    .floral-left {
+        width: 180px;
+        left: -35px;
+        bottom: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .footer-right,
+    .floral-right {
+        width: 180px;
+        right: -35px;
+        bottom: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .footer {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .countdown,
+    .timer,
+    .footer-content {
+        position: relative;
+        z-index: 5;
+    }
+}
