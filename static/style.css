@@ -7595,3 +7595,44 @@ html, body {
         font-size:17px;
     }
 }
+
+
+/* FINAL: heart button replaces old heart after equals */
+.hero-heart,
+.hero-button:not(.heart-button) {
+    display:none !important;
+}
+
+.heart-button{
+    width:180px;
+    height:160px;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    text-decoration:none;
+    color:#5c624b;
+    background:#fff8ea;
+    position:relative;
+    margin-left:25px;
+    filter:drop-shadow(0 12px 18px rgba(0,0,0,.18));
+    clip-path:polygon(50% 95%, 8% 55%, 8% 32%, 20% 15%, 38% 12%, 50% 28%, 62% 12%, 80% 15%, 92% 32%, 92% 55%);
+    font-size:18px;
+    line-height:1.2;
+}
+
+.heart-button i{
+    font-style:normal;
+    color:#c8a35a;
+    margin-top:8px;
+}
+
+@media(max-width:700px){
+    .heart-button{
+        width:140px;
+        height:125px;
+        margin:20px auto;
+        font-size:15px;
+    }
+}
