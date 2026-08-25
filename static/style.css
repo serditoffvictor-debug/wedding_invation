@@ -7590,7 +7590,7 @@ html, body {
 @media(max-width:700px){
     .heart-after-equals{
         margin:20px auto 0;
-        width:150px;
+        width:150px; 
         height:130px;
         font-size:17px;
     }
