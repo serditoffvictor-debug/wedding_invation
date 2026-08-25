@@ -998,7 +998,6 @@ color: var(--olive-dark);
 
 }
 .timeline-info p { margin: 0;
-
 font-size: 17px;
 
 line-height: 1.45;
@@ -1998,7 +1997,6 @@ opacity: 0.55;
 
     height: 138px;
 }
-
 .envelope-letter.letter-open {
     transform:
         translateY(-71px);
@@ -2998,7 +2996,6 @@ margin:
 .photo-right .photo-image-crop img {
     transform:
         scale(1.03) !important;
-
     transform-origin:
         center !important;
 }
@@ -4998,7 +4995,6 @@ opacity: 0.55;
 .envelope-letter {
     left: 25px;
     right: 25px;
-
     top: 44px;
 
     height: 150px;
@@ -7176,72 +7172,106 @@ html, body {
 }
 
 
+
 /* =====================================================
-   REALISTIC BOTANICAL FOOTER DECOR
-   Peonies + eucalyptus + gold branches
+   FOOTER BOTANICAL DECOR - FINAL RESPONSIVE
 ===================================================== */
 
-.final-section {
-    position: relative;
-    overflow: hidden;
-}
-
-
-
-
-
-/* FINAL FOOTER FLOWERS - responsive version */
 .final-section{
     position:relative;
     overflow:hidden;
-    min-height:500px;
+    min-height:520px;
+    isolation:isolate;
+}
+
+.final-content{
+    position:relative;
+    z-index:10;
 }
 
 .footer-floral{
     position:absolute;
-    bottom:10px;
-    width:min(34vw,500px);
     z-index:2;
     pointer-events:none;
+    user-select:none;
+    opacity:1;
 }
 
-.footer-floral-left{left:-10px;}
-.footer-floral-right{right:-10px;}
+.footer-floral-left{
+    left:-15px;
+    bottom:-5px;
+    width:390px;
+}
+
+.footer-floral-right{
+    right:-15px;
+    bottom:-5px;
+    width:390px;
+}
 
 .footer-bottom-flowers{
     position:absolute;
-    bottom:-15px;
-    left:50%;
-    transform:translateX(-50%);
-    width:min(1500px,125vw);
-    height:auto;
-    max-height:none;
-    object-fit:contain;
-    object-position:center bottom;
     z-index:1;
     pointer-events:none;
+    user-select:none;
+    left:50%;
+    bottom:-35px;
+    transform:translateX(-50%);
+    width:900px;
+    max-width:none;
+    height:auto;
 }
 
-.final-content{position:relative;z-index:5;}
-
 @media(max-width:768px){
-    .final-section{min-height:460px;}
-    .footer-floral{width:220px;bottom:20px;}
-    .footer-floral-left{left:-35px;}
-    .footer-floral-right{right:-35px;}
-    .footer-bottom-flowers{
-        width:850px;
-        bottom:-5px;
+
+    .final-section{
+        min-height:430px;
     }
+
+    .footer-floral-left,
+    .footer-floral-right{
+        width:180px;
+        bottom:0;
+    }
+
+    .footer-floral-left{
+        left:-20px;
+    }
+
+    .footer-floral-right{
+        right:-20px;
+    }
+
+    .footer-bottom-flowers{
+        width:520px;
+        bottom:-15px;
+    }
+
 }
 
 @media(max-width:420px){
-    .final-section{min-height:440px;}
-    .footer-floral{width:180px;bottom:15px;}
-    .footer-floral-left{left:-45px;}
-    .footer-floral-right{right:-45px;}
-    .footer-bottom-flowers{
-        width:700px;
+
+    .final-section{
+        min-height:410px;
+    }
+
+    .footer-floral-left,
+    .footer-floral-right{
+        width:145px;
         bottom:0;
     }
+
+    .footer-floral-left{
+        left:-15px;
+    }
+
+    .footer-floral-right{
+        right:-15px;
+    }
+
+    .footer-bottom-flowers{
+        width:430px;
+        bottom:-10px;
+    }
+
 }
