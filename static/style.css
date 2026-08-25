@@ -7188,32 +7188,62 @@ html, body {
 
 
 
-/* Floral footer images */
+/* Footer floral images */
 .final-section{
     position:relative;
     overflow:hidden;
+    min-height:430px;
 }
 
 .footer-floral{
     position:absolute;
-    bottom:-20px;
-    width:min(52vw,620px);
-    max-width:620px;
+    bottom:-40px;
+    width:min(38vw,520px);
     z-index:1;
-    opacity:0;
-    transform:translateY(80px);
-    animation:footerFlowerIn 1.8s ease forwards;
     pointer-events:none;
+    opacity:0;
+    transform:translateY(50px);
+    animation:footerFlowerIn 1.6s ease forwards;
 }
 
 .footer-floral-left{
-    left:-30px;
+    left:-20px;
 }
 
 .footer-floral-right{
-    right:-30px;
-    transform:translateY(80px) scaleX(-1);
-    animation-delay:.25s;
+    right:-20px;
+}
+
+.final-content{
+    position:relative;
+    z-index:3;
+}
+
+@keyframes footerFlowerIn{
+    from{
+        opacity:0;
+        transform:translateY(70px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:700px){
+    .final-section{
+        min-height:360px;
+    }
+    .footer-floral{
+        width:260px;
+        bottom:-10px;
+    }
+    .footer-floral-left{
+        left:-80px;
+    }
+    .footer-floral-right{
+        right:-80px;
+    }
 }
 
 .final-content{
