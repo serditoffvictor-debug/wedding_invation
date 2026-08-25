@@ -7177,8 +7177,8 @@ html, body {
 
 
 /* =====================================================
-   БОТАНИЧЕСКИЙ ДЕКОР ПОДВАЛА
-   Эвкалипт + пионы + золотые линии + лепестки
+   ДЕКОР ЦВЕТАМИ В ПОДВАЛЕ
+   Лёгкие ботанические элементы без дополнительных картинок
 ===================================================== */
 
 .final-section {
@@ -7187,78 +7187,68 @@ html, body {
 }
 
 .footer-flowers {
-    position:absolute;
-    bottom:-20px;
-    width:260px;
-    height:220px;
-    pointer-events:none;
-    opacity:.95;
+    position: absolute;
+    bottom: -25px;
+    width: 220px;
+    height: 190px;
+    pointer-events: none;
+    opacity: .9;
 }
 
-.footer-flowers-left { left:-35px; }
-.footer-flowers-right { right:-35px; transform:scaleX(-1); }
+.footer-flowers-left {
+    left: -35px;
+}
 
-.footer-flowers span { position:absolute; display:block; }
+.footer-flowers-right {
+    right: -35px;
+    transform: scaleX(-1);
+}
 
-.footer-flowers .peony {
-    width:90px;height:90px;border-radius:50%;
-    left:90px;bottom:35px;
+.footer-flowers span {
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
     background:
-    radial-gradient(circle,#fff8ef 0 18%,transparent 20%),
-    radial-gradient(circle,#f1ddd0 0 42%,transparent 45%),
-    radial-gradient(circle,#dcc0ae 0 62%,transparent 65%);
-    filter:drop-shadow(0 8px 15px rgba(0,0,0,.12));
+        radial-gradient(circle at center,
+        #f8eee4 0 18%,
+        transparent 20%),
+        radial-gradient(circle at top,
+        #e9d7c8 0 45%,
+        transparent 47%),
+        radial-gradient(circle at bottom,
+        #dfc7b5 0 45%,
+        transparent 47%);
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,.12));
 }
 
-.footer-flowers .eucalyptus {
-    width:150px;height:130px;
-    left:15px;bottom:20px;
-    border-left:2px solid rgba(86,110,78,.45);
-    transform:rotate(-25deg);
-}
-.footer-flowers .eucalyptus:before,
-.footer-flowers .eucalyptus:after {
-    content:"";position:absolute;width:34px;height:34px;
-    border-radius:50%;background:#a8b49b;
-}
-.footer-flowers .eucalyptus:before {left:-18px;top:20px;box-shadow:30px 35px 0 #b7c1aa,55px 65px 0 #95a789;}
-.footer-flowers .eucalyptus:after {left:18px;top:50px;}
-
-.footer-flowers .gold-line {
-    width:150px;height:1px;background:#c9a45b;
-    left:70px;bottom:15px;transform:rotate(-12deg);
+.footer-flowers span:nth-child(1) {
+    left: 10px;
+    bottom: 25px;
 }
 
-.footer-flowers .petal {
-    width:18px;height:26px;background:#f3dfd2;border-radius:70% 0;
-    animation:petalFloat 6s infinite ease-in-out;
-}
-.footer-flowers .petal-1 {left:40px;top:30px;}
-.footer-flowers .petal-2 {left:170px;top:20px;animation-delay:2s;}
-
-.floating-petals span {
-    position:absolute;width:12px;height:18px;
-    background:#ead3c4;border-radius:70% 0;
-    animation:petalFloat 8s infinite ease-in-out;
-}
-.floating-petals span:nth-child(1){left:25%;top:30%;}
-.floating-petals span:nth-child(2){left:70%;top:20%;animation-delay:2s;}
-.floating-petals span:nth-child(3){left:50%;top:60%;animation-delay:4s;}
-
-@keyframes petalFloat {
-    0%,100%{transform:translateY(0) rotate(0deg);opacity:.4;}
-    50%{transform:translateY(-18px) rotate(25deg);opacity:1;}
+.footer-flowers span:nth-child(2) {
+    left: 70px;
+    bottom: 65px;
+    transform: scale(.75);
 }
 
-.reveal-footer .footer-flowers {
-    opacity:0;transform:translateY(40px);
-    transition:1.4s ease;
-}
-.reveal-footer.visible .footer-flowers {
-    opacity:1;transform:translateY(0);
+.footer-flowers span:nth-child(3) {
+    left: 125px;
+    bottom: 15px;
+    transform: scale(.6);
 }
 
-@media(max-width:700px){
-.footer-flowers{width:150px;height:140px;opacity:.8;}
-.footer-flowers .peony{width:60px;height:60px;left:60px;}
+@media (max-width: 700px) {
+    .footer-flowers {
+        width: 130px;
+        height: 120px;
+        opacity: .65;
+    }
+
+    .footer-flowers span {
+        width: 50px;
+        height: 50px;
+    }
 }
