@@ -7850,24 +7850,3 @@ footer .container,
  .footer-bottom-botanical,
  .bottom-botanical { bottom:-95px !important; }
 }
-
-
-/* Slightly wider bottom flowers only */
-.footer-bottom-flowers,
-.bottom-flowers,
-.footer-floral-bottom,
-.footer-bottom-botanical {
-    width: 112% !important;
-    max-width: none !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-}
-
-@media (max-width:768px){
-    .footer-bottom-flowers,
-    .bottom-flowers,
-    .footer-floral-bottom,
-    .footer-bottom-botanical {
-        width: 116% !important;
-    }
-}
