@@ -7894,3 +7894,43 @@ footer .container,
         bottom:-45px !important;
     }
 }
+
+
+/* ONLY LOWER CENTER FLOWERS - DO NOT MOVE SIDE FLOWERS */
+.footer-floral:not(.footer-floral-left):not(.footer-floral-right),
+.footer-bottom-botanical,
+.bottom-botanical {
+    position:absolute !important;
+    bottom:-95px !important;
+    transform:translateX(-50%) !important;
+    z-index:1 !important;
+}
+
+.footer-floral-left,
+.footer-floral-right {
+    transform:none !important;
+}
+
+.countdown,
+.wedding-countdown,
+.footer-content,
+.final-content {
+    position:relative;
+    z-index:5;
+}
+
+@media(max-width:768px){
+    .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
+    .footer-bottom-botanical,
+    .bottom-botanical {
+        bottom:-75px !important;
+    }
+}
+
+@media(max-width:420px){
+    .footer-floral:not(.footer-floral-left):not(.footer-floral-right),
+    .footer-bottom-botanical,
+    .bottom-botanical {
+        bottom:-65px !important;
+    }
+}
