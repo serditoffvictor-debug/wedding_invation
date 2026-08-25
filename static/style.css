@@ -7478,3 +7478,72 @@ html, body {
         right:-15px;
     }
 }
+
+
+/* FINAL HEART INVITATION BUTTON */
+.hero-heart{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-button{
+    width:280px;
+    height:245px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    text-decoration:none;
+    color:#59634a;
+    background:linear-gradient(145deg,#fffaf0,#eee2cc);
+    font-family:Arial,sans-serif;
+    font-size:22px;
+    line-height:1.25;
+    font-weight:500;
+    clip-path:polygon(
+        50% 96%,
+        42% 86%,
+        28% 74%,
+        16% 61%,
+        8% 45%,
+        8% 30%,
+        15% 18%,
+        28% 10%,
+        42% 12%,
+        50% 22%,
+        58% 12%,
+        72% 10%,
+        85% 18%,
+        92% 30%,
+        92% 45%,
+        84% 61%,
+        72% 74%,
+        58% 86%
+    );
+    filter:drop-shadow(0 15px 22px rgba(0,0,0,.22));
+    transition:.3s ease;
+}
+
+.hero-button:hover{
+    transform:translateY(-6px) scale(1.03);
+}
+
+.hero-button small{
+    margin-top:15px;
+    color:#c9a85a;
+    font-size:26px;
+}
+
+@media(max-width:600px){
+    .hero-button{
+        width:210px;
+        height:185px;
+        font-size:17px;
+    }
+    .hero-button small{
+        font-size:20px;
+    }
+}
