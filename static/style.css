@@ -5998,7 +5998,6 @@ margin:
 
     display: flex !important;
     flex-direction: column !important;
-
     align-items: center !important;
 
     justify-content: center !important;
@@ -7738,5 +7737,66 @@ html, body {
     .footer-bottom-botanical img {
         max-height: 120px;
         object-fit: contain;
+    }
+}
+
+
+/* FINAL FOOTER BOTANICAL RESPONSIVE FIX */
+.footer,
+.footer-section,
+footer {
+    overflow:hidden;
+    position:relative;
+}
+
+.footer-bottom-botanical,
+.footer-flower,
+.footer-flowers,
+.bottom-flowers,
+.footer img[class*="flower"],
+.footer img[class*="botanical"] {
+    max-height:160px !important;
+    height:auto !important;
+    width:auto;
+    max-width:75vw;
+    object-fit:contain;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    z-index:1;
+    pointer-events:none;
+}
+
+.footer-content,
+.footer .container,
+footer .container,
+.footer-title,
+.footer-name {
+    position:relative;
+    z-index:5;
+}
+
+@media(max-width:768px){
+    .footer-bottom-botanical,
+    .footer-flower,
+    .footer-flowers,
+    .bottom-flowers,
+    .footer img[class*="flower"],
+    .footer img[class*="botanical"] {
+        max-height:100px !important;
+        max-width:100vw;
+        bottom:0;
+    }
+}
+
+@media(max-width:420px){
+    .footer-bottom-botanical,
+    .footer-flower,
+    .footer-flowers,
+    .bottom-flowers,
+    .footer img[class*="flower"],
+    .footer img[class*="botanical"] {
+        max-height:85px !important;
     }
 }
