@@ -7636,3 +7636,39 @@ html, body {
         font-size:15px;
     }
 }
+
+
+/* Bottom botanical footer decoration */
+.final-section{
+    overflow:hidden;
+    position:relative;
+}
+
+.footer-bottom-botanical{
+    position:absolute;
+    left:50%;
+    bottom:-15px;
+    transform:translateX(-50%);
+    width:min(900px,80vw);
+    z-index:1;
+    pointer-events:none;
+}
+
+.footer-bottom-botanical img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.final-content{
+    position:relative;
+    z-index:3;
+}
+
+@media(max-width:700px){
+    .footer-bottom-botanical{
+        width:650px;
+        max-width:none;
+        bottom:-5px;
+    }
+}
