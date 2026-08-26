@@ -936,42 +936,22 @@ html,body{width:100%;min-height:100%;margin:0;padding:0;overflow-x:hidden;}
 }
 
 
-/* FIX: опускаем только боковые цветы в финальном блоке */
-.final-section{
-    position:relative;
-    overflow:hidden;
-}
-
-.footer-floral,
-.footer-left,
-.floral-left,
-.footer-right,
-.floral-right{
-    z-index:1;
-}
-
-.footer-floral-left,
-.footer-left,
-.floral-left{
-    bottom:-35px !important;
-}
-
-.footer-floral-right,
-.footer-right,
-.floral-right{
-    bottom:-35px !important;
+/* FINAL FIX: move only side flowers lower */
+.final-section .footer-floral-left,
+.final-section .footer-floral-right {
+    bottom: -45px !important;
 }
 
 @media (max-width:700px){
-    .footer-floral-left,
-    .footer-left,
-    .floral-left{
-        bottom:-45px !important;
+    .final-section .footer-floral-left,
+    .final-section .footer-floral-right {
+        bottom: -35px !important;
     }
+}
 
-    .footer-floral-right,
-    .footer-right,
-    .floral-right{
-        bottom:-45px !important;
+@media (max-width:420px){
+    .final-section .footer-floral-left,
+    .final-section .footer-floral-right {
+        bottom: -25px !important;
     }
 }
