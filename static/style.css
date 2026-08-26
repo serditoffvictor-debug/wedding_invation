@@ -7852,35 +7852,26 @@ footer .container,
 }
 
 
-/* Bottom flowers: slightly wider on all screens */
-.footer-bottom-flowers,
+/* FINAL: widen bottom flowers only, keep original vertical position */
+.footer-flowers,
 .bottom-flowers,
-.footer-floral-bottom,
-.footer-bottom-botanical,
-.footer-flower-bottom {
-    width: 120% !important;
-    max-width: none !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+.footer-flower,
+.footer img[class*="flower"],
+.footer img[class*="botanical"] {
+    max-width: 90vw !important;
+    width: 90vw !important;
+    height: auto !important;
+    bottom: 0 !important;
 }
 
-/* Mobile: increase width so flowers reach side decorations */
-@media (max-width: 768px) {
-    .footer-bottom-flowers,
+@media (max-width:768px){
+    .footer-flowers,
     .bottom-flowers,
-    .footer-floral-bottom,
-    .footer-bottom-botanical,
-    .footer-flower-bottom {
-        width: 140% !important;
-    }
-}
-
-@media (max-width: 420px) {
-    .footer-bottom-flowers,
-    .bottom-flowers,
-    .footer-floral-bottom,
-    .footer-bottom-botanical,
-    .footer-flower-bottom {
-        width: 150% !important;
+    .footer-flower,
+    .footer img[class*="flower"],
+    .footer img[class*="botanical"] {
+        max-width: 96vw !important;
+        width: 96vw !important;
+        bottom: 0 !important;
     }
 }
