@@ -7964,3 +7964,39 @@ footer .container,
         bottom: 0 !important;
     }
 }
+
+
+/* === FINAL: only bottom flowers width, side flowers untouched === */
+.final-section .footer-floral-left,
+.final-section .footer-floral-right {
+    width: 190px !important;
+    max-width: 190px !important;
+}
+
+.final-section .footer-bottom-botanical {
+    width: 115% !important;
+    max-width: none !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    bottom: 0 !important;
+}
+
+.final-section .footer-bottom-botanical img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+@media (max-width:700px){
+    .final-section .footer-floral-left,
+    .final-section .footer-floral-right {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+
+    .final-section .footer-bottom-botanical {
+        width: 125% !important;
+        bottom: 0 !important;
+    }
+}
