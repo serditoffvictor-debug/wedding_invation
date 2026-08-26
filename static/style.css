@@ -5096,7 +5096,7 @@ position: relative;
 
 }
 
-/* Side footer flowers - single control block */
+/* Side flowers position - cleaned single rule */
 .final-section {
     position: relative;
     overflow: hidden;
@@ -5104,7 +5104,7 @@ position: relative;
 
 .footer-floral {
     position: absolute;
-    bottom: -55px;
+    bottom: -45px;
     width: 260px;
     height: auto;
     z-index: 1;
@@ -5112,32 +5112,32 @@ position: relative;
 }
 
 .footer-floral-left {
-    left: -55px;
+    left: -45px;
 }
 
 .footer-floral-right {
-    right: -55px;
+    right: -45px;
 }
 
 @media (max-width: 700px) {
     .footer-floral {
-        bottom: -40px;
-        width: 190px;
+        bottom: -30px;
+        width: 200px;
     }
 
     .footer-floral-left {
-        left: -35px;
+        left: -30px;
     }
 
     .footer-floral-right {
-        right: -35px;
+        right: -30px;
     }
 }
 
 @media (max-width: 420px) {
     .footer-floral {
-        bottom: -30px;
-        width: 160px;
+        bottom: -20px;
+        width: 180px;
     }
 }
 
