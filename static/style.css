@@ -7922,3 +7922,45 @@ footer .container,
         right:-70px !important;
     }
 }
+
+
+/* ===== FINAL FIX: side flowers restored, bottom flowers only wider ===== */
+
+/* Возвращаем боковые цветы к нормальному размеру */
+.final-section .footer-floral-left,
+.final-section .footer-floral-right {
+    width: 190px !important;
+    max-width: 190px !important;
+}
+
+@media (max-width:700px){
+    .final-section .footer-floral-left,
+    .final-section .footer-floral-right {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+}
+
+/* Увеличиваем только нижнюю центральную композицию */
+.footer-bottom-botanical,
+.bottom-botanical,
+.bottom-flowers,
+.footer-flowers {
+    width: 96vw !important;
+    max-width: 96vw !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    bottom: 0 !important;
+}
+
+@media (max-width:700px){
+    .footer-bottom-botanical,
+    .bottom-botanical,
+    .bottom-flowers,
+    .footer-flowers {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        bottom: 0 !important;
+    }
+}
