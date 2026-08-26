@@ -5069,19 +5069,10 @@ padding-bottom:0 !important;
 @media (max-width:768px) {
 }
 
-.footer-flowers,.bottom-flowers,.footer-flower,.footer img[class*="flower"],.footer img[class*="botanical"] {
-max-width:90vw !important;
-    width:90vw !important;
-    height:auto !important;
-    bottom:0 !important;
-}
+
 
 @media (max-width:768px) {
-.footer-flowers,.bottom-flowers,.footer-flower,.footer img[class*="flower"],.footer img[class*="botanical"] {
-max-width:96vw !important;
-    width:96vw !important;
-    bottom:0 !important;
-}
+
 
 }
 
@@ -5120,50 +5111,71 @@ position: relative;
     overflow: hidden;
 }
 
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+    
+
+    
+
+}
+
+@media (max-width: 420px) {
+
+
+    
+
+    
+
+}
+
+/* Side footer flowers - single control block */
+.final-section {
+    position: relative;
+    overflow: hidden;
+}
+
 .footer-floral {
-position: absolute;
-    bottom: -35px;
+    position: absolute;
+    bottom: -55px;
     width: 260px;
+    height: auto;
     z-index: 1;
     pointer-events: none;
 }
 
 .footer-floral-left {
-left: -55px;
+    left: -55px;
 }
 
 .footer-floral-right {
-right: -55px;
+    right: -55px;
 }
 
 @media (max-width: 700px) {
-.footer-floral {
-bottom: -25px;
-    width: 190px;
-}
+    .footer-floral {
+        bottom: -40px;
+        width: 190px;
+    }
 
     .footer-floral-left {
-left: -30px;
-}
+        left: -35px;
+    }
 
     .footer-floral-right {
-right: -30px;
-}
-
+        right: -35px;
+    }
 }
 
 @media (max-width: 420px) {
-.footer-floral {
-bottom: -15px;
-    width: 160px;
-}
-
-    .footer-floral-left {
-left: -20px;
-}
-
-    .footer-floral-right {
-right: -20px;
-}
-
+    .footer-floral {
+        bottom: -30px;
+        width: 160px;
+    }
 }
