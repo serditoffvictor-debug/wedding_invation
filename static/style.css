@@ -5183,3 +5183,54 @@ position: relative;
 
 /* Heart after equals */
 .photo-equals + .hero-heart { margin-top:20px; }
+
+
+/* HERO HEART AFTER EQUAL - final */
+.love-equation .hero-heart {
+    width: 120px;
+    height: 105px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(232,221,211,0.22);
+    clip-path: polygon(50% 96%, 35% 82%, 20% 65%, 10% 48%, 10% 30%, 22% 15%, 38% 10%, 50% 25%, 62% 10%, 78% 15%, 90% 30%, 90% 48%, 80% 65%, 65% 82%);
+    color:#f7f1e7;
+    font-size:0;
+}
+
+.love-equation .hero-heart::after {
+    content:"♥";
+    font-size:58px;
+    color:#f7f1e7;
+}
+
+.love-equation .scroll-arrow {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:14px;
+    color:#f7f1e7;
+}
+
+.love-equation .scroll-arrow span {
+    font-size:32px;
+    line-height:1;
+}
+
+.love-equation .scroll-arrow p {
+    margin:8px 0 0;
+    font-size:14px;
+}
+
+@media (max-width:700px) {
+    .love-equation .hero-heart {
+        width:90px;
+        height:80px;
+    }
+
+    .love-equation .hero-heart::after {
+        font-size:44px;
+    }
+}
