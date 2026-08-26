@@ -5188,3 +5188,23 @@ right: -20px;
   color: #d00; /* красный, можно поменять */
   line-height: 1;
 }
+.love-word {
+  position: relative;
+  display: inline-block;
+}
+
+.strike-letter {
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.over-letter {
+  position: relative;
+  top: -0.35em;          /* подбери, если нужно чуть выше/ниже */
+  left: -0.1em;          /* небольшая коррекция по горизонтали */
+  font-weight: 700;      /* чтобы было заметнее */
+  color: #d00;           /* красный, можно поменять на цвет из палитры */
+  display: inline-block;
+  vertical-align: middle;
+}
