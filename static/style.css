@@ -5179,3 +5179,7 @@ position: relative;
         width: 160px;
     }
 }
+
+
+/* Heart after equals */
+.photo-equals + .hero-heart { margin-top:20px; }
