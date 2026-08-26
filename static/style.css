@@ -928,55 +928,28 @@ pointer-events:none;
 }
 
 
-/* FINAL FIX: move only side flowers lower */
-.final-section .footer-floral-left,
-.final-section .footer-floral-right {
-    bottom: -45px !important;
-}
-
-@media (max-width:700px){
-    .final-section .footer-floral-left,
-    .final-section .footer-floral-right {
-        bottom: -35px !important;
-    }
-}
-
-@media (max-width:420px){
-    .final-section .footer-floral-left,
-    .final-section .footer-floral-right {
-        bottom: -25px !important;
-    }
-}
 
 
-/* FINAL OVERRIDE: side flowers only - keep them at bottom */
+/* Side flowers final position */
 .final-section .footer-floral-left,
 .final-section .footer-floral-right {
     position: absolute !important;
-    bottom: -90px !important;
+    bottom: -45px !important;
     top: auto !important;
     transform: none !important;
     z-index: 1 !important;
 }
 
-.final-section .footer-floral-left {
-    left: -70px !important;
-}
-
-.final-section .footer-floral-right {
-    right: -70px !important;
-}
-
 @media (max-width:700px){
     .final-section .footer-floral-left,
     .final-section .footer-floral-right {
-        bottom: -70px !important;
+        bottom: -30px !important;
     }
 }
 
 @media (max-width:420px){
     .final-section .footer-floral-left,
     .final-section .footer-floral-right {
-        bottom: -55px !important;
+        bottom: -20px !important;
     }
 }
