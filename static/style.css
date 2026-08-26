@@ -7850,3 +7850,37 @@ footer .container,
  .footer-bottom-botanical,
  .bottom-botanical { bottom:-95px !important; }
 }
+
+
+/* Bottom flowers: slightly wider on all screens */
+.footer-bottom-flowers,
+.bottom-flowers,
+.footer-floral-bottom,
+.footer-bottom-botanical,
+.footer-flower-bottom {
+    width: 120% !important;
+    max-width: none !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Mobile: increase width so flowers reach side decorations */
+@media (max-width: 768px) {
+    .footer-bottom-flowers,
+    .bottom-flowers,
+    .footer-floral-bottom,
+    .footer-bottom-botanical,
+    .footer-flower-bottom {
+        width: 140% !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-bottom-flowers,
+    .bottom-flowers,
+    .footer-floral-bottom,
+    .footer-bottom-botanical,
+    .footer-flower-bottom {
+        width: 150% !important;
+    }
+}
