@@ -898,3 +898,39 @@ html,body{width:100%;min-height:100%;margin:0;padding:0;overflow-x:hidden;}
 .footer-floral-right {
     display:block !important;
 }
+
+
+/* Restore side flowers only */
+.final-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.final-section .footer-floral {
+    position: absolute;
+    width: 260px;
+    bottom: -10px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.final-section .footer-floral-left {
+    left: -80px;
+}
+
+.final-section .footer-floral-right {
+    right: -80px;
+}
+
+@media (max-width:700px) {
+    .final-section .footer-floral {
+        width: 180px;
+        bottom: 0;
+    }
+    .final-section .footer-floral-left {
+        left: -35px;
+    }
+    .final-section .footer-floral-right {
+        right: -35px;
+    }
+}
