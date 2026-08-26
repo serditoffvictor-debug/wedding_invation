@@ -882,3 +882,19 @@ html,body{width:100%;min-height:100%;margin:0;padding:0;overflow-x:hidden;}
 .footer-flowers,.bottom-flowers,.footer-flower,.footer img[class*="flower"],.footer img[class*="botanical"]{max-width:90vw !important;width:90vw !important;height:auto !important;bottom:0 !important;}
 @media (max-width:768px){.footer-flowers,.bottom-flowers,.footer-flower,.footer img[class*="flower"],.footer img[class*="botanical"]{max-width:96vw !important;width:96vw !important;bottom:0 !important;}
 }
+
+
+/* FIX: remove only bottom flowers, keep side flowers */
+.footer-bottom-botanical,
+.bottom-flowers,
+.footer-flowers,
+.footer-flower-bottom,
+.footer-bottom-flowers {
+    display:none !important;
+}
+
+/* restore side flowers sizing */
+.footer-floral-left,
+.footer-floral-right {
+    display:block !important;
+}
