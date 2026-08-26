@@ -4973,46 +4973,7 @@ margin:20px auto 0;
 
 }
 
-.hero-heart,.hero-button:not(.heart-button) {
-display:none !important;
-}
-
-.heart-button {
-width:180px;
-    height:160px;
-    display:inline-flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    text-decoration:none;
-    color:#5c624b;
-    background:#fff8ea;
-    position:relative;
-    margin-left:25px;
-    filter:drop-shadow(0 12px 18px rgba(0,0,0,.18));
-    clip-path:polygon(50% 95%,8% 55%,8% 32%,20% 15%,38% 12%,50% 28%,62% 12%,80% 15%,92% 32%,92% 55%);
-    font-size:18px;
-    line-height:1.2;
-}
-
-.heart-button i {
-font-style:normal;
-    color:#c8a35a;
-    margin-top:8px;
-}
-
-@media(max-width:700px) {
-.heart-button {
-width:140px;
-    height:125px;
-    margin:20px auto;
-    font-size:15px;
-}
-
-}
-
-.final-section {
+.hero-heart,.hero-button:not(.final-section {
 overflow:hidden;
     position:relative;
 }
@@ -5076,57 +5037,161 @@ padding-bottom:0 !important;
 
 }
 
+/* FIX: remove only bottom flowers, keep side flowers */
 
+/* restore side flowers sizing */
 
-/* Final cleaned hero adjustments */
-.hero {
-    padding: 8px 30px 45px;
-}
-
-.hero-subtitle {
-    margin-top: 0;
-}
-
-.hero-quote {
-    margin-top: 22px;
-    font-size: 22px;
-    letter-spacing: 6px;
-    color: #f3eee3;
-}
-
-.love-equation {
-    margin-top: 28px;
-    flex-wrap: wrap;
-}
-
-.love-equation .hero-heart {
-    width: 120px;
-    height: 105px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(232,221,211,0.22);
-    clip-path: polygon(50% 96%,35% 82%,20% 65%,10% 48%,10% 30%,22% 15%,38% 10%,50% 25%,62% 10%,78% 15%,90% 30%,90% 48%,80% 65%,65% 82%);
-    font-size: 0;
-}
-
-.love-equation .hero-heart::after {
-    content: "♥";
-    font-size: 58px;
-    color: #f7f1e7;
+/* Restore side flowers only */
+.final-section {
+position: relative;
+    overflow: hidden;
 }
 
 @media (max-width:700px) {
-    .hero {
-        padding: 12px 18px 35px;
+}
+
+/* Side flowers final position */
+
+@media (max-width:700px) {
+}
+
+@media (max-width:420px) {
+}
+
+/* FINAL FIX: move only side flowers lower */
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 420px) {
+}
+
+/* Side flowers */
+.final-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.final-section .footer-floral {
+    position: absolute;
+    bottom: -55px;
+    width: 260px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.final-section .footer-floral-left {
+    left: -45px;
+}
+
+.final-section .footer-floral-right {
+    right: -45px;
+}
+
+@media (max-width: 700px) {
+    .final-section .footer-floral {
+        bottom: -40px;
+        width: 210px;
     }
 
-    .love-equation .hero-heart {
-        width: 90px;
-        height: 80px;
+    .final-section .footer-floral-left {
+        left: -35px;
     }
 
-    .love-equation .hero-heart::after {
-        font-size: 44px;
+    .final-section .footer-floral-right {
+        right: -35px;
+    }
+}
+
+@media (max-width: 420px) {
+    .final-section .footer-floral {
+        bottom: -30px;
+        width: 190px;
+    }
+}
+
+/* Hero heart and scroll hint */
+.hero-heart-scroll {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:25px;
+}
+
+.hero-heart {
+    width:70px;
+    height:70px;
+    position:relative;
+    transform:rotate(-45deg);
+    background:#fff8ea;
+    margin:20px 0 35px;
+    filter:drop-shadow(0 8px 14px rgba(0,0,0,.15));
+}
+
+.hero-heart::before,
+.hero-heart::after {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    background:#fff8ea;
+    border-radius:50%;
+}
+
+.hero-heart::before {
+    top:-35px;
+    left:0;
+}
+
+.hero-heart::after {
+    left:35px;
+    top:0;
+}
+
+.hero-heart {
+    color:transparent;
+}
+
+.scroll-arrow {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#fff8ea;
+    animation:scrollPulse 2s infinite;
+}
+
+.scroll-arrow span {
+    font-size:42px;
+    line-height:.8;
+}
+
+.scroll-arrow p {
+    margin:10px 0 0;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+@keyframes scrollPulse {
+    0%,100% { opacity:.7; transform:translateY(0); }
+    50% { opacity:1; transform:translateY(8px); }
+}
+
+@media(max-width:700px){
+    .hero-heart {
+        width:55px;
+        height:55px;
+    }
+    .hero-heart::before,
+    .hero-heart::after {
+        width:55px;
+        height:55px;
+    }
+    .hero-heart::before {
+        top:-27px;
+    }
+    .hero-heart::after {
+        left:27px;
     }
 }
