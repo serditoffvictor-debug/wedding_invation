@@ -8000,3 +8000,45 @@ footer .container,
         bottom: 0 !important;
     }
 }
+
+
+/* === REAL FIX: only central bottom botanical === */
+.final-section .footer-floral-left,
+.final-section .footer-floral-right {
+    width: 190px !important;
+    max-width: 190px !important;
+    height: auto !important;
+}
+
+.final-section .footer-bottom-botanical {
+    width: 135% !important;
+    max-width: none !important;
+    left: 50% !important;
+    bottom: -15px !important;
+    transform: translateX(-50%) !important;
+}
+
+.final-section .footer-bottom-botanical img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width:700px){
+    .final-section .footer-floral-left,
+    .final-section .footer-floral-right {
+        width: 150px !important;
+        max-width: 150px !important;
+    }
+
+    .final-section .footer-bottom-botanical {
+        width: 150% !important;
+        bottom: -10px !important;
+    }
+}
+
+@media (max-width:420px){
+    .final-section .footer-bottom-botanical {
+        width: 165% !important;
+        bottom: -10px !important;
+    }
+}
