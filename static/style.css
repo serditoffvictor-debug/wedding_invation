@@ -5167,3 +5167,24 @@ right: -20px;
 }
 
 }
+.overstrike-pair {
+  position: relative;
+  display: inline-block;
+}
+
+.old-letter {
+  text-decoration: line-through;
+  display: block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.new-letter {
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  font-weight: bold;
+  color: #d00; /* красный, можно поменять */
+  line-height: 1;
+}
