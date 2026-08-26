@@ -7875,3 +7875,50 @@ footer .container,
         bottom: 0 !important;
     }
 }
+
+
+/* === FIX: расширение нижних цветов без смещения вниз === */
+.final-section .footer-floral{
+    width:min(55vw, 760px) !important;
+    bottom:-25px !important;
+    transform:translateY(0) !important;
+}
+
+.final-section .footer-floral-left{
+    left:-35px !important;
+}
+
+.final-section .footer-floral-right{
+    right:-35px !important;
+}
+
+@media (max-width:700px){
+    .final-section .footer-floral{
+        width:420px !important;
+        bottom:-25px !important;
+        transform:translateY(0) !important;
+    }
+
+    .final-section .footer-floral-left{
+        left:-80px !important;
+    }
+
+    .final-section .footer-floral-right{
+        right:-80px !important;
+    }
+}
+
+@media (max-width:400px){
+    .final-section .footer-floral{
+        width:390px !important;
+        bottom:-25px !important;
+    }
+
+    .final-section .footer-floral-left{
+        left:-70px !important;
+    }
+
+    .final-section .footer-floral-right{
+        right:-70px !important;
+    }
+}
