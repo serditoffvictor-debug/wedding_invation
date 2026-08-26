@@ -5066,81 +5066,50 @@ position: relative;
 @media (max-width: 420px) {
 }
 
-/* Side flowers - single clean rule */
-.final-section {
-position: relative;
-    overflow: hidden;
-}
-
-
-
-
-
-
-
-@media (max-width: 700px) {
-
-
-    
-
-    
-
-}
-
-@media (max-width: 420px) {
-
-
-    
-
-    
-
-}
-
-/* Side flowers position - cleaned single rule */
+/* Side flowers */
 .final-section {
     position: relative;
     overflow: hidden;
 }
 
-.footer-floral {
+.final-section .footer-floral {
     position: absolute;
-    bottom: -45px;
+    bottom: -55px;
     width: 260px;
     height: auto;
     z-index: 1;
     pointer-events: none;
 }
 
-.footer-floral-left {
+.final-section .footer-floral-left {
     left: -45px;
 }
 
-.footer-floral-right {
+.final-section .footer-floral-right {
     right: -45px;
 }
 
 @media (max-width: 700px) {
-    .footer-floral {
-        bottom: -30px;
-        width: 200px;
+    .final-section .footer-floral {
+        bottom: -40px;
+        width: 210px;
     }
 
-    .footer-floral-left {
-        left: -30px;
+    .final-section .footer-floral-left {
+        left: -35px;
     }
 
-    .footer-floral-right {
-        right: -30px;
+    .final-section .footer-floral-right {
+        right: -35px;
     }
 }
 
 @media (max-width: 420px) {
-    .footer-floral {
-        bottom: -20px;
-        width: 180px;
+    .final-section .footer-floral {
+        bottom: -30px;
+        width: 190px;
     }
 }
-
 
 /* Hero heart and scroll hint */
 .hero-heart-scroll {
